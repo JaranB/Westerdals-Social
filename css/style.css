@@ -1,0 +1,155 @@
+/*Home kode - start*/
+
+
+/*Settings generelt for siden - start*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a,
+h1,
+h2,
+p {
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+}
+
+h1 {
+    color: #074B97;
+}
+
+p {
+    font-size: 1.2em;
+    top: 10px;
+}
+
+
+/*Settings generelt for siden - slutt*/
+
+
+/*Header og navigator - start*/
+
+header {
+    position: relative;
+    overflow: hidden;
+    background-color: #8DC9FF;
+}
+
+#logo {
+    float: left;
+    padding-left: 5%;
+    max-width: 50%;
+}
+
+#logo img {
+    margin-top: 4px;
+    max-width: 100%;
+}
+
+#navbuttons {
+    float: right;
+    text-align: center;
+    text-decoration: none;
+    max-width: 100%;
+    margin-top: 35px;
+    margin-right: 5%;
+}
+
+#navbuttons a {
+    color: #b7ffff;
+    padding: 10px;
+    display: inline-block;
+}
+
+#navbuttons a:hover {
+    background-color: #111;
+    border-radius: 10%;
+}
+
+
+/*Header og navigator - slutt*/
+
+
+/*html, body (alt innenfor body) - start*/
+
+html {
+    height: 100%;
+}
+
+body {
+    position: relative;
+    background-color: #FFFFFF;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+}
+
+#menu {
+    position: relative;
+    margin: auto;
+    top: 5%;
+    width: 665px;
+    height: 455px;
+    max-width: 100%;
+}
+
+#menu:hover .circle {
+    -webkit-animation-play-state: paused;
+}
+
+
+/*Container med hovedinnhold på alle sider - start*/
+
+#container {
+    width: 90%;
+    height: auto;
+    margin-top: 30px;
+    margin-left: 5%;
+    border-radius: 2%;
+    background-color: #3A4047;
+    position: relative;
+}
+
+
+/*Container med hovedinnhold på alle sider - slutt*/
+
+#sitecontent {
+    text-align: center;
+    position: relative;
+    margin: auto;
+    padding: 1%;
+}
+
+
+/*html, body (alt innenfor body) - slutt*/
+
+
+/*Pusher og footer - start*/
+
+.push {
+    height: 70px;
+}
+
+footer {
+    background-color: #8DC9FF;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 40px;
+    text-align: center;
+}
+
+footer p {
+    margin-top: 10px;
+}
+
+
+/*Pusher og footer - slutt*/
+
+
+/*Home kode - slutt*/
