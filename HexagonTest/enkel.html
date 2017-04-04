@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+
+
+<title>New HMTL document by NewJect</title>
+    <!--https://codepen.io/dmac37/pen/cfArp-->
+<style>
+ BODY {
+  background: #222;
+}
+
+.center {
+  width: 200px;
+  margin: auto;
+  margin-top: -50px;
+}
+
+.hexagon {
+  width: 200px;
+  height: 400px;
+  overflow: hidden;
+  visibility: hidden;
+  transform: rotate(120deg);
+  cursor: pointer;
+}
+
+.hexagon-in1 {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  transform: rotate(-60deg);
+}
+
+.hexagon-in2 {
+  width: 100%;
+  height: 100%;
+  visibility: visible;
+  transform: rotate(-60deg);
+  background: url("http://lorempixel.com/g/250/350/people");
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+.hexagon-in2:hover {
+  background: url("http://lorempixel.com/250/350/people");
+}
+
+    
+</style>
+</head>
+<body>
+
+<div class='center'>
+  <div class='hexagon'>
+    <div class='hexagon-in1'>
+      <div class='hexagon-in2'></div>
+    </div>
+  </div>
+</div>
+    
+</body>
+</html>
