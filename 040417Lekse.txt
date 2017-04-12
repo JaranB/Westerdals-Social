@@ -8,5 +8,5 @@ Neste gang når vi har fått litt i Trello og litt erfaringer med Trello så må
 - få Git lokalt/eksternt til å fungere. laste opp via git slik at vi får en git logg som vi skal levere
 start med testing slik at vi får en enkel prn scrn. (dette har vi fått til) - Tommy
 
-
+12.4.17 - Tommy la til forslaget sitt på Trello, lyst på uten kart og med bilde istede.
 
