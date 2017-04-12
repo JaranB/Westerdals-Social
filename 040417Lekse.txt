@@ -6,7 +6,7 @@ Neste gang når vi har fått litt i Trello og litt erfaringer med Trello så må
 - Kom på forslag til temaer! Velger dette nestegang også!
 
 - få Git lokalt/eksternt til å fungere. laste opp via git slik at vi får en git logg som vi skal levere
-start med testing slik at vi får en enkel prn scrn.
+start med testing slik at vi får en enkel prn scrn. (dette har vi fått til) - Tommy
 
 
 
