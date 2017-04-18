@@ -21,14 +21,13 @@
             <ol class="odd">
                 <li class='hex'></li>
                 <li class='hex'></li>
-                <li class='hex'></li>
             </ol>
             <ol class="even">
                 <li class='hex'></li>
                 <li class='hex'></li>
+                <li class='hex'></li>
             </ol>
             <ol class="odd2">
-                <li class='hex'></li>
                 <li class='hex'></li>
                 <li class='hex'></li>
             </ol>
