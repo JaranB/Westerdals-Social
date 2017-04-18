@@ -34,7 +34,7 @@ p {
 header {
     position: relative;
     overflow: hidden;
-    background-color: #8DC9FF;
+    background-color: rgba(30, 37, 48, 0.5);
 }
 
 #logo {
@@ -45,7 +45,7 @@ header {
 
 #logo img {
     margin-top: 4px;
-    max-width: 100%;
+    max-width: 200px;
 }
 
 #navbuttons {
@@ -136,7 +136,7 @@ body {
 }
 
 footer {
-    background-color: #8DC9FF;
+    background-color: rgba(30, 37, 48, 0.5);
     position: absolute;
     left: 0;
     bottom: 0;

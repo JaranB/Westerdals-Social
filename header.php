@@ -3,7 +3,7 @@
         <div id="navigator">
             <div id="logo">
                 <a href="index.html">
-                    <img src="http://i.imgur.com/J7zEglx.png?1">
+                    <img src="http://bylarm.no/wp-content/themes/bylarm/images/logos/westerdals.png">
                 </a>
             </div>
             <div id="navbuttons">
