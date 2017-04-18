@@ -10,26 +10,10 @@
 </head>
 <!-- Head som inneholder hvordan character format siden bruker, tittel på siden og stylesheetet - slutt -->
 
+    <?php include 'header.php';?>
+
 <body>
 
-    <!-- Header som inneholder navigatoren på nettsiden - start -->
-    <header>
-        <div id="navigator">
-            <div id="logo">
-                <a href="index.html">
-                    <img src="http://i.imgur.com/J7zEglx.png?1">
-                </a>
-            </div>
-            <div id="navbuttons">
-                <a href="index.html">Home</a>
-                <a href="Something.html">Something</a>
-                <a href="Something.html">Something</a>
-                <a href="Something.html">Something</a>
-                <a href="Something.html">Something</a>
-            </div>
-        </div>
-    </header>
-    <!-- Header som inneholder navigatoren på nettsiden - slutt -->
 
     <!-- Boks for "velkommen" tekst og firmaets  slogan - start -->
     <div id="homeslogantext">
@@ -42,11 +26,7 @@
     <div class="push"></div>
     <!-- En "pusher" som sørger for ett mellomrom mellom footer og sidenes innhold - slutt -->
 
-    <!-- Footeren på siden - start -->
-    <footer>
-        <p>Copyright © Something 2017</p>
-    </footer>
-    <!-- Footeren på siden - slutt -->
+    <?php include 'footer.php';?>
 
 </body>
 
