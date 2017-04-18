@@ -80,8 +80,9 @@ html {
 
 body {
     position: relative;
-    background-color: #FFFFFF;
-    background-size: cover;
+    background-image: url(https://www.westerdals.no/content/uploads/2015/12/Fasade-fra-elven.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
     background-attachment: fixed;
     margin: 0;
     padding: 0;
@@ -107,10 +108,10 @@ body {
 #container {
     width: 90%;
     height: auto;
-    margin-top: 30px;
+    margin-top: 5%;
+    margin-bottom: 5%;
     margin-left: 5%;
     border-radius: 2%;
-    background-color: #3A4047;
     position: relative;
 }
 
@@ -150,6 +151,73 @@ footer p {
 
 
 /*Pusher og footer - slutt*/
+
+
+/*Hexagons hovedside - start*/
+
+#hexbox{
+    position: relative;
+    width: 518px;
+    margin:auto;
+
+}
+
+ol.even {
+    position: relative;
+    left: 17%;
+}
+
+ol.odd {
+    position: relative;
+    margin-bottom: -9.5%;
+}
+
+ol.odd2 {
+    position: relative;
+    margin-top: -9.5%;
+}
+
+.hex {
+    left: 7.25%;
+    position: relative;
+    margin: 3% auto;
+    width: 6rem;
+    height: 10.2rem;
+    background: #1e2530;
+    transform: rotate(-90deg);
+    display: inline-block;
+    list-style-type: none;
+    margin-right: 14%;
+    transition: all 150ms ease-in-out;
+    z-index: 2;
+}
+
+.hex:before,
+.hex:after {
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    border-radius: inherit;
+    background: inherit;
+    content: '';
+    z-index: -1;
+}
+
+.hex:before {
+    transform: rotate(60deg);
+}
+
+.hex:after {
+    transform: rotate(-60deg);
+}
+
+.hex:hover {
+    background: #ea7432;
+    cursor: pointer;
+}
+
+
+/*Hexagons hovedside - slutt*/
 
 
 /*Home kode - slutt*/
