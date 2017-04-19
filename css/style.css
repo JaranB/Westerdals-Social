@@ -155,16 +155,15 @@ footer p {
 
 /*Hexagons hovedside - start*/
 
-#hexbox{
+#hexbox {
     position: relative;
     width: 600px;
-    margin:auto;
-
+    margin: auto;
 }
 
 ol.even {
     position: relative;
-    left: 4%;
+    left: 3.7%;
 }
 
 ol.odd {
@@ -183,7 +182,7 @@ ol.odd2 {
     left: 7.25%;
     position: relative;
     margin: 3% auto;
-    width: 6rem;
+    width: 94px;
     height: 10.2rem;
     background: #1e2530;
     transform: rotate(-90deg);
@@ -218,8 +217,38 @@ ol.odd2 {
     cursor: pointer;
 }
 
+#registerbox {
+    align-content: center;
+    margin: auto;
+    width: 300px;
+    height: 200px;
+    line-height: 150%;
+}
+
+label {
+    color: white;
+}
+
+input {
+
+}
+
 
 /*Hexagons hovedside - slutt*/
 
+.brukerinfo {
+    position: absolute;
+    margin-left: 5%;
+    margin-top: 1%;
+    height: 20px;
+    max-width: 50%;
+    white-space: nowrap;
+    display: inline;
+}
+
+.brukerinfo1 {
+    display: inline;
+    white-space: nowrap;
+}
 
 /*Home kode - slutt*/
