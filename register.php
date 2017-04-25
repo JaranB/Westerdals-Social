@@ -8,9 +8,9 @@ if(isset($_POST) & !empty($_POST)){
 	$sql = "INSERT INTO `brukere` (brukernavn, epost, passord) VALUES ('$brukernavn', '$epost', '$passord')";
 	$result = mysqli_query($connection, $sql);
 	if($result){
-		$smsg = "User Registration successfull";
+		$smsg = "Bruker registrert!";
 	}else{
-		$fmsg = "User registration failed";
+		$fmsg = "Registrering misslyket!";
 	}
 }
 
@@ -39,20 +39,17 @@ if(isset($_POST) & !empty($_POST)){
         <div id="container">
             <div id="registerbox">
                 <?php if(isset($smsg)){ ?>
-                <div class="alert alert-success" role="alert">
+                <div class="varsel" role="alert">
                     <?php echo $smsg; ?> </div>
                 <?php } ?>
                 <?php if(isset($fmsg)){ ?>
-                <div class="alert alert-danger" role="alert">
+                <div class="varsel" role="alert">
                     <?php echo $fmsg; ?> </div>
                 <?php } ?>
-                <form class="" method="POST">
-                    <label for="inputEmail" class="">Brukernavn:</label>
-                    <input type="text" name="brukernavn" class="" placeholder="" required>
-                    <label for="inputEmail" class="">EPost:</label>
-                    <input type="email" name="epost" id="inputEmail" class="" placeholder="Email address" required autofocus>
-                    <label for="inputPassword" class="">Passord:</label>
-                    <input type="password" name="passord" id="inputPassword" class="" placeholder="Password" required>
+                <form class="registerform" method="POST">
+                    <input type="text" name="brukernavn" class="" placeholder="Brukernavn" required>
+                    <input type="email" name="epost" id="inputEmail" class="" placeholder="EPost" required autofocus>
+                    <input type="password" name="passord" id="inputPassword" class="" placeholder="Passord" required>
                     <button class="" type="submit">Registrer</button>
                     <a class="" href="login.php">Login</a>
                 </form>

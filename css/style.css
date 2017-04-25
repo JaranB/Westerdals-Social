@@ -11,13 +11,10 @@
 a,
 h1,
 h2,
-p {
+p,
+#infobar{
     text-decoration: none;
     font-family: 'Lato', sans-serif;
-}
-
-h1 {
-    color: #074B97;
 }
 
 p {
@@ -87,19 +84,6 @@ body {
     margin: 0;
     padding: 0;
     min-height: 100%;
-}
-
-#menu {
-    position: relative;
-    margin: auto;
-    top: 5%;
-    width: 665px;
-    height: 455px;
-    max-width: 100%;
-}
-
-#menu:hover .circle {
-    -webkit-animation-play-state: paused;
 }
 
 
@@ -220,8 +204,6 @@ ol.odd2 {
 #registerbox {
     align-content: center;
     margin: auto;
-    width: 300px;
-    height: 200px;
     line-height: 150%;
 }
 
@@ -236,19 +218,74 @@ input {
 
 /*Hexagons hovedside - slutt*/
 
-.brukerinfo {
-    position: absolute;
-    margin-left: 5%;
-    margin-top: 1%;
-    height: 20px;
-    max-width: 50%;
-    white-space: nowrap;
-    display: inline;
+#brukerinfo {
+    align-content: center;
+    margin: auto;
+    line-height: 150%;
 }
 
-.brukerinfo1 {
-    display: inline;
-    white-space: nowrap;
+.brukerinfoform {
+    text-decoration: none;
+    width: 200px;
+    border-radius: 4px;
+    background-color: rgba(30, 37, 48, 0.5);
+    text-align: center;
+    margin-left: auto;
+    margin-bottom: auto;
+    margin-right: auto;
+    margin-top: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#brukerinfo a {
+    color: #b7ffff;
+}
+
+.registerform {
+    text-decoration: none;
+    width: 200px;
+    border-radius: 4px;
+    background-color: rgba(30, 37, 48, 0.5);
+    text-align: center;
+    margin-left: auto;
+    margin-bottom: auto;
+    margin-right: auto;
+    margin-top: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.registerform a {
+    color: #b7ffff;
+}
+
+.varsel {
+    text-decoration: none;
+    width: 200px;
+    border-radius: 4px;
+    background-color: rgba(30, 37, 48, 0.5);
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #b7ffff;
+}
+
+#infobar, infobarcontent {
+    position: inherit;
+    height: 30px;
+    width: 100%;
+    background-color: rgba(30, 37, 48, 0.5);
+    display: inline-block;
+    z-index: 1;
+    color: #b7ffff;
+}
+
+#infobarcontent {
+    margin-left: 5%;
+    line-height: 30px;
 }
 
 /*Home kode - slutt*/
