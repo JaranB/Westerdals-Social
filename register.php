@@ -46,7 +46,7 @@ if(isset($_POST) & !empty($_POST)){
                 <div class="varsel" role="alert">
                     <?php echo $fmsg; ?> </div>
                 <?php } ?>
-                <form class="registerform" method="POST">
+                <form class="forms" method="POST">
                     <input type="text" name="brukernavn" class="" placeholder="Brukernavn" required>
                     <input type="email" name="epost" id="inputEmail" class="" placeholder="EPost" required autofocus>
                     <input type="password" name="passord" id="inputPassword" class="" placeholder="Passord" required>

@@ -1,30 +1,41 @@
 <?php
 
-session_start();
+if(!isset($_SESSION)){
+    session_start();
+}
 
 require_once('db.php');
+
 if(isset($_POST) & !empty($_POST)){
 	$brukernavn = mysqli_real_escape_string($connection, $_POST['brukernavn']);
 	$passord = md5($_POST['passord']);
 
 	$sql = "SELECT * FROM `brukere` WHERE brukernavn='$brukernavn' AND passord='$passord'";
-	$result = mysqli_query($connection, $sql);
+    $result = mysqli_query($connection, $sql);
+    $row = $result->fetch_assoc();
 	$count = mysqli_num_rows($result);
 	if($count == 1){
         $_SESSION['LogInStatus'] = true;
-		$_SESSION['brukernavn'] = $brukernavn;
+        $_SESSION['brukernavn'] = $brukernavn;
+
 	}else{
 		$fmsg = "Feil brukernavn eller passord!";
 
 	}
-}
 
-if (isset($_SESSION['LogInStatus']) && $_SESSION['LogInStatus'] == true) {
-	$smsg = "Bruker logget inn!";
-    header("Location: ./index.php");
-    die();
-}
+    if($row['rang'] == 1){
+        $_SESSION['admin'] = true;
+    } else {
+        $_SESSION['admin'] = false;
+    }
 
+    if (isset($_SESSION['LogInStatus']) && $_SESSION['LogInStatus'] == true) {
+        $smsg = "Bruker logget inn!";
+        header("Location: ./index.php");
+        die();
+    }
+
+}
 ?>
 
 <!DOCTYPE html>
@@ -50,11 +61,11 @@ if (isset($_SESSION['LogInStatus']) && $_SESSION['LogInStatus'] == true) {
                 <div class="varsel" role="alert">
                     <?php echo $fmsg; ?> </div>
                 <?php } ?>
-                <form class="brukerinfoform" method="POST">
-                    <input type="text" name="brukernavn" class="login1" placeholder="Brukernavn" required>
+                <form class="forms" method="POST">
+                    <input type="text" name="brukernavn" class="" placeholder="Brukernavn" required>
                     <input type="password" name="passord" id="inputPassword" class="" placeholder="Passord" required>
                     <br>
-                    <button class="" type="submit">Login</button>
+                    <button name="" type="submit">Login</button>
                     <a class="" href="register.php">Register</a>
                 </form>
             </div>

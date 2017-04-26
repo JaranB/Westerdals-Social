@@ -12,7 +12,7 @@ a,
 h1,
 h2,
 p,
-#infobar{
+#infobar {
     text-decoration: none;
     font-family: 'Lato', sans-serif;
 }
@@ -32,6 +32,7 @@ header {
     position: relative;
     overflow: hidden;
     background-color: rgba(30, 37, 48, 0.5);
+    height: 100px;
 }
 
 #logo {
@@ -50,7 +51,7 @@ header {
     text-align: center;
     text-decoration: none;
     max-width: 100%;
-    margin-top: 35px;
+    margin-top: 20px;
     margin-right: 5%;
 }
 
@@ -61,8 +62,24 @@ header {
 }
 
 #navbuttons a:hover {
-    background-color: #111;
+    background-color: rgba(30, 37, 48, 0.5);
     border-radius: 10%;
+}
+
+#infobar,
+#infobarcontent {
+    position: inherit;
+    height: 30px;
+    width: 100%;
+    background-color: rgba(30, 37, 48, 0.5);
+    display: inline-block;
+    z-index: 1;
+    color: #b7ffff;
+}
+
+#infobarcontent {
+    padding-left: 5%;
+    line-height: 25px;
 }
 
 
@@ -131,6 +148,7 @@ footer {
 
 footer p {
     margin-top: 10px;
+    color: #b7ffff;
 }
 
 
@@ -143,7 +161,11 @@ footer p {
     position: relative;
     width: 600px;
     margin: auto;
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
 }
+
+.li {}
 
 ol.even {
     position: relative;
@@ -152,13 +174,13 @@ ol.even {
 
 ol.odd {
     position: relative;
-    margin-bottom: -9.5%;
+    margin-bottom: -8%;
     left: 19%;
 }
 
 ol.odd2 {
     position: relative;
-    margin-top: -9.5%;
+    margin-top: -8%;
     left: 19%;
 }
 
@@ -170,11 +192,14 @@ ol.odd2 {
     height: 10.2rem;
     background: #1e2530;
     transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
     display: inline-block;
     list-style-type: none;
     margin-right: 14%;
     transition: all 150ms ease-in-out;
     z-index: 2;
+    opacity: 0.9;
+    box-shadow: 0 0 150px 50px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .hex:before,
@@ -190,10 +215,12 @@ ol.odd2 {
 
 .hex:before {
     transform: rotate(60deg);
+    -webkit-transform: rotate(60deg);
 }
 
 .hex:after {
     transform: rotate(-60deg);
+    -webkit-transform: rotate(-60deg);
 }
 
 .hex:hover {
@@ -201,30 +228,24 @@ ol.odd2 {
     cursor: pointer;
 }
 
-#registerbox {
-    align-content: center;
-    margin: auto;
-    line-height: 150%;
-}
-
-label {
-    color: white;
-}
-
-input {
-
+#hexText {
+    position: fixed;
+    float: left;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #b7ffff;
 }
 
 
 /*Hexagons hovedside - slutt*/
 
-#brukerinfo {
-    align-content: center;
-    margin: auto;
+#registerbox,
+#brukerinfo,
+.adminpanel {
     line-height: 150%;
 }
-
-.brukerinfoform {
+.forms {
     text-decoration: none;
     width: 200px;
     border-radius: 4px;
@@ -238,16 +259,12 @@ input {
     padding-bottom: 20px;
 }
 
-#brukerinfo a {
-    color: #b7ffff;
-}
-
-.registerform {
+.adminpanel{
     text-decoration: none;
     width: 200px;
     border-radius: 4px;
     background-color: rgba(30, 37, 48, 0.5);
-    text-align: center;
+    padding-left: 30px;
     margin-left: auto;
     margin-bottom: auto;
     margin-right: auto;
@@ -256,7 +273,7 @@ input {
     padding-bottom: 20px;
 }
 
-.registerform a {
+.forms a, .adminpanel a {
     color: #b7ffff;
 }
 
@@ -273,19 +290,5 @@ input {
     color: #b7ffff;
 }
 
-#infobar, infobarcontent {
-    position: inherit;
-    height: 30px;
-    width: 100%;
-    background-color: rgba(30, 37, 48, 0.5);
-    display: inline-block;
-    z-index: 1;
-    color: #b7ffff;
-}
-
-#infobarcontent {
-    margin-left: 5%;
-    line-height: 30px;
-}
 
 /*Home kode - slutt*/
