@@ -11,17 +11,16 @@
     <div id="containerHovedside">
         <div class="hexbox">
             <div class="even centering">
-                <a href="index.php">
-                    <div class="hexagon">
-                        <div class="hexagon-inside">
-                            <a href="https://www.facebook.com/">
+                <div class="hexagon">
+                    <div class="hexagon-inside">
+                        <a href="https://www.facebook.com/">
                             <div class="hexagonimg">
                                 <p id="hexText">Barer</p>
                                 </div>
-                                    </a>
+                            </a>
                         </div>
                     </div>
-                </a>
+
                 <br>
                 <div class="hexagon">
                     <div class="hexagon-inside">
