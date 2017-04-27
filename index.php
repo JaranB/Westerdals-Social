@@ -14,9 +14,11 @@
                 <a href="index.php">
                     <div class="hexagon">
                         <div class="hexagon-inside">
+                            <a href="https://www.facebook.com/">
                             <div class="hexagonimg">
-                                <a id="hexText">Barer</a>
-                            </div>
+                                <p id="hexText">Barer</p>
+                                </div>
+                                    </a>
                         </div>
                     </div>
                 </a>
