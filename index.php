@@ -29,7 +29,7 @@
                 <li class='hex'><a id="hexText">Restauranter</a></li>
             </ol>
             <ol class="odd2">
-                <li class='hex'><a id="hexText">Butikkoooer</a></li>
+                <li class='hex'><a id="hexText">Butikker</a></li>
                 <li class='hex'><a id="hexText">Studie</a></li>
             </ol>
         </div>
