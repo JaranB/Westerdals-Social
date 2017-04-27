@@ -1,0 +1,339 @@
+/*Home kode - start*/
+
+
+/*Settings generelt for siden - start*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a,
+h1,
+h2,
+p {
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+}
+
+h1 {
+    color: #074B97;
+}
+
+
+/*Settings generelt for siden - slutt*/
+
+
+/*Header og navigator - start*/
+
+header {
+    position: relative;
+    overflow: hidden;
+    background-color: #3A4047;
+}
+
+/*Header og navigator - slutt*/
+
+
+/*html, body (alt innenfor body) - start*/
+
+html {
+    height: 100%;
+}
+
+body {
+    position: relative;
+    background-image: url(../bilder/bg.jpg);
+    /* https://pbs.twimg.com/media/Cw2GfpTUkAAPhzW.jpg */
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+}
+
+
+
+/*Container med hovedinnhold på alle sider - start*/
+
+#container {
+    width: 90%;
+    height: auto;
+    margin-top: 30px;
+    margin-left: 5%;
+    border-radius: 2%;
+    background-color: #3A4047;
+    position: relative;
+}
+
+
+/*Container med hovedinnhold på alle sider - slutt*/
+
+#sitecontent {
+    text-align: center;
+    position: relative;
+    margin: auto;
+    margin-right: 1.3%; /*OBS må fikses!!!*/
+    padding: 1%;
+}
+
+
+/*html, body (alt innenfor body) - slutt*/
+
+
+/* Solutions */
+
+#solutionstitle {
+    font-size: 20px;
+}
+
+#solutionstext {
+    margin-bottom: 40px;
+    padding: 10px 100px 10px 100px;
+}
+
+
+/* Lysbildefremviser */
+
+#slides {
+    background: black;
+    border: 5px solid white;
+    height: auto;
+    width: 700px;
+    margin: auto;
+    position: relative;
+    max-width: 100%;
+}
+
+
+/* Skjuler bildene utenfor rammen */
+
+#hiddenslides {
+    overflow: hidden;
+    height: 392px;
+}
+
+
+/* Så bildene fyller rammen*/
+
+#slides ul {
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+
+/* Bildene starter utenfor rammen*/
+
+#slides li {
+    position: absolute;
+    top: 0px;
+    left: -705px;
+}
+
+
+/* Bildestørrelsen */
+
+#slides img {
+    width: 700px;
+    height: 392px;
+}
+
+
+/* Lysbilde-Animasjonen*/
+
+#slides li.s1_animation {
+    -webkit-animation: slideshow1 15s infinite linear;
+}
+
+#slides li.s2_animation {
+    -webkit-animation: slideshow2 15s infinite linear;
+}
+
+#slides li.s3_animation {
+    -webkit-animation: slideshow3 15s infinite linear;
+}
+
+#slides li.s4_animation {
+    -webkit-animation: slideshow4 15s infinite linear;
+}
+
+@-webkit-keyframes slideshow1 {
+    0% {
+        left: 0px;
+        top: 0px;
+    }
+    5% {
+        left: 0px;
+    }
+    20% {
+        left: 0px;
+        opacity: 1;
+        z-index: 0;
+    }
+    25% {
+        left: 705px;
+        opacity: 0;
+        z-index: 0;
+    }
+    26% {
+        left: -705px;
+        opacity: 0;
+        z-index: -1;
+    }
+    90% {
+        left: -705px;
+        opacity: 0;
+        z-index: 0;
+    }
+    95% {
+        left: -705px;
+        opacity: 0;
+    }
+    100% {
+        left: 0px;
+        top: 0px;
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes slideshow2 {
+    0% {
+        top: 0px;
+        left: -705px;
+        opacity: 0;
+    }
+    20% {
+        left: -705px;
+        opacity: 0;
+    }
+    25% {
+        left: 0px;
+        opacity: 1;
+    }
+    30% {
+        left: 0px;
+        opacity: 1;
+    }
+    45% {
+        left: 0px;
+        opacity: 1;
+        z-index: 0;
+    }
+    50% {
+        left: 705px;
+        opacity: 0;
+        z-index: 0;
+    }
+    51% {
+        left: -705px;
+        opacity: 0;
+        z-index: -1;
+    }
+    100% {
+        top: 0px;
+        left: -705px;
+        opacity: 0;
+        z-index: -1;
+    }
+}
+
+@-webkit-keyframes slideshow3 {
+    0% {
+        left: -705px;
+        opacity: 0;
+    }
+    45% {
+        left: -705px;
+        opacity: 0;
+    }
+    50% {
+        left: 0px;
+        opacity: 1;
+    }
+    55% {
+        left: 0px;
+        opacity: 1;
+    }
+    70% {
+        left: 0px;
+        opacity: 1;
+    }
+    75% {
+        left: 705px;
+        opacity: 0;
+        z-index: 0;
+    }
+    76% {
+        left: -705px;
+        opacity: 0;
+        z-index: -1;
+    }
+    100% {
+        left: -705px;
+        opacity: 0;
+        z-index: -1;
+    }
+}
+
+@-webkit-keyframes slideshow4 {
+    0% {
+        left: -705px;
+        opacity: 0;
+    }
+    70% {
+        left: -705px;
+        opacity: 0;
+    }
+    75% {
+        left: 0px;
+        opacity: 1;
+    }
+    80% {
+        left: 0px;
+        opacity: 1;
+    }
+    95% {
+        left: 0px;
+        opacity: 1;
+        z-index: 0;
+    }
+    100% {
+        left: 705px;
+        opacity: 0;
+        z-index: 0;
+    }
+    105% {
+        left: -705px;
+        opacity: 0;
+        z-index: -1;
+    }
+}
+
+#slides .s_info {
+    background: black;
+    opacity: 0.7;
+    width: 300px;
+    height: 30px;
+    position: relative;
+    bottom: 40px;
+    left: 10px;
+}
+
+#slides .s_info h1 {
+    color: #fff;
+    font-size: 24px;
+}
+
+#slides .s_info {
+    -webkit-transition: all 0.3s ease-in-out;
+}
+
+
+
+#slides:hover li {
+    -webkit-animation-play-state: paused;
+}
+
+
+/* Solutions SLUTT */
