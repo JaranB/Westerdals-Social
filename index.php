@@ -20,7 +20,7 @@
     <div id="container">
         <div id="hexbox">
             <ol class="odd">
-                <li class='hex'><a id="hexText">Park</a></li>
+                <li class='hex'><a id="hexText">Parkering</a></li>
                 <li class='hex'><a id="hexText">Barer</a></li>
             </ol>
             <ol class="even">
