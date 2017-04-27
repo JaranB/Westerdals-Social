@@ -21,15 +21,6 @@ if(isset($_POST) & !empty($_POST)){
 
     <html>
 
-    <!-- Head som inneholder hvordan character format siden bruker, tittel på siden og stylesheetet - start -->
-
-    <head>
-        <meta charset="UTF-8">
-        <title>Something</title>
-        <link rel="stylesheet" href="./css/style.css" type="text/css">
-    </head>
-    <!-- Head som inneholder hvordan character format siden bruker, tittel på siden og stylesheetet - slutt -->
-
     <?php include 'header.php';?>
 
     <body>

@@ -1,5 +1,6 @@
 /*Home kode - start*/
 
+max-zoom: 150%
 
 /*Settings generelt for siden - start*/
 
@@ -30,9 +31,10 @@ p {
 
 header {
     position: relative;
-    overflow: hidden;
     background-color: rgba(30, 37, 48, 0.5);
-    height: 100px;
+    height: 134px;
+    overflow: hidden;
+    z-index: 1;
 }
 
 #logo {
@@ -52,7 +54,7 @@ header {
     text-align: center;
     text-decoration: none;
     max-width: 100%;
-    margin-top: 20px;
+    margin-top: 33.5px;
     margin-right: 5%;
 }
 
@@ -67,22 +69,21 @@ header {
     border-radius: 10%;
 }
 
-#infobar,
 #infobarcontent {
-    position: inherit;
+    position: relative;
     height: 30px;
+    line-height: 24px;
     width: 100%;
     background-color: rgba(30, 37, 48, 0.5);
     display: inline-block;
     z-index: 1;
     color: #b7ffff;
-}
-
-#infobarcontent {
     padding-left: 5%;
-    line-height: 25px;
 }
 
+#infobarcontent a {
+    padding-top: 20px;
+}
 
 /*Header og navigator - slutt*/
 
@@ -101,6 +102,7 @@ body {
     background-attachment: fixed;
     margin: 0;
     padding: 0;
+    z-index: 0;
     min-height: 100%;
 }
 
@@ -108,6 +110,7 @@ body {
 /*Container med hovedinnhold på alle sider - start*/
 
 #container {
+    z-index: 0;
     width: 90%;
     height: auto;
     margin-top: 5%;
@@ -115,6 +118,17 @@ body {
     margin-left: 5%;
     border-radius: 2%;
     position: relative;
+}
+
+#containerHovedside {
+    position: fixed;
+    z-index: 0;
+    padding:0;
+    margin:0;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
 }
 
 
@@ -158,83 +172,92 @@ footer p {
 
 /*Hexagons hovedside - start*/
 
-#hexbox {
-    width: 600px;
-    margin: auto;
-    transform: rotate(90deg);
-    -webkit-transform: rotate(90deg);
+.centering {
+    top: 50%;                           /* center text vertically */
+    left: 50%;                          /* center text horizontally */
+    transform: translate(-50%, -50%);
 }
 
-.li {}
-
-ol.even {
-    position: relative;
-    left: 3.7%;
-}
-
-ol.odd {
-    position: relative;
-    margin-bottom: -8%;
-    left: 19%;
-}
-
-ol.odd2 {
-    position: relative;
-    margin-top: -8%;
-    left: 19%;
-}
-
-.hex {
-    left: 7.25%;
-    position: relative;
-    margin: 3% auto;
-    width: 94px;
-    height: 10.2rem;
-    background: #1e2530;
-    transform: rotate(-90deg);
-    -webkit-transform: rotate(-90deg);
-    display: inline-block;
-    list-style-type: none;
-    margin-right: 14%;
-    transition: all 150ms ease-in-out;
-    z-index: 2;
-    opacity: 0.9;
-    box-shadow: 0 0 150px 50px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.hex:before,
-.hex:after {
+.hexbox {
     position: absolute;
-    width: inherit;
-    height: inherit;
-    border-radius: inherit;
-    background: inherit;
-    content: '';
-    z-index: -1;
+    width: 480px;
+    height: 426px;
+    margin: auto;
+    opacity: 0.8;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 0;
 }
 
-.hex:before {
-    transform: rotate(60deg);
-    -webkit-transform: rotate(60deg);
+.move {
+
 }
 
-.hex:after {
-    transform: rotate(-60deg);
-    -webkit-transform: rotate(-60deg);
+.even {
+    position: absolute;
+    padding-right: 55%;
 }
 
-.hex:hover {
-    background: #ea7432;
-    cursor: pointer;
+.odd {
+    position: absolute;
+    width: 100;
+    padding-top: 100%;
+
+    padding-bottom: 100%;
+}
+
+.even2 {
+    position: absolute;
+    padding-left: 55%;
 }
 
 #hexText {
-    position: fixed;
+    position: absolute;
     float: left;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: #b7ffff;
+}
+
+.hexagon {
+    width: 160px;
+    height: 130px;
+    background: red;
+    transform: rotate(120deg);
+    margin: auto;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+
+.hexagon-inside
+{
+    width: 100%;
+    height: 100%;
+    background-color: green;
+    transform: rotate(-60deg);
+    overflow: hidden;
+    display: inline-block;
+    list-style-type: none;
+}
+
+.hexagonimg
+{
+    width: 100%;
+    height: 100%;
+    background-image: url(http://localhost/something/bilder/hexBilde.jpg);
+    background-position: center;
+    background-size: contain;
+    transform: rotate(-60deg);
+    visibility: visible;
+}
+
+.hexagon:hover {
+    transform: scale(1.1) rotate(120deg);
+    transition-duration: 1s;
 }
 
 
@@ -289,6 +312,5 @@ ol.odd2 {
     padding-bottom: 20px;
     color: #b7ffff;
 }
-
 
 /*Home kode - slutt*/

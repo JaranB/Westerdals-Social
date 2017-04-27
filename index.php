@@ -1,15 +1,6 @@
 <!DOCTYPE html>
 <html>
 
-<!-- Head som inneholder hvordan character format siden bruker, tittel på siden og stylesheetet - start -->
-
-<head>
-    <meta charset="UTF-8">
-    <title>Something</title>
-    <link rel="stylesheet" href="./css/style.css" type="text/css">
-</head>
-<!-- Head som inneholder hvordan character format siden bruker, tittel på siden og stylesheetet - slutt -->
-
 <?php include 'header.php';
         include 'SQLQuerys.php'?>
 
@@ -17,21 +8,69 @@
 
 
     <!-- Boks for "velkommen" tekst og firmaets  slogan - start -->
-    <div id="container">
-        <div id="hexbox">
-            <ol class="odd">
-                <li class='hex'><a id="hexText">Parkering</a></li>
-                <li class='hex'><a id="hexText">Barer</a></li>
-            </ol>
-            <ol class="even">
-                <li class='hex'><a id="hexText">Transport</a></li>
-                <li class='hex'><a id="hexText">Helse</a></li>
-                <li class='hex'><a id="hexText">Restauranter</a></li>
-            </ol>
-            <ol class="odd2">
-                <li class='hex'><a id="hexText">Butikker</a></li>
-                <li class='hex'><a id="hexText">Studie</a></li>
-            </ol>
+    <div id="containerHovedside">
+        <div class="hexbox">
+            <div class="even centering">
+                <a href="index.php">
+                    <div class="hexagon">
+                        <div class="hexagon-inside">
+                            <div class="hexagonimg">
+                                <a id="hexText">Barer</a>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <br>
+                <div class="hexagon">
+                    <div class="hexagon-inside">
+                        <div class="hexagonimg">
+                            <a id="hexText">Transport</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="odd centering">
+                <div class="hexagon">
+                    <div class="hexagon-inside">
+                        <div class="hexagonimg">
+                            <a id="hexText">Restauranter</a>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="hexagon">
+                    <div class="hexagon-inside">
+                        <div class="hexagonimg">
+                            <a id="hexText">Helse</a>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="hexagon">
+                    <div class="hexagon-inside">
+                        <div class="hexagonimg">
+                            <a id="hexText">Butikker</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="even2 centering">
+                <div class="hexagon">
+                    <div class="hexagon-inside">
+                        <div class="hexagonimg">
+                            <a id="hexText">Studie</a>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="hexagon">
+                    <div class="hexagon-inside">
+                        <div class="hexagonimg">
+                            <a id="hexText">Parkering</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <!-- Boks for "velkommen" tekst og firmaets  slogan - slutt -->

@@ -1,6 +1,8 @@
 <!-- Header som inneholder navigatoren på nettsiden - start -->
 
 <head>
+    <meta charset="UTF-8">
+    <title>Something</title>
     <link rel="stylesheet" href="./css/style.css" type="text/css">
 </head>
 <header>
@@ -51,16 +53,14 @@
                 ?>
         </div>
     </div>
-    <div id="infobar">
         <div id="infobarcontent">
             <?php
 
                 if(isset($_SESSION['LogInStatus']) && $_SESSION['LogInStatus'] == true) {
-                  echo "Logget inn som: " . $_SESSION['brukernavn'];
+                  echo "<a>Logget inn som: </a><a>" . $_SESSION['brukernavn']; echo "</a>";
                 }
 
                 ?>
         </div>
-    </div>
 </header>
 <!-- Header som inneholder navigatoren på nettsiden - slutt -->
