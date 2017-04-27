@@ -10,30 +10,28 @@
     <!-- Boks for "velkommen" tekst og firmaets  slogan - start -->
     <div id="containerHovedside">
         <div class="hexbox">
-            <div class="even centering">
-                <a href="index.php">
+            <div class="even">
                     <div class="hexagon">
                         <div class="hexagon-inside">
                             <div class="hexagonimg">
-                                <a id="hexText">Barer</a>
+                                <a href="./index.php" id="hexText">Barer</a>
                             </div>
                         </div>
                     </div>
-                </a>
                 <br>
                 <div class="hexagon">
                     <div class="hexagon-inside">
                         <div class="hexagonimg">
-                            <a id="hexText">Transport</a>
+                            <a href="./index.php" id="hexText">Transport</a>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="odd centering">
+            <div class="odd">
                 <div class="hexagon">
                     <div class="hexagon-inside">
                         <div class="hexagonimg">
-                            <a id="hexText">Restauranter</a>
+                            <a href="./index.php" id="hexText">Restauranter</a>
                         </div>
                     </div>
                 </div>
@@ -41,7 +39,7 @@
                 <div class="hexagon">
                     <div class="hexagon-inside">
                         <div class="hexagonimg">
-                            <a id="hexText">Helse</a>
+                            <a href="./index.php" id="hexText">Helse</a>
                         </div>
                     </div>
                 </div>
@@ -49,16 +47,16 @@
                 <div class="hexagon">
                     <div class="hexagon-inside">
                         <div class="hexagonimg">
-                            <a id="hexText">Butikker</a>
+                            <a href="./index.php" id="hexText">Butikker</a>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="even2 centering">
+            <div class="even2">
                 <div class="hexagon">
                     <div class="hexagon-inside">
                         <div class="hexagonimg">
-                            <a id="hexText">Studie</a>
+                            <a href="./index.php" id="hexText">Studie</a>
                         </div>
                     </div>
                 </div>
@@ -66,7 +64,7 @@
                 <div class="hexagon">
                     <div class="hexagon-inside">
                         <div class="hexagonimg">
-                            <a id="hexText">Parkering</a>
+                            <a href="./index.php" id="hexText">Parkering</a>
                         </div>
                     </div>
                 </div>
