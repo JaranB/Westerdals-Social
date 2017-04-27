@@ -7,7 +7,7 @@
     <div id="navigator">
         <div id="logo">
             <a href="index.php">
-                <img src="http://bylarm.no/wp-content/themes/bylarm/images/logos/westerdals.png">
+                <img src="http://localhost/something/bilder/logo.png">
             </a>
         </div>
         <div id="navbuttons">

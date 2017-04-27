@@ -44,6 +44,7 @@ header {
 #logo img {
     margin-top: 4px;
     max-width: 200px;
+    height: 100px;
 }
 
 #navbuttons {
@@ -94,7 +95,7 @@ html {
 
 body {
     position: relative;
-    background-image: url(https://www.westerdals.no/content/uploads/2015/12/Fasade-fra-elven.jpg);
+    background-image: url(http://localhost/something/bilder/bg.jpg);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
