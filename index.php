@@ -7,7 +7,7 @@
 <body>
 
 
-    <!-- Boks for "velkommen" tekst og firmaets  slogan - start -->
+    <!-- Boks for "velkommen" tekst & firmaets  slogan - start -->
     <div id="containerHovedside">
         <div class="hexbox">
             <div class="even">
