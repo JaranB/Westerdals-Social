@@ -1,13 +1,20 @@
 <?php
 require_once('db.php');
 
-    if(isset($_POST['submit'])) {
-        $title = $_POST['title'];
-        $content = $_POST['content'];
-        $postsystem = "INSERT IGNORE INTO storage (tittel, post) VALUE ('$title', '$content')";
-        mysqli_query($connection, $postsystem);
-        echo "Post lagt til";
-    }
+                $postsystem = "SELECT DISTINCT postid, tittel, bildeURL, post FROM storage ORDER BY postid DESC";
+                $postsystemquery = mysqli_query($connection, $postsystem);
+
+                $finnpostid = "SELECT postid FROM storage";
+                $postidquery = mysqli_query($connection, $finnpostid);
+
+
+                while ($row = mysqli_fetch_array($postsystemquery)) {
+                    $tittel = $row['tittel'];
+                    $bildeURL = $row['bildeURL'];
+                    $post = $row['post'];
+                    $postid = $row['postid'];
+
+            }
 
 ?>
 
@@ -24,13 +31,17 @@ require_once('db.php');
     <div id="container">
 
         <div class="bildeTest center">
+            <?php
+
+                echo "<img src='$bildeURL'>";
+            ?>
 
         </div>
 
         <div class="bildeTestText center">
             <?php
 
-                $postsystem = "SELECT DISTINCT postid, tittel, post FROM storage ORDER BY postid DESC";
+                $postsystem = "SELECT DISTINCT postid, tittel, bildeURL, post FROM storage ORDER BY postid DESC";
                 $postsystemquery = mysqli_query($connection, $postsystem);
 
                 $finnpostid = "SELECT postid FROM storage";
@@ -38,16 +49,17 @@ require_once('db.php');
 
 
                 while ($row = mysqli_fetch_array($postsystemquery)) {
-                    $title = $row['tittel'];
-                    $content = $row['post'];
+                    $tittel = $row['tittel'];
+                    $bildeURL = $row['bildeURL'];
+                    $post = $row['post'];
                     $postid = $row['postid'];
                     ?>
 
-            <h2><?php echo $title; ?> &emsp;
+            <h2><?php echo $tittel; ?> &emsp;
 
             </h2>
 
-            <p><?php echo $content; ?></p>
+            <p><?php echo $post; ?></p>
 
         <?php
             }

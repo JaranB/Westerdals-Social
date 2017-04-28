@@ -13,7 +13,6 @@ if(!isset($_SESSION)){
         die();
     }
 
-
 if(isset($_POST['endreBruker'])) {
 
   ///do save processing
@@ -33,25 +32,25 @@ if(!empty($_POST['brukerEndre'])){
     if($row['brukernavn'] == $_POST['brukerEndre']){
             if(!empty($_POST['navnEndre'])){
                 $byttBrukernavn = "UPDATE brukere SET brukernavn='$nyttBrukernavn' WHERE brukernavn ='$brukernavn'";
-                $result2 = mysqli_query($connection, $byttBrukernavn);
+                mysqli_query($connection, $byttBrukernavn);
                 $smsg = "Navn endret!";
                 }
 
             if(!empty($_POST['epostEndre'])){
                 $byttEPost = "UPDATE brukere SET epost='$nyEPost' WHERE brukernavn ='$brukernavn'";
-                $result3 = mysqli_query($connection, $byttEPost);
+                mysqli_query($connection, $byttEPost);
                 $smsg = "EPost endret!";
             }
 
             if(!empty($_POST['passordEndre'])){
                 $byttPassord = "UPDATE brukere SET passord='$nyttPassord' WHERE brukernavn ='$brukernavn'";
-                $result3 = mysqli_query($connection, $byttPassord);
+                mysqli_query($connection, $byttPassord);
                 $smsg = "Passord endret!";
                 }
 
             if(!empty($_POST['adminEndre'])){
                 $byttRang = "UPDATE brukere SET rang='$nyRang' WHERE brukernavn ='$brukernavn'";
-                $result3 = mysqli_query($connection, $byttRang);
+                mysqli_query($connection, $byttRang);
                 $smsg = "Rang endret!";
                 }
 
@@ -63,6 +62,16 @@ if(!empty($_POST['brukerEndre'])){
 }
 }
 
+if(!empty($_POST['submit'])){
+        $tittel = $_POST['tittel'];
+        $kategori=$_POST['formKategorier'];
+        $navn = $_POST['navn'];
+        $bildeURL = $_POST['bildeURL'];
+        $post = $_POST['post'];
+        $postsystem = "INSERT IGNORE INTO storage (tittel, kategori, navn, bildeURL, post) VALUE ('$tittel', '$kategori', '$navn', '$bildeURL', '$post')";
+        mysqli_query($connection, $postsystem);
+        $smsg = "Post lagt til!";
+}
 
 ?>
 
@@ -105,9 +114,9 @@ if(!empty($_POST['brukerEndre'])){
                 <form class="adminpanel" method="POST">
                     <a>Legg til post</a>
                     <br>
-                    <a>Tittel:</a> <input type="text" name="tittel"><br>
+                    <a>Tittel:</a> <input type="text" name="tittel" required><br>
                     <a>Kategori:</a> <br>
-                        <select name="formKategorier" id="formKategorier">
+                        <select name="formKategorier" id="formKategorier" required>
                         <option value="1">Bar</option>
                         <option value="2">Restaurant</option>
                         <option value="3">Butikk</option>
@@ -116,10 +125,18 @@ if(!empty($_POST['brukerEndre'])){
                         <option value="6">Tilbud</option>
                         </select>
                     <br>
-                    <a>Navn:</a> <input type="text" name="navn"><br>
-                    <a>Post:</a> <textarea id="minpost" name="post"></textarea>
+                    <a>Navn:</a> <input type="text" name="navn" required><br>
+                    <a>Bilde URL:</a> <input type="text" name="bildeURL" required><br>
+                    <a>Post:</a> <textarea id="minpost" name="post" required></textarea>
                     <button type="submit" name="postInnlegg">Endre</button>
+                    <input type="submit" name="submit" value="Post" />
                 </form>
+            <form class="adminpanel" action="upload.php" method="post" enctype="multipart/form-data">
+                Select image to upload:
+                <input type="file" name="fileToUpload" id="fileToUpload">
+                <input type="submit" value="Upload Image" name="submit">
+            </form>
+
             </div>
 
         </div>

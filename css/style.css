@@ -14,7 +14,8 @@ h1,
 h2,
 p,
 #infobar,
-.varsel {
+.varsel,
+.adminpanel {
     text-decoration: none;
     font-family: "Segoe UI";
     color: whitesmoke;
@@ -277,7 +278,7 @@ footer p {
     background-color: rgba(30, 37, 48, 0.5);
     padding-left: 30px;
     margin-left: auto;
-    margin-bottom: auto;
+    margin-bottom: 10px;
     margin-right: auto;
     margin-top: auto;
     padding-top: 20px;
@@ -309,6 +310,11 @@ footer p {
     position: relative;
     width: 800px;;
     height: 400px;
+    overflow: hidden;
+}
+
+.bildeTest img {
+    width: 100%;
 }
 
 .bildeTestText {
