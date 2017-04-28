@@ -14,7 +14,7 @@
         </div>
         <div id="navbuttons">
             <a href="index.php">Home</a>
-            <a href="index.php">Something</a>
+            <a href="bildetest.php">Test</a>
             <a href="index.php">Something</a>
             <?php
 

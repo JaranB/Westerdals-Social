@@ -14,33 +14,53 @@ if(!isset($_SESSION)){
     }
 
 
-if(isset($_POST) & !empty($_POST)){
+if(isset($_POST['endreBruker'])) {
+
+  ///do save processing
+
+if(!empty($_POST['brukerEndre'])){
 
 	$brukernavn = mysqli_real_escape_string($connection, $_POST['brukerEndre']);
-    $nyttBrukernavn = mysqli_real_escape_string($connection, $_POST['navnEndre']);
+    $nyttBrukernavn = $_POST['navnEndre'];
+    $nyEPost = $_POST['epostEndre'];
+    $nyttPassord = md5($_POST['passordEndre']);
+    $nyRang = $_POST['adminEndre'];
 
 	$sql = "SELECT * FROM `brukere` WHERE brukernavn='$brukernavn'";
-    $result = mysqli_query($connection, $sql);
-    $row = $result->fetch_assoc();
-	$count = mysqli_num_rows($result);
-	if($count == 1){
+    $result1 = mysqli_query($connection, $sql);
+    $row = $result1->fetch_assoc();
 
-        if(!empty($_POST['brukerEndre'])){
-
-            if($row['brukernavn'] == $_POST['brukerEndre']){
-                $sql2 = "UPDATE brukere SET brukernavn='$nyttBrukernavn' WHERE brukernavn ='$brukernavn'";
-                $result2 = mysqli_query($connection, $sql2);
+    if($row['brukernavn'] == $_POST['brukerEndre']){
+            if(!empty($_POST['navnEndre'])){
+                $byttBrukernavn = "UPDATE brukere SET brukernavn='$nyttBrukernavn' WHERE brukernavn ='$brukernavn'";
+                $result2 = mysqli_query($connection, $byttBrukernavn);
                 $smsg = "Navn endret!";
-        } else {
-                $fmsg = "Endring misslykkes!";
-        }
+                }
 
-	}else{
-		echo "FAILED";
+            if(!empty($_POST['epostEndre'])){
+                $byttEPost = "UPDATE brukere SET epost='$nyEPost' WHERE brukernavn ='$brukernavn'";
+                $result3 = mysqli_query($connection, $byttEPost);
+                $smsg = "EPost endret!";
+            }
 
-	   }
+            if(!empty($_POST['passordEndre'])){
+                $byttPassord = "UPDATE brukere SET passord='$nyttPassord' WHERE brukernavn ='$brukernavn'";
+                $result3 = mysqli_query($connection, $byttPassord);
+                $smsg = "Passord endret!";
+                }
 
-    }
+            if(!empty($_POST['adminEndre'])){
+                $byttRang = "UPDATE brukere SET rang='$nyRang' WHERE brukernavn ='$brukernavn'";
+                $result3 = mysqli_query($connection, $byttRang);
+                $smsg = "Rang endret!";
+                }
+
+
+            }else{
+                $smsg = "Skriv inn gyldig brukernavn!";
+}
+
+}
 }
 
 
@@ -56,6 +76,15 @@ if(isset($_POST) & !empty($_POST)){
 
         <!-- Boks for "velkommen" tekst og firmaets  slogan - start -->
         <div id="container">
+            <?php if(isset($smsg)){ ?>
+            <div class="varsel" role="alert">
+                <?php echo $smsg; ?> </div>
+            <?php } ?>
+            <?php if(isset($fmsg)){ ?>
+            <div class="varsel" role="alert">
+                <?php echo $fmsg; ?> </div>
+            <?php } ?>
+
             <div id="adminpanel">
                 <form class="adminpanel" method="POST">
                     <a>Bruker å endre:</a>
@@ -64,23 +93,33 @@ if(isset($_POST) & !empty($_POST)){
                     <input type="text" name="navnEndre" id="inputPassword" class="" placeholder="Nytt Brukernavn">
                     <br>
                     <a>Ny EPost:</a>
-                    <input type="text" name="epostEndre" id="inputPassword" class="" placeholder="Nytt Brukernavn">
+                    <input type="text" name="epostEndre" id="inputPassword" class="" placeholder="Ny EPost">
                     <a>Nytt passord:</a>
-                    <input type="text" name="passordENdre" id="inputPassword" class="" placeholder="Nytt Passord">
-                    <a>Admin? true/false:</a>
-                    <input type="password" name="adminEndre" id="inputPassword" class="" placeholder="Admin? (true/false)">
+                    <input type="password" name="passordEndre" id="inputPassword" class="" placeholder="Nytt Passord">
+                    <a>Admin? 1/false:</a>
+                    <input type="text" name="adminEndre" id="inputPassword" class="" placeholder="Admin? (1/false)">
                     <br>
-                    <button id="adminButton" type="submit">Endre</button>
+                    <button type="submit" name="endreBruker">Endre</button>
                 </form>
 
-                <?php if(isset($smsg)){ ?>
-                <div class="varsel" role="alert">
-                    <?php echo $smsg; ?> </div>
-                <?php } ?>
-                <?php if(isset($fmsg)){ ?>
-                <div class="varsel" role="alert">
-                    <?php echo $fmsg; ?> </div>
-                <?php } ?>
+                <form class="adminpanel" method="POST">
+                    <a>Legg til post</a>
+                    <br>
+                    <a>Tittel:</a> <input type="text" name="tittel"><br>
+                    <a>Kategori:</a> <br>
+                        <select name="formKategorier" id="formKategorier">
+                        <option value="1">Bar</option>
+                        <option value="2">Restaurant</option>
+                        <option value="3">Butikk</option>
+                        <option value="4">Parkering</option>
+                        <option value="5">Helse</option>
+                        <option value="6">Tilbud</option>
+                        </select>
+                    <br>
+                    <a>Navn:</a> <input type="text" name="navn"><br>
+                    <a>Post:</a> <textarea id="minpost" name="post"></textarea>
+                    <button type="submit" name="postInnlegg">Endre</button>
+                </form>
             </div>
 
         </div>

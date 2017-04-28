@@ -297,4 +297,25 @@ footer p {
     margin-bottom: 10px;
 }
 
+.center {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.bildeTest {
+    margin-top: 250px;
+    position: relative;
+    width: 800px;;
+    height: 400px;
+}
+
+.bildeTestText {
+    top: -100px;
+    position: relative;
+    width: 800px;;
+    height: 200px;
+}
+
 /*Home kode - slutt*/
