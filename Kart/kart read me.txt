@@ -1,0 +1,3 @@
+Style og script må ut men flere har fått trøbbel med det når dem har gjort det så jeg har latt det være
+API nøkkelen er synlig i koden og burde vært tatt ut og sikret.
+Iconet er linket til en annen side, jeg fikk ikke til å bruke lokal til bilde i javascript/GoogleAPIet.
