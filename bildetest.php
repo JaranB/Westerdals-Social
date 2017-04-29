@@ -1,10 +1,14 @@
 <?php
 require_once('db.php');
 
-                $postsystem = "SELECT DISTINCT postid, tittel, bildeURL, post FROM storage ORDER BY postid DESC";
+if(!isset($_SESSION)){
+    session_start();
+}
+
+                $postsystem = "SELECT DISTINCT postid, tittel, bildeURL, post FROM steder ORDER BY postid DESC";
                 $postsystemquery = mysqli_query($connection, $postsystem);
 
-                $finnpostid = "SELECT postid FROM storage";
+                $finnpostid = "SELECT postid FROM steder";
                 $postidquery = mysqli_query($connection, $finnpostid);
 
 
@@ -15,6 +19,15 @@ require_once('db.php');
                     $postid = $row['postid'];
 
             }
+
+if(!empty($_POST['submit'])){
+        $kommentar = $_POST['kommentar'];
+        $kategori='bar';
+        $brukernavn = $_SESSION['brukernavn'];
+        $postsystem = "INSERT IGNORE INTO kommentarer (kommentar, kategori, brukernavn) VALUE ('$kommentar', '$kategori', '$brukernavn')";
+        mysqli_query($connection, $postsystem);
+        $smsg = "Post lagt til!";
+}
 
 ?>
 
@@ -30,7 +43,7 @@ require_once('db.php');
     <!-- Boks for "velkommen" tekst og firmaets  slogan - start -->
     <div id="container">
 
-        <div class="bildeTest center">
+        <div class="bildeTest centerHorizontal">
             <?php
 
                 echo "<img src='$bildeURL'>";
@@ -38,13 +51,13 @@ require_once('db.php');
 
         </div>
 
-        <div class="bildeTestText center">
+        <div class="bildeTestText centerHorizontal">
             <?php
 
-                $postsystem = "SELECT DISTINCT postid, tittel, bildeURL, post FROM storage ORDER BY postid DESC";
+                $postsystem = "SELECT DISTINCT postid, tittel, bildeURL, post FROM steder ORDER BY postid DESC";
                 $postsystemquery = mysqli_query($connection, $postsystem);
 
-                $finnpostid = "SELECT postid FROM storage";
+                $finnpostid = "SELECT postid FROM steder";
                 $postidquery = mysqli_query($connection, $finnpostid);
 
 
@@ -55,15 +68,42 @@ require_once('db.php');
                     $postid = $row['postid'];
                     ?>
 
-            <h2><?php echo $tittel; ?> &emsp;
+                    <h2><?php echo $tittel; ?></h2>
 
-            </h2>
+                    <p><?php echo $post;
 
-            <p><?php echo $post; ?></p>
+                }?></p>
 
-        <?php
-            }
+        </div>
+        <div class="bildeKommentarText centerHorizontal">
+            <?php
+
+                $kommentarsystem = "SELECT DISTINCT * FROM kommentarer ORDER BY kommentarid DESC";
+                $kommentarsystemquery = mysqli_query($connection, $kommentarsystem);
+
+                $finnkommentarid = "SELECT kommentarid FROM steder";
+                $kommentaridquery = mysqli_query($connection, $finnkommentarid);
+
+
+                echo '<h2>Kommentarer:</h2>';
+
+                while ($row = mysqli_fetch_array($kommentarsystemquery)) {
+                    $brukernavn = $row['brukernavn'];
+                    $kommentar = $row['kommentar'];
                     ?>
+
+                    <p><?php echo $_SESSION['brukernavn']; ?></p>
+
+                    <p><?php echo $kommentar;
+
+                }?></p>
+                <form class="kommentarpanel" method="POST">
+                    <a>Legg til kommentar</a>
+                    <br>
+                    <textarea id="kommentar" name="kommentar" required></textarea>
+                    <br>
+                    <input type="submit" name="submit" value="Post" />
+                </form>
         </div>
 
     </div>

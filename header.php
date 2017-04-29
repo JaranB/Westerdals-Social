@@ -23,6 +23,7 @@
                   function loggUtFunksjon() {
                     $_SESSION['LogInStatus'] = false;
                     $_SESSION['admin'] = false;
+                    $_SESSION['brukernavn'] = null;
                     header("Location: ./index.php");
                     die();
                   }
@@ -41,6 +42,7 @@
                         echo "<a href='adminpanel.php'>Admin</a>";
                     }
 
+                    echo "<a href='minside.php'>Min Side</a>";
                     echo "<a href='index.php?loggUt=true'>Logg ut</a>";
 
                 } else {
@@ -57,8 +59,20 @@
             <?php
 
                 if(isset($_SESSION['LogInStatus']) && $_SESSION['LogInStatus'] == true) {
-                  echo "<a>Logget inn som: </a><a>" . $_SESSION['brukernavn']; echo "</a>";
+                  echo "<a id='loggetInnSom'>Logget inn som: </a><a>" . $_SESSION['brukernavn']; echo "</a> ";
                 }
+
+                 if(isset($_SESSION['avatarURL'])) {
+
+                    $brukernavn = mysqli_real_escape_string($connection, $_SESSION['brukernavn']);
+
+                    $sql = "SELECT avatarURL FROM `brukere` WHERE brukernavn='$brukernavn'";
+                    $result1 = mysqli_query($connection, $sql);
+                    $row = $result1->fetch_assoc();
+                    $avatarURL = $row['avatarURL'];
+
+                     echo "<div id='avatarBildeHeader'><img src='$avatarURL' id='avatarBilde'></div>";
+                 }
 
                 ?>
         </div>

@@ -17,6 +17,8 @@ if(isset($_POST) & !empty($_POST)){
 	if($count == 1){
         $_SESSION['LogInStatus'] = true;
         $_SESSION['brukernavn'] = $brukernavn;
+        $_SESSION['epost'] = $row['epost'];
+        $_SESSION['avatarURL'] = $row['avatarURL'];
 
 	}else{
 		$fmsg = "Feil brukernavn eller passord!";
@@ -30,7 +32,6 @@ if(isset($_POST) & !empty($_POST)){
     }
 
     if (isset($_SESSION['LogInStatus']) && $_SESSION['LogInStatus'] == true) {
-        $smsg = "Bruker logget inn!";
         header("Location: ./index.php");
         die();
     }

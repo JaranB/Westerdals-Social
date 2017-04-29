@@ -36,7 +36,6 @@ header {
     position: relative;
     background-color: rgba(30, 37, 48, 0.5);
     height: 134px;
-    overflow: hidden;
     z-index: 1;
 }
 
@@ -72,18 +71,22 @@ header {
 }
 
 #infobarcontent {
-    position: relative;
+    position: absolute;
     height: 30px;
-    line-height: 24px;
     width: 100%;
     background-color: rgba(30, 37, 48, 0.5);
-    display: inline-block;
     z-index: 1;
     padding-left: 5%;
+    margin-top: 104px;
+    box-sizing: border-box;
+
 }
 
 #infobarcontent a {
+    position: relative;
     padding-top: 20px;
+    float: left;
+    bottom: 17px;
 }
 
 /*Header og navigator - slutt*/
@@ -305,8 +308,13 @@ footer p {
     transform: translate(-50%, -50%);
 }
 
+.centerHorizontal {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+}
+
 .bildeTest {
-    margin-top: 250px;
     position: relative;
     width: 800px;;
     height: 400px;
@@ -318,10 +326,55 @@ footer p {
 }
 
 .bildeTestText {
-    top: -100px;
     position: relative;
     width: 800px;;
-    height: 200px;
+    height: 100%;
+}
+
+.bildeKommentarText {
+    position: relative;
+    width: 800px;;
+    height: 100%;
 }
 
 /*Home kode - slutt*/
+
+
+#avatarBilde {
+    overflow: hidden;
+    width: 100px;
+    height: 100px;
+    position: relative;
+}
+
+#avatarBildeHeader {
+    width: 100px;
+    height: 100px;
+    bottom: 35px;
+    position: relative;
+    opacity: 0.5;
+    float: left;
+    left: 10px;
+}
+
+#loggetInnSom {
+    margin-right: 10px;
+}
+
+.kommentarpanel{
+    text-decoration: none;
+    width: 100%;
+    border-radius: 4px;
+    background-color: rgba(30, 37, 48, 0.5);
+    padding-left: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#kommentar {
+    width: 95%;
+    height: 100px;
+}

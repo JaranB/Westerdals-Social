@@ -68,7 +68,7 @@ if(!empty($_POST['submit'])){
         $navn = $_POST['navn'];
         $bildeURL = $_POST['bildeURL'];
         $post = $_POST['post'];
-        $postsystem = "INSERT IGNORE INTO storage (tittel, kategori, navn, bildeURL, post) VALUE ('$tittel', '$kategori', '$navn', '$bildeURL', '$post')";
+        $postsystem = "INSERT IGNORE INTO steder (tittel, kategori, navn, bildeURL, post) VALUE ('$tittel', '$kategori', '$navn', '$bildeURL', '$post')";
         mysqli_query($connection, $postsystem);
         $smsg = "Post lagt til!";
 }
@@ -128,7 +128,6 @@ if(!empty($_POST['submit'])){
                     <a>Navn:</a> <input type="text" name="navn" required><br>
                     <a>Bilde URL:</a> <input type="text" name="bildeURL" required><br>
                     <a>Post:</a> <textarea id="minpost" name="post" required></textarea>
-                    <button type="submit" name="postInnlegg">Endre</button>
                     <input type="submit" name="submit" value="Post" />
                 </form>
             <form class="adminpanel" action="upload.php" method="post" enctype="multipart/form-data">
