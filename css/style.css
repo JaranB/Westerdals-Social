@@ -73,10 +73,14 @@ header {
     position: absolute;
     height: 30px;
     width: 100%;
+<<<<<<< HEAD
     background-color: #191919;
+=======
+    background-color: rgba(30, 37, 48, 0.7);
+>>>>>>> origin/master
     z-index: 1;
     padding-left: 5%;
-    margin-top: 104px;
+    margin-top: 110px;
     box-sizing: border-box;
 
 }
@@ -204,8 +208,8 @@ footer p {
 
 
 .hexagon {
-    width: 300px;
-    height: 200px;
+    width: 200px;
+    height: 170px;
     background: red;
     transform: rotate(120deg);
     margin: auto;
@@ -421,6 +425,11 @@ footer p {
     margin-top: 150px;
 }
 
+.adminside {
+    position: absolute;
+    margin-top: 300px;
+}
+
 
 
 #barerimg {
@@ -436,7 +445,7 @@ footer p {
 
 .container{
     position: absolute;
-    width: 1100px;
+    width: 950px;
     height: 570px;
     margin: auto;
     top: 0;
@@ -448,7 +457,6 @@ footer p {
 #bar1 {
     position: absolute;
     float: left;
-
 }
 
 #bar2 {
@@ -462,7 +470,6 @@ footer p {
     position: absolute;
     float: left;
     margin-left: 500px;
-
 }
 
 #bar4 {

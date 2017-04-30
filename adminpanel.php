@@ -94,18 +94,26 @@ if(!empty($_POST['submit'])){
                 <?php echo $fmsg; ?> </div>
             <?php } ?>
 
-            <div id="adminpanel">
+            <div class="adminside center">
                 <form class="adminpanel" method="POST">
                     <a>Bruker å endre:</a>
+                    <br>
                     <input type="text" name="brukerEndre" class="" placeholder="Bruker å endre" required>
+                    <br>
                     <a>Nytt brukernavn:</a>
+                    <br>
                     <input type="text" name="navnEndre" id="inputPassword" class="" placeholder="Nytt Brukernavn">
                     <br>
                     <a>Ny EPost:</a>
+                    <br>
                     <input type="text" name="epostEndre" id="inputPassword" class="" placeholder="Ny EPost">
+                    <br>
                     <a>Nytt passord:</a>
+                    <br>
                     <input type="password" name="passordEndre" id="inputPassword" class="" placeholder="Nytt Passord">
+                    <br>
                     <a>Admin? 1/false:</a>
+                    <br>
                     <input type="text" name="adminEndre" id="inputPassword" class="" placeholder="Admin? (1/false)">
                     <br>
                     <button type="submit" name="endreBruker">Endre</button>
@@ -114,8 +122,10 @@ if(!empty($_POST['submit'])){
                 <form class="adminpanel" method="POST">
                     <a>Legg til post</a>
                     <br>
-                    <a>Tittel:</a> <input type="text" name="tittel" required><br>
-                    <a>Kategori:</a> <br>
+                    <a>Tittel:</a> <input type="text" name="tittel" required>
+                    <br>
+                    <a>Kategori:</a>
+                    <br>
                         <select name="formKategorier" id="formKategorier" required>
                         <option value="1">Bar</option>
                         <option value="2">Restaurant</option>
@@ -125,14 +135,19 @@ if(!empty($_POST['submit'])){
                         <option value="6">Tilbud</option>
                         </select>
                     <br>
-                    <a>Navn:</a> <input type="text" name="navn" required><br>
-                    <a>Bilde URL:</a> <input type="text" name="bildeURL" required><br>
+                    <a>Navn:</a> <input type="text" name="navn" required>
+                    <br>
+                    <a>Bilde URL:</a> <input type="text" name="bildeURL" required>
+                    <br>
                     <a>Post:</a> <textarea id="minpost" name="post" required></textarea>
+                    <br>
                     <input type="submit" name="submit" value="Post" />
                 </form>
             <form class="adminpanel" action="upload.php" method="post" enctype="multipart/form-data">
-                Select image to upload:
+                <a>Select image to upload:</a>
+                <br>
                 <input type="file" name="fileToUpload" id="fileToUpload">
+                <br>
                 <input type="submit" value="Upload Image" name="submit">
             </form>
 
