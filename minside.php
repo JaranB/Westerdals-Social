@@ -76,8 +76,8 @@ if(isset($_POST['endreBruker'])) {
                 <?php echo $fmsg; ?> </div>
             <?php } ?>
 
-            <div id="adminpanel">
-                <form class="adminpanel" method="POST">
+            <div class="minside center">
+                <form class="adminpanel left" method="POST">
                     <a>Ditt brukernavn: </a><?php echo $_SESSION['brukernavn']; ?>
                     <br>
                     <a>Din EPost: </a><?php echo $_SESSION['epost']; ?>
@@ -87,15 +87,25 @@ if(isset($_POST['endreBruker'])) {
                     <?php echo "<img src='$avatarURLSession' id='avatarBilde'>"; ?>
                     <br>
                     <a>Bytt passord:</a>
+                    <br>
                     <input type="password" name="eksisterendePassord" class="" placeholder="Eksisterende passord">
+                    <br>
                     <input type="password" name="passordEndre" class="" placeholder="Nytt passord">
+                    <br>
                     <a>Bytt EPost:</a>
+                    <br>
                     <input type="text" name="epostEndre" class="" placeholder="Ny EPost">
                     <br>
                     <a>Avatar URL:</a>
+                    <br>
                     <input type="text" name="settAvatar" class="" placeholder="Skriv inn URL til avataret">
                     <br>
                     <button type="submit" name="endreBruker">Endre</button>
+                </form>
+
+                <form class="adminpanel left" method="POST">
+                    <a>Favoritter: </a><?php echo $_SESSION['brukernavn']; ?>
+                    <br>
                 </form>
 
             </div>
