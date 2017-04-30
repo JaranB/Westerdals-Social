@@ -352,7 +352,7 @@ footer p {
 
 .kommentarpanel{
     text-decoration: none;
-    width: 100%;
+    width: 96%;
     border-radius: 4px;
     background-color: rgba(30, 37, 48, 0.5);
     padding-left: 30px;
@@ -366,6 +366,18 @@ footer p {
 #kommentar {
     width: 95%;
     height: 100px;
+}
+
+
+
+#kommentarBox {
+    background-color: rgba(30, 37, 48, 0.5);
+}
+
+.sletteKryss {
+
+    position: relative;
+    float: right;
 }
 
 #barer {
