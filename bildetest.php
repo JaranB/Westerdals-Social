@@ -26,7 +26,7 @@ if(!empty($_POST['submit'])){
         $brukernavn = $_SESSION['brukernavn'];
         $postsystem = "INSERT IGNORE INTO kommentarer (kommentar, kategori, brukernavn) VALUE ('$kommentar', '$kategori', '$brukernavn')";
         mysqli_query($connection, $postsystem);
-        $smsg = "Post lagt til!";
+        $smsg = "Kommentar lagt til!";
 }
 
 ?>
@@ -34,8 +34,7 @@ if(!empty($_POST['submit'])){
 <!DOCTYPE html>
 <html>
 
-<?php include 'header.php';
-        include 'SQLQuerys.php'?>
+<?php include 'header.php'; ?>
 
 <body>
 
@@ -66,7 +65,10 @@ if(!empty($_POST['submit'])){
                     $bildeURL = $row['bildeURL'];
                     $post = $row['post'];
                     $postid = $row['postid'];
+
                     ?>
+
+                    <p><a href="favoritt.php?postid=<?php echo $postid; ?>" class="sletteKryss">&#9734</a></p>
 
                     <h2><?php echo $tittel; ?></h2>
 
@@ -84,21 +86,30 @@ if(!empty($_POST['submit'])){
                 $finnkommentarid = "SELECT kommentarid FROM steder";
                 $kommentaridquery = mysqli_query($connection, $finnkommentarid);
 
-
                 echo '<h2>Kommentarer:</h2>';
 
                 while ($row = mysqli_fetch_array($kommentarsystemquery)) {
                     $brukernavn = $row['brukernavn'];
                     $kommentar = $row['kommentar'];
-                    ?>
+                    $kommentarid = $row['kommentarid'];
 
-                    <p><?php echo $_SESSION['brukernavn']; ?></p>
+                    if(isset($_SESSION['admin']) && $_SESSION['admin'] == true || isset($_SESSION['brukernavn']) && $_SESSION['brukernavn'] == $brukernavn) {
+
+                       // echo "<a href='funksjoner.php?kommentarid='$kommentarid'' class='sletteKryss'>&#x2717</a>";
+
+                     ?>
+                        <p><a href="slettKommentar.php?kommentarid=<?php echo $kommentarid; ?>" class="sletteKryss">&#x2717</a>
+
+                    <?php } ?>
+
+                    <?php echo $brukernavn ?></p>
 
                     <p><?php echo $kommentar;
 
+
                 }?></p>
                 <form class="kommentarpanel" method="POST">
-                    <a>Legg til kommentar</a>
+                    <a>Legg til kommentar:</a>
                     <br>
                     <textarea id="kommentar" name="kommentar" required></textarea>
                     <br>
