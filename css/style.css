@@ -265,16 +265,24 @@ footer p {
 
 .adminpanel{
     text-decoration: none;
-    width: 200px;
     border-radius: 4px;
     background-color: rgba(30, 37, 48, 0.5);
     padding-left: 30px;
+    padding-right: 25px;
     margin-left: auto;
     margin-bottom: 10px;
-    margin-right: auto;
+    margin-right: 10px;
     margin-top: auto;
     padding-top: 20px;
     padding-bottom: 20px;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
 }
 
 .varsel {
@@ -331,8 +339,8 @@ footer p {
 
 #avatarBilde {
     overflow: hidden;
-    width: 100px;
-    height: 100px;
+    max-width: 100px;
+    max-height: 100px;
     position: relative;
 }
 
@@ -406,4 +414,9 @@ footer p {
 
 #butikker {
     background-image: url(http://localhost/something/bilder/Icons/Shopping.jpg);
+}
+
+.minside {
+    position: absolute;
+    margin-top: 150px;
 }
