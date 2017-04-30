@@ -7,67 +7,81 @@
 <body>
 
 
-    <!-- Boks for "velkommen" tekst & firmaets  slogan - start -->
+   <!-- Boks for "velkommen" tekst & firmaets  slogan - start -->
     <div id="containerHovedside">
         <div class="hexbox">
             <div class="even">
-                    <div class="hexagon">
+
+                <a href="https://www.facebook.com/"><div class="hexagon">
                         <div class="hexagon-inside">
-                            <div class="hexagonimg">
-                                <a href="./index.php" id="hexText">Barer</a>
+                            <div class="hexagonimg" id="barer">
+
                             </div>
                         </div>
                     </div>
+                </a>
                 <br>
-                <div class="hexagon">
+
+                <a href="https://www.facebook.com/"><div class="hexagon">
                     <div class="hexagon-inside">
-                        <div class="hexagonimg">
-                            <a href="./index.php" id="hexText">Transport</a>
+                        <div class="hexagonimg" id="transport">
                         </div>
                     </div>
                 </div>
-            </div>
+            </a>
+        </div>
+
             <div class="odd">
-                <div class="hexagon">
-                    <div class="hexagon-inside">
-                        <div class="hexagonimg">
-                            <a href="./index.php" id="hexText">Restauranter</a>
+                <a href="https://www.facebook.com/">
+                    <div class="hexagon">
+                        <div class="hexagon-inside">
+                            <div class="hexagonimg" id="restauranter">
+
+                            </div>
                         </div>
                     </div>
-                </div>
+                </a>
+
                 <br>
+                <a href="https://www.facebook.com/">
                 <div class="hexagon">
                     <div class="hexagon-inside">
-                        <div class="hexagonimg">
-                            <a href="./index.php" id="hexText">Helse</a>
+                        <div class="hexagonimg" id="helse">
+                            </div>
                         </div>
                     </div>
-                </div>
+                </a>
+
                 <br>
-                <div class="hexagon">
+                <a href="https://www.facebook.com/">
+                    <div class="hexagon">
                     <div class="hexagon-inside">
-                        <div class="hexagonimg">
-                            <a href="./index.php" id="hexText">Butikker</a>
+                        <div class="hexagonimg" id="butikker">
+
+                            </div>
                         </div>
                     </div>
-                </div>
+                </a>
             </div>
             <div class="even2">
-                <div class="hexagon">
-                    <div class="hexagon-inside">
-                        <div class="hexagonimg">
-                            <a href="./index.php" id="hexText">Studie</a>
+                <a href="https://www.facebook.com/">
+                    <div class="hexagon">
+                        <div class="hexagon-inside">
+                            <div class="hexagonimg" id="studie">
+
+                            </div>
                         </div>
                     </div>
-                </div>
+                </a>
                 <br>
-                <div class="hexagon">
-                    <div class="hexagon-inside">
-                        <div class="hexagonimg">
-                            <a href="./index.php" id="hexText">Parkering</a>
+                <a href="https://www.facebook.com/">
+                    <div class="hexagon">
+                        <div class="hexagon-inside">
+                            <div class="hexagonimg" id="parkering">
+                            </div>
                         </div>
                     </div>
-                </div>
+                </a>
             </div>
         </div>
     </div>

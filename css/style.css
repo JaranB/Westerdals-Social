@@ -35,14 +35,13 @@ p {
 header {
     position: relative;
     background-color: rgba(30, 37, 48, 0.5);
-    height: 134px;
+    height: 110px;
     z-index: 1;
 }
 
 #logo {
     float: left;
     padding-left: 5%;
-    max-width: 50%;
 }
 
 #logo img {
@@ -100,7 +99,7 @@ html {
 
 body {
     position: relative;
-    background-image: url(http://localhost/something/bilder/bg.jpg);
+    background-image: url(http://localhost/something/Alex/WesterdalsSocial/IMG_0901.JPG);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -177,8 +176,8 @@ footer p {
 
 .hexbox {
     position: absolute;
-    width: 420px;
-    height: 426px;
+    width: 450px;
+    height: 456px;
     margin: auto;
     opacity: 0.8;
     top: 0;
@@ -189,34 +188,24 @@ footer p {
 
 .even {
     position: absolute;
-    margin-top: 75px;
+    margin-top: 95px;
 }
 
 .odd {
     position: absolute;
-    margin-left: 130px;
+    margin-left: 160px;
 }
 
 .even2 {
     position: absolute;
-    margin-left: 260px;
-    margin-top: 75px;
+    margin-left: 320px;
+    margin-top: 95px;
 }
 
-#hexText {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 160px;
-    text-align: center;
-    height: 130px;
-    line-height: 130px;
-}
 
 .hexagon {
-    width: 160px;
-    height: 130px;
+    width: 200px;
+    height: 170px;
     background: red;
     transform: rotate(120deg);
     margin: auto;
@@ -371,7 +360,7 @@ footer p {
 
 .kommentarpanel{
     text-decoration: none;
-    width: 96%;
+    width: 100%;
     border-radius: 4px;
     background-color: rgba(30, 37, 48, 0.5);
     padding-left: 30px;
@@ -380,7 +369,6 @@ footer p {
     margin-top: auto;
     padding-top: 20px;
     padding-bottom: 20px;
-
 }
 
 #kommentar {
@@ -388,13 +376,32 @@ footer p {
     height: 100px;
 }
 
-#kommentarBox {
-    background-color: rgba(30, 37, 48, 0.5);
+#barer {
+    background-image: url(http://localhost/something/bilder/Icons/bars.jpg);
 }
 
-.sletteKryss {
-    position: relative;
-    float: right;
+#restauranter {
+    background-image: url(http://localhost/something/bilder/Icons/restaurants.jpg);
+}
+
+#studie {
+    background-image: url(http://localhost/something/bilder/Icons/education.jpg);
+}
+
+#helse {
+    background-image: url(http://localhost/something/bilder/Icons/health.jpg);
+}
+
+#transport {
+    background-image: url(http://localhost/something/bilder/Icons/transport.jpg);
+}
+
+#parkering {
+    background-image: url(http://localhost/something/bilder/Icons/parking.jpg);
+}
+
+#butikker {
+    background-image: url(http://localhost/something/bilder/Icons/Shopping.jpg);
 }
 
 .minside {
