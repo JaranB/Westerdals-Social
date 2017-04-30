@@ -346,6 +346,7 @@ footer p {
     max-width: 100px;
     max-height: 100px;
     position: relative;
+    border-radius: 100px;
 }
 
 #avatarBildeHeader {
