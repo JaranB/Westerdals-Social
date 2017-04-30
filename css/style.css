@@ -455,25 +455,25 @@ footer p {
     right: 0;
 }
 
-#bar1 {
+.sted1 {
     position: absolute;
     float: left;
 }
 
-#bar2 {
+.sted2 {
     position: absolute;
     float: left;
     margin-left: 250px;
 
 }
 
-#bar3 {
+.sted3 {
     position: absolute;
     float: left;
     margin-left: 500px;
 }
 
-#bar4 {
+.sted4 {
     position: absolute;
     float: left;
     margin-left: 750px;
