@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="./css/style.css" type="text/css">
 </head>
 <header>
-    <div id="navigator">
+       <div id="navigator">
         <div id="logo">
             <a href="index.php">
                 <img src="http://localhost/something/bilder/logo.png">
