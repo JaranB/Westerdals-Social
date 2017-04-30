@@ -73,10 +73,10 @@ header {
     position: absolute;
     height: 30px;
     width: 100%;
-    background-color: rgba(30, 37, 48, 0.5);
+    background-color: rgba(30, 37, 48, 0.7);
     z-index: 1;
     padding-left: 5%;
-    margin-top: 104px;
+    margin-top: 110px;
     box-sizing: border-box;
 
 }
@@ -406,5 +406,10 @@ footer p {
 
 .minside {
     position: absolute;
-    margin-top: 150px;
+    margin-top: 157px;
+}
+
+.adminside {
+    position: absolute;
+    margin-top: 300px;
 }
