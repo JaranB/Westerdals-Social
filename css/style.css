@@ -423,7 +423,6 @@ footer p {
 
 .minside {
     position: absolute;
-    margin-top: 150px;
 }
 
 .adminside {
@@ -488,5 +487,6 @@ footer p {
 }
 
 .yes {
+    position: relative;
     float: left;
 }
