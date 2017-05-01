@@ -104,7 +104,6 @@ if(isset($_POST['endreBruker'])) {
                 </form>
 
                 <div class="yes">
-                <form class="adminpanel2" method="POST">
                     <a>Favoritter: </a>
                     <br>
 
@@ -128,17 +127,16 @@ if(isset($_POST['endreBruker'])) {
 
                     ?>
 
+
                     <p><a href="slettFavoritt.php?postid=<?php echo $postid; ?>" class="sletteKryss">&#9734</a></p>
 
                     <h2><?php echo $tittel; ?></h2>
 
                     <p><?php echo $post;
 
-                }
 
-            }?></p>
+            }} ?> </p>
 
-                </form>
                 </div>
 
             </div>

@@ -1,3 +1,3 @@
 <footer>
-        <p>Copyright © Something 2017</p>
+        <p>Copyright © More Something 2017</p>
 </footer>
