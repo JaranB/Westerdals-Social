@@ -49,7 +49,7 @@
                         <div class="hexagonimg" id="helse">
                             </div>
                         </div>
-                    </div>
+                    </div
                 </a>
 
                 <br>

@@ -103,7 +103,7 @@ if(!empty($_POST['submit'])){
 
                     <?php } ?>
                     <br>
-                    <?php echo $brukernavn ?></p>
+                    <p><?php echo $brukernavn ?></p>
                     <p><?php echo $kommentar;
 
 
@@ -127,7 +127,7 @@ if(!empty($_POST['submit'])){
     <div class="push"></div>
     <!-- En "pusher" som sørger for ett mellomrom mellom footer og sidenes innhold - slutt -->
 
-    <?php include 'footer.php';?>
+    <?php include 'footer.php'; ?>
 
 </body>
 
