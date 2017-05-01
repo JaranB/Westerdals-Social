@@ -103,6 +103,7 @@ if(isset($_POST['endreBruker'])) {
                     <button type="submit" name="endreBruker">Endre</button>
                 </form>
 
+                <div class="yes">
                 <form class="adminpanel" method="POST">
                     <a>Favoritter: </a>
                     <br>
@@ -138,6 +139,7 @@ if(isset($_POST['endreBruker'])) {
             }?></p>
 
                 </form>
+                </div>
 
             </div>
 

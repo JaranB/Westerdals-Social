@@ -486,3 +486,7 @@ footer p {
     margin:auto;
     margin-bottom: 130px
 }
+
+.yes {
+    float: left;
+}
