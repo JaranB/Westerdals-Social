@@ -112,9 +112,6 @@ if(isset($_POST['endreBruker'])) {
                 $postsystem = "SELECT DISTINCT steder.postid, steder.tittel, steder.kategori, steder.navn, steder.bildeURL, steder.post, favoritter.favorittID, favoritter.brukernavn FROM steder, favoritter WHERE steder.postid=favoritter.favorittID";
                 $postsystemquery = mysqli_query($connection, $postsystem);
 
-                $finnpostid = "SELECT postid FROM steder";
-                $postidquery = mysqli_query($connection, $finnpostid);
-
 
                 while ($row = mysqli_fetch_array($postsystemquery)) {
                     $tittel = $row['tittel'];

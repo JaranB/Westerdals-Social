@@ -34,7 +34,7 @@ p {
 
 header {
     position: relative;
-    background-color: rgba(30, 37, 48, 0.5);
+    background-color: rgba(30, 37, 48, 1);
     height: 110px;
     z-index: 1;
 
