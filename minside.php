@@ -104,7 +104,7 @@ if(isset($_POST['endreBruker'])) {
                 </form>
 
                 <div class="yes">
-                <form class="adminpanel" method="POST">
+                <form class="adminpanel2" method="POST">
                     <a>Favoritter: </a>
                     <br>
 

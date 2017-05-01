@@ -273,12 +273,28 @@ footer p {
     margin-left: auto;
     margin-bottom: 10px;
     margin-right: 10px;
-    margin-top: auto;
     padding-top: 20px;
     padding-bottom: 20px;
     position: relative;
     float: left;
     max-width: 500px;
+}
+
+.adminpanel2 {
+    text-decoration: none;
+    border-radius: 4px;
+    background-color: rgba(30, 37, 48, 0.5);
+    padding-left: 30px;
+    padding-right: 25px;
+    margin-left: auto;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    float: left;
+    max-width: 500px;
+    overflow: hidden;
 }
 
 .left {
@@ -489,4 +505,5 @@ footer p {
 .yes {
     position: relative;
     float: left;
+    max-height: 500px;
 }
