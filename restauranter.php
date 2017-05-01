@@ -7,9 +7,9 @@ require_once('db.php');
 
 <?php include 'header.php'; ?>
 
-<body id="barerimg">
+<body id="restauranterimg">
     <div class="container">
-        <img class="titelundersider" src="http://localhost/something/bilder/kategoribilder/barerlogo.png" width="300px">
+        <img class="titelundersider" src="http://localhost/something/bilder/kategoribilder/restauranterlogo.png" width="300px">
             <div id="undersidor">
 
                 <a href="bildetest.php"><div class="hexagon sted1" >

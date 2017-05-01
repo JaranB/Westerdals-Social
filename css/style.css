@@ -503,4 +503,14 @@ footer p {
     max-width: 500px;
     overflow: hidden;
 }
+
+#restauranterimg {
+    background-image: url(http://localhost/something/bilder/kategoribilder/restauranterbackground.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+
 }
