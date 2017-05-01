@@ -275,6 +275,9 @@ footer p {
     margin-top: auto;
     padding-top: 20px;
     padding-bottom: 20px;
+    position: relative;
+    float: left;
+    max-width: 500px;
 }
 
 .left {
@@ -405,7 +408,7 @@ footer p {
 }
 
 .minside {
-    position: absolute;
+    position: relative;
     margin-top: 157px;
 }
 

@@ -76,8 +76,8 @@ if(isset($_POST['endreBruker'])) {
                 <?php echo $fmsg; ?> </div>
             <?php } ?>
 
-            <div class="minside center">
-                <form class="adminpanel left" method="POST">
+            <div class="minside">
+                <form class="adminpanel" method="POST">
                     <a>Ditt brukernavn: </a><?php echo $_SESSION['brukernavn']; ?>
                     <br>
                     <a>Din EPost: </a><?php echo $_SESSION['epost']; ?>
@@ -103,9 +103,43 @@ if(isset($_POST['endreBruker'])) {
                     <button type="submit" name="endreBruker">Endre</button>
                 </form>
 
-                <form class="adminpanel left" method="POST">
-                    <a>Favoritter: </a><?php echo $_SESSION['brukernavn']; ?>
+                <form class="adminpanel" method="POST">
+                    <a>Favoritter: </a>
                     <br>
+
+            <?php
+
+                $postsystem = "SELECT DISTINCT steder.postid, steder.tittel, steder.kategori, steder.navn, steder.bildeURL, steder.post, favoritter.favorittID, favoritter.brukernavn FROM steder, favoritter WHERE steder.postid=favoritter.favorittID";
+                $postsystemquery = mysqli_query($connection, $postsystem);
+
+                $finnpostid = "SELECT postid FROM steder";
+                $postidquery = mysqli_query($connection, $finnpostid);
+
+
+                while ($row = mysqli_fetch_array($postsystemquery)) {
+                    $tittel = $row['tittel'];
+                    $bildeURL = $row['bildeURL'];
+                    $post = $row['post'];
+                    $postid = $row['postid'];
+                    $favorittid = $row['favorittID'];
+                    $favorittBrukernavn = $row['brukernavn'];
+                    $brukernavn = $_SESSION['brukernavn'];
+
+                    if(($favorittid == $postid) && ($favorittBrukernavn == $brukernavn)) {
+
+
+                    ?>
+
+                    <p><a href="slettFavoritt.php?postid=<?php echo $postid; ?>" class="sletteKryss">&#9734</a></p>
+
+                    <h2><?php echo $tittel; ?></h2>
+
+                    <p><?php echo $post;
+
+                }
+
+            }?></p>
+
                 </form>
 
             </div>
