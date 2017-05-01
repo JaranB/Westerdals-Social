@@ -37,6 +37,7 @@ header {
     background-color: rgba(30, 37, 48, 0.5);
     height: 110px;
     z-index: 1;
+
 }
 
 #logo {
@@ -155,11 +156,11 @@ body {
 }
 
 footer {
-    background-color: rgba(30, 37, 48, 0.5);
+    background-color: #191919;
     position: absolute;
     left: 0;
-    bottom: 0;
     right: 0;
+    bottom: 0;
     height: 40px;
     text-align: center;
 }
@@ -345,6 +346,7 @@ footer p {
     max-width: 100px;
     max-height: 100px;
     position: relative;
+    border-radius: 100px;
 }
 
 #avatarBildeHeader {
@@ -363,7 +365,7 @@ footer p {
 
 .kommentarpanel{
     text-decoration: none;
-    width: 100%;
+    width: 96%;
     border-radius: 4px;
     background-color: rgba(30, 37, 48, 0.5);
     padding-left: 30px;
@@ -377,6 +379,18 @@ footer p {
 #kommentar {
     width: 95%;
     height: 100px;
+}
+
+
+
+#kommentarBox {
+    background-color: rgba(30, 37, 48, 0.5);
+}
+
+.sletteKryss {
+
+    position: relative;
+    float: right;
 }
 
 #barer {
@@ -408,11 +422,67 @@ footer p {
 }
 
 .minside {
-    position: relative;
-    margin-top: 157px;
+    position: absolute;
+    margin-top: 150px;
 }
 
 .adminside {
     position: absolute;
     margin-top: 300px;
+}
+
+
+
+#barerimg {
+    background-image: url(http://localhost/something/bilder/kategoribilder/barerbackground.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+
+}
+
+.container{
+    position: absolute;
+    width: 950px;
+    height: 570px;
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.sted1 {
+    position: absolute;
+    float: left;
+}
+
+.sted2 {
+    position: absolute;
+    float: left;
+    margin-left: 250px;
+
+}
+
+.sted3 {
+    position: absolute;
+    float: left;
+    margin-left: 500px;
+}
+
+.sted4 {
+    position: absolute;
+    float: left;
+    margin-left: 750px;
+
+
+}
+
+.titelundersider {
+    display:block;
+    margin:auto;
+    margin-bottom: 130px
 }

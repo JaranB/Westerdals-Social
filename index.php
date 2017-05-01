@@ -12,7 +12,7 @@
         <div class="hexbox">
             <div class="even">
 
-                <a href="https://www.facebook.com/"><div class="hexagon">
+                <a href="barer.php"><div class="hexagon">
                         <div class="hexagon-inside">
                             <div class="hexagonimg" id="barer">
 
