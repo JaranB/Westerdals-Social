@@ -86,7 +86,7 @@ if(!empty($_POST['submit'])){
                 $finnkommentarid = "SELECT kommentarid FROM steder";
                 $kommentaridquery = mysqli_query($connection, $finnkommentarid);
 
-                echo '<h2>Kommentarer:</h2>';
+                echo '<h2>Kommentarer:</h2><p>';
 
                 while ($row = mysqli_fetch_array($kommentarsystemquery)) {
                     $brukernavn = $row['brukernavn'];
@@ -98,16 +98,19 @@ if(!empty($_POST['submit'])){
                        // echo "<a href='funksjoner.php?kommentarid='$kommentarid'' class='sletteKryss'>&#x2717</a>";
 
                      ?>
-                        <p><a href="slettKommentar.php?kommentarid=<?php echo $kommentarid; ?>" class="sletteKryss">&#x2717</a>
+                    <br>
+                        <a href="slettKommentar.php?kommentarid=<?php echo $kommentarid; ?>" class="sletteKryss">&#x2717</a>
 
                     <?php } ?>
-
+                    <br>
                     <?php echo $brukernavn ?></p>
-
                     <p><?php echo $kommentar;
 
 
-                }?></p>
+                ?>
+                        <br>
+        <?php } ?>
+        </p>
                 <form class="kommentarpanel" method="POST">
                     <a>Legg til kommentar:</a>
                     <br>

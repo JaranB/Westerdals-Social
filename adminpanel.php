@@ -122,7 +122,9 @@ if(!empty($_POST['submit'])){
                 <form class="adminpanel" method="POST">
                     <a>Legg til post</a>
                     <br>
-                    <a>Tittel:</a> <input type="text" name="tittel" required>
+                    <a>Tittel:</a>
+                    <br>
+                    <input type="text" name="tittel" required>
                     <br>
                     <a>Kategori:</a>
                     <br>
@@ -135,11 +137,17 @@ if(!empty($_POST['submit'])){
                         <option value="6">Tilbud</option>
                         </select>
                     <br>
-                    <a>Navn:</a> <input type="text" name="navn" required>
+                    <a>Navn:</a>
                     <br>
-                    <a>Bilde URL:</a> <input type="text" name="bildeURL" required>
+                    <input type="text" name="navn" required>
                     <br>
-                    <a>Post:</a> <textarea id="minpost" name="post" required></textarea>
+                    <a>Bilde URL:</a>
+                    <br>
+                    <input type="text" name="bildeURL" required>
+                    <br>
+                    <a>Post:</a>
+                    <br>
+                    <textarea id="minpost" name="post" required></textarea>
                     <br>
                     <input type="submit" name="submit" value="Post" />
                 </form>
