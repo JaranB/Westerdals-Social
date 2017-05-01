@@ -86,7 +86,7 @@
         </div>
     </div>
     <!-- Boks for "velkommen" tekst og firmaets  slogan - slutt -->
-
+<!--Tommy-->
     <!-- En "pusher" som sørger for ett mellomrom mellom footer og sidenes innhold - start -->
     <div class="push"></div>
     <!-- En "pusher" som sørger for ett mellomrom mellom footer og sidenes innhold - slutt -->
