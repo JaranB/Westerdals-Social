@@ -380,8 +380,10 @@ footer p {
 }
 
 #kommentar {
-    width: 95%;
-    height: 100px;
+    min-width: 95%;
+    max-width: 95%;
+    min-height: 100px;
+    max-height: 100px;
 }
 
 
@@ -391,7 +393,7 @@ footer p {
 }
 
 .sletteKryss {
-
+    margin-top: 15px;
     position: relative;
     float: right;
 }
@@ -513,4 +515,39 @@ footer p {
     height: 100%;
     margin: 0;
     padding: 0;
+}
+
+
+
+
+
+
+
+#kommentar2 {
+    background: rgba(54, 25, 25, .9);
+    border-radius: 15px;
+    padding-top: 1px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+
+#kommentarpanel2 {
+    background-color: rgba(25, 25, 25, 0);
+}
+
+.navnKommentar {
+    font-size: 25px;
+    margin-left: 20px;
+}
+
+
+
+.kommentarKommentar {
+
+    border-bottom-style: solid;
+    border-left, border-right, border-bottom: 0px;
+    border-bottom-width: thick;
+    border-color: darkgray;
 }
