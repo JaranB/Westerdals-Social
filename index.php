@@ -22,7 +22,7 @@
                 </a>
                 <br>
 
-                <a href="https://www.facebook.com/"><div class="hexagon">
+                <a href="transport.php"><div class="hexagon">
                     <div class="hexagon-inside">
                         <div class="hexagonimg" id="transport">
                         </div>
@@ -32,7 +32,7 @@
         </div>
 
             <div class="odd">
-                <a href="https://www.facebook.com/">
+                <a href="restauranter.php">
                     <div class="hexagon">
                         <div class="hexagon-inside">
                             <div class="hexagonimg" id="restauranter">
@@ -43,7 +43,7 @@
                 </a>
 
                 <br>
-                <a href="https://www.facebook.com/">
+                <a href="helse.php">
                 <div class="hexagon">
                     <div class="hexagon-inside">
                         <div class="hexagonimg" id="helse">
@@ -53,7 +53,7 @@
                 </a>
 
                 <br>
-                <a href="https://www.facebook.com/">
+                <a href="butikker.php">
                     <div class="hexagon">
                     <div class="hexagon-inside">
                         <div class="hexagonimg" id="butikker">
@@ -64,7 +64,7 @@
                 </a>
             </div>
             <div class="even2">
-                <a href="https://www.facebook.com/">
+                <a href="studier.php">
                     <div class="hexagon">
                         <div class="hexagon-inside">
                             <div class="hexagonimg" id="studie">
@@ -74,7 +74,7 @@
                     </div>
                 </a>
                 <br>
-                <a href="https://www.facebook.com/">
+                <a href="parkering.php">
                     <div class="hexagon">
                         <div class="hexagon-inside">
                             <div class="hexagonimg" id="parkering">
