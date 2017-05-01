@@ -305,7 +305,7 @@ footer p {
 
 .bildeTest {
     position: relative;
-    width: 800px;;
+    width: 800px;
     height: 400px;
     overflow: hidden;
 }
@@ -316,7 +316,7 @@ footer p {
 
 .bildeTestText {
     position: relative;
-    width: 800px;;
+    width: 800px;
     height: 100%;
 }
 

@@ -332,7 +332,7 @@ footer p {
 
 .bildeTestText {
     position: relative;
-    width: 800px;;
+    width: 800px;
     height: 100%;
 }
 
@@ -551,4 +551,13 @@ footer p {
     border-left, border-right, border-bottom: 0px;
     border-bottom-width: thick;
     border-color: darkgray;
+}
+
+#bildeogText {
+    background-color: black;
+    width: 850px;
+    margin: auto;
+    padding: 25px 0px 10px 0px;
+    margin-bottom: 10px;
+    border-radius: 25px;
 }

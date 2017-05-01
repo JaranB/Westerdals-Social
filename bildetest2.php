@@ -41,7 +41,7 @@ if(!empty($_POST['submit'])){
 
     <!-- Boks for "velkommen" tekst og firmaets  slogan - start -->
     <div id="container">
-
+        <div id="bildeogText">
         <div class="bildeTest centerHorizontal">
             <?php
 
@@ -76,6 +76,7 @@ if(!empty($_POST['submit'])){
 
                 }?></p>
 
+        </div>
         </div>
         <div class="bildeKommentarText centerHorizontal" id="kommentar2">
             <?php
