@@ -94,8 +94,8 @@ if(!empty($_POST['submit'])){
                 <?php echo $fmsg; ?> </div>
             <?php } ?>
 
-            <div class="adminside center">
-                <form class="adminpanel" method="POST">
+            <div class="container2 center">
+                <form class="panel" method="POST">
                     <a>Bruker å endre:</a>
                     <br>
                     <input type="text" name="brukerEndre" class="" placeholder="Bruker å endre" required>
@@ -119,7 +119,7 @@ if(!empty($_POST['submit'])){
                     <button type="submit" name="endreBruker">Endre</button>
                 </form>
 
-                <form class="adminpanel" method="POST">
+                <form class="panel" method="POST">
                     <a>Legg til post</a>
                     <br>
                     <a>Tittel:</a>
@@ -151,7 +151,7 @@ if(!empty($_POST['submit'])){
                     <br>
                     <input type="submit" name="submit" value="Post" />
                 </form>
-            <form class="adminpanel" action="upload.php" method="post" enctype="multipart/form-data">
+            <form class="panel" action="upload.php" method="post" enctype="multipart/form-data">
                 <a>Select image to upload:</a>
                 <br>
                 <input type="file" name="fileToUpload" id="fileToUpload">

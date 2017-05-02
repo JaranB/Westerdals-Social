@@ -62,10 +62,9 @@ if(isset($_POST) & !empty($_POST)){
                 <div class="varsel" role="alert">
                     <?php echo $fmsg; ?> </div>
                 <?php } ?>
-                <form class="forms" method="POST">
-                    <input type="text" name="brukernavn" class="" placeholder="Brukernavn" required>
-                    <input type="password" name="passord" id="inputPassword" class="" placeholder="Passord" required>
-                    <br>
+                <form class="forms marginauto" method="POST">
+                    <input type="text" name="brukernavn" placeholder="Brukernavn" required>
+                    <input type="password" name="passord" placeholder="Passord" required>
                     <button name="" type="submit">Login</button>
                     <a class="" href="register.php">Register</a>
                 </form>

@@ -64,8 +64,6 @@ if(isset($_POST['endreBruker'])) {
 
     <body>
 
-
-        <!-- Boks for "velkommen" tekst og firmaets  slogan - start -->
         <div id="container">
             <?php if(isset($smsg)){ ?>
             <div class="varsel" role="alert">
@@ -76,8 +74,9 @@ if(isset($_POST['endreBruker'])) {
                 <?php echo $fmsg; ?> </div>
             <?php } ?>
 
-            <div class="minside">
-                <form class="adminpanel" method="POST">
+            <div class="container2 center">
+                <div class="item">
+                <form class="panel" method="POST">
                     <a>Ditt brukernavn: </a><?php echo $_SESSION['brukernavn']; ?>
                     <br>
                     <a>Din EPost: </a><?php echo $_SESSION['epost']; ?>
@@ -103,8 +102,8 @@ if(isset($_POST['endreBruker'])) {
                     <button type="submit" name="endreBruker">Endre</button>
                 </form>
 
-                <div class="yes">
-                    <a>Favoritter: </a>
+                <div class="panel">
+                    <a>Dine favoritter: </a>
                     <br>
 
             <?php
@@ -139,10 +138,54 @@ if(isset($_POST['endreBruker'])) {
 
                 </div>
 
-            </div>
 
+
+
+
+
+                <div class="panel">
+                    <a>Dine kommentarer: </a>
+                    <br>
+
+                <?php
+
+                    $brukernavn = $_SESSION['brukernavn'];
+                    $kommentarsystem = "SELECT DISTINCT * FROM kommentarer WHERE brukernavn='$brukernavn' ORDER BY kommentarid DESC";
+                    $kommentarsystemquery = mysqli_query($connection, $kommentarsystem);
+
+                    $finnkommentarid = "SELECT kommentarid FROM steder";
+                    $kommentaridquery = mysqli_query($connection, $finnkommentarid);
+
+                    while ($row = mysqli_fetch_array($kommentarsystemquery)) {
+                        $brukernavn = $row['brukernavn'];
+                        $kommentar = $row['kommentar'];
+                        $kommentarid = $row['kommentarid'];
+
+                        if(isset($_SESSION['admin']) && $_SESSION['admin'] == true || isset($_SESSION['brukernavn']) && $_SESSION['brukernavn'] == $brukernavn) {
+
+                           // echo "<a href='funksjoner.php?kommentarid='$kommentarid'' class='sletteKryss'>&#x2717</a>";
+
+                         ?>
+                            <a href="slettKommentar.php?kommentarid=<?php echo $kommentarid; ?>" class="sletteKryss">&#x2717</a>
+
+                        <?php } ?>
+                        <br>
+                        <p><?php echo $brukernavn ?></p>
+                        <p><?php echo $kommentar;
+
+
+                    ?>
+                            <br>
+            <?php } ?>
+
+
+                    </p>
+
+                </div>
+
+            </div>
+            </div>
         </div>
-        <!-- Boks for "velkommen" tekst og firmaets  slogan - slutt -->
 
         <!-- En "pusher" som sørger for ett mellomrom mellom footer og sidenes innhold - start -->
         <div class="push"></div>

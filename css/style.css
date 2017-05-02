@@ -15,7 +15,7 @@ h2,
 p,
 #infobar,
 .varsel,
-.adminpanel {
+.panel {
     text-decoration: none;
     font-family: "Segoe UI";
     color: whitesmoke;
@@ -124,6 +124,11 @@ body {
     position: relative;
 }
 
+.container2 {
+    position: relative;
+    width: 1725px;
+}
+
 #containerHovedside {
     position: fixed;
     z-index: 0;
@@ -166,6 +171,7 @@ footer {
 }
 
 footer p {
+    line-height: 20px;
     margin-top: 10px;
 }
 
@@ -248,41 +254,42 @@ footer p {
 
 #registerbox,
 #brukerinfo,
-.adminpanel {
+.panel {
     line-height: 150%;
 }
-.forms {
-    text-decoration: none;
-    width: 200px;
-    border-radius: 4px;
-    background-color: rgba(30, 37, 48, 0.5);
-    text-align: center;
+
+.marginauto {
     margin-left: auto;
     margin-bottom: auto;
     margin-right: auto;
     margin-top: auto;
+}
+
+.forms {
+    text-decoration: none;
+    width: 200px;
+    border-radius: 4px;
+    background-color: rgba(30, 37, 48, 0.95);
+    text-align: center;
     padding-top: 20px;
     padding-bottom: 20px;
 }
 
-.adminpanel{
+.panel{
     text-decoration: none;
     border-radius: 4px;
-    background-color: rgba(30, 37, 48, 0.5);
+    background-color: rgba(30, 37, 48, 0.95);
     padding-left: 30px;
     padding-right: 25px;
-    margin-left: auto;
-    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-bottom: 5%;
     margin-right: 10px;
     padding-top: 20px;
     padding-bottom: 20px;
     position: relative;
     float: left;
-    max-width: 500px;
-}
-
-.adminpanel2 {
-
+    width: 500px;
+    height: 100%;
 }
 
 .left {
@@ -292,6 +299,7 @@ footer p {
 .right {
     float: right;
 }
+
 
 .varsel {
     text-decoration: none;
@@ -427,17 +435,6 @@ footer p {
     background-image: url(http://localhost/something/bilder/Icons/Shopping.jpg);
 }
 
-.minside {
-    position: absolute;
-}
-
-.adminside {
-    position: absolute;
-    margin-top: 300px;
-}
-
-
-
 #barerimg {
     background-image: url(http://localhost/something/bilder/kategoribilder/barerbackground.jpeg);
     background-repeat: no-repeat;
@@ -492,22 +489,6 @@ footer p {
     margin-bottom: 130px
 }
 
-.yes {
-    text-decoration: none;
-    border-radius: 4px;
-    background-color: rgba(30, 37, 48, 0.5);
-    padding-left: 30px;
-    padding-right: 25px;
-    margin-left: auto;
-    margin-bottom: 10%;
-    margin-right: 10px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    max-width: 500px;
-    overflow: hidden;
-    position: relative;
-}
-
 #restauranterimg {
     background-image: url(http://localhost/something/bilder/kategoribilder/restauranterbackground.jpeg);
     background-repeat: no-repeat;
@@ -517,12 +498,6 @@ footer p {
     margin: 0;
     padding: 0;
 }
-
-
-
-
-
-
 
 #kommentar2 {
     background: rgba(54, 25, 25, .9);

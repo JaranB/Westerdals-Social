@@ -98,7 +98,6 @@ if(!empty($_POST['submit'])){
                        // echo "<a href='funksjoner.php?kommentarid='$kommentarid'' class='sletteKryss'>&#x2717</a>";
 
                      ?>
-                    <br>
                         <a href="slettKommentar.php?kommentarid=<?php echo $kommentarid; ?>" class="sletteKryss">&#x2717</a>
 
                     <?php } ?>
