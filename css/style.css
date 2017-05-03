@@ -113,7 +113,7 @@ body {
 
 /*Container med hovedinnhold på alle sider - start*/
 
-#container {
+.container {
     z-index: 0;
     width: 90%;
     height: auto;
@@ -194,6 +194,18 @@ footer p {
     transform: scale(0.7);
 }
 
+.hexbox2 {
+    position: relative;
+    width: 200px;
+    height:170px;
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: inline;
+}
+
 .even {
     position: absolute;
     margin-top: 95px;
@@ -212,6 +224,7 @@ footer p {
 
 
 .hexagon {
+    position: relative;
     width: 200px;
     height: 170px;
     background: red;
@@ -219,6 +232,17 @@ footer p {
     margin: auto;
     overflow: hidden;
     visibility: hidden;
+}
+
+.hexagon2 {
+    position: relative;
+    width: 200px;
+    height: 170px;
+    overflow: hidden;
+    visibility: hidden;
+    display: inline-block;
+    transform: rotate(120deg);
+
 }
 
 
@@ -443,7 +467,6 @@ footer p {
     height: 100%;
     margin: 0;
     padding: 0;
-
 }
 
 .container{
@@ -521,7 +544,6 @@ footer p {
 
 
 .kommentarKommentar {
-
     border-bottom-style: solid;
     border-left, border-right, border-bottom: 0px;
     border-bottom-width: thick;
@@ -535,4 +557,9 @@ footer p {
     padding: 25px 0px 10px 0px;
     margin-bottom: 10px;
     border-radius: 25px;
+}
+
+.undersidor {
+    position: relative;
+    width: 100px;
 }
