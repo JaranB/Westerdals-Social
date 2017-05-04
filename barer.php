@@ -12,7 +12,7 @@ require_once('db.php');
         <img class="titelundersider" src="http://localhost/something/bilder/kategoribilder/barerlogo.png" width="300px">
             <div id="undersidor">
 
-                <a href="bildetest.php"><div class="hexagon sted1" >
+                <a href="bildetest.php"><div class="hexagon sted1" id="undersideHex">
                     <div class="hexagon-inside">
                         <div class="hexagonimg" id="barimg1">
 
@@ -21,7 +21,7 @@ require_once('db.php');
                     </div>
                 </a>
 
-                <a href=""><div class="hexagon sted2">
+                <a href=""><div class="hexagon sted2" id="undersideHex">
                     <div class="hexagon-inside">
                         <div class="hexagonimg" id="barimg2">
                         </div>
@@ -30,7 +30,7 @@ require_once('db.php');
             </a>
 
                 <a href="">
-                    <div class="hexagon sted3">
+                    <div class="hexagon sted3" id="undersideHex">
                         <div class="hexagon-inside">
                             <div class="hexagonimg" id="barimg3">
 

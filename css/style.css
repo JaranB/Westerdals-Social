@@ -487,8 +487,7 @@ footer p {
     right: 0;
 }
 
-.sted1 {
-}
+
 
 .sted2 {
 
@@ -559,5 +558,8 @@ footer p {
 #undersidor {
     display: flex;
     justify-content: center;
+}
 
+#undersideHex {
+    margin: 40px;
 }
