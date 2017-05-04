@@ -52,7 +52,7 @@ if(isset($_POST) & !empty($_POST)){
 
     <body>
 
-        <div id="container">
+        <div class="container">
             <div id="brukerinfo">
                 <?php if(isset($smsg)){ ?>
                 <div class="varsel" role="alert">
@@ -62,7 +62,7 @@ if(isset($_POST) & !empty($_POST)){
                 <div class="varsel" role="alert">
                     <?php echo $fmsg; ?> </div>
                 <?php } ?>
-                <form class="forms marginauto" method="POST">
+                <form class="forms center" method="POST">
                     <input type="text" name="brukernavn" placeholder="Brukernavn" required>
                     <input type="password" name="passord" placeholder="Passord" required>
                     <button name="" type="submit">Login</button>
