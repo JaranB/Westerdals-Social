@@ -22,17 +22,17 @@ if(!isset($_SESSION)){
 
 ?>
 
-<!DOCTYPE html>
-<html>
+    <!DOCTYPE html>
+    <html>
 
-<?php include 'header.php'; ?>
+    <?php include 'header.php'; ?>
 
-<body id="barerimg">
-    <div class="container">
-        <img class="titelundersider" src="http://localhost/something/bilder/kategoribilder/barerlogo.png" width="300px">
+    <body id="barerimg">
+        <div class="container">
+            <img class="titelundersider" src="http://localhost/something/bilder/kategoribilder/barerlogo.png" width="300px">
             <div class="undersidor">
 
-            <?php
+                <?php
 
                 $postsystem = "SELECT DISTINCT postid, tittel, bildeURL, post FROM steder ORDER BY postid DESC";
                 $postsystemquery = mysqli_query($connection, $postsystem);
@@ -49,30 +49,29 @@ if(!isset($_SESSION)){
 
                     ?>
 
-            <div class="hexbox2">
-                <a href="bildetest2.php?postid=<?php echo $postid; ?>">
-                    <div class="hexagon2">
-                        <div class="hexagon-inside">
-                            <div class="hexagonimg" style="background:url(<?php echo $bildeURL; ?>)">
+                    <a href="bildetest2.php?postid=<?php echo $postid; ?>">
+                        <div class="hexagonundersider" id="undersideHex">
+                            <div class="hexagon-insideundersider">
+                                <div class="hexagonimg" style="background:url(<?php echo $bildeURL; ?>)">
 
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </a>
-            </div>
+                    </a>
 
-        <?php   }   ?>
+                    <?php   }   ?>
 
             </div>
-    </div>
+        </div>
 
-    <!-- Boks for "velkommen" tekst og firmaets  slogan - slutt -->
+        <!-- Boks for "velkommen" tekst og firmaets  slogan - slutt -->
 
-    <!-- En "pusher" som sørger for ett mellomrom mellom footer og sidenes innhold - start -->
-    <div class="push"></div>
-    <!-- En "pusher" som sørger for ett mellomrom mellom footer og sidenes innhold - slutt -->
+        <!-- En "pusher" som sørger for ett mellomrom mellom footer og sidenes innhold - start -->
+        <div class="push"></div>
+        <!-- En "pusher" som sørger for ett mellomrom mellom footer og sidenes innhold - slutt -->
 
-    <?php include 'footer.php';?>
+        <?php include 'footer.php';?>
 
-</body>
-</html>
+    </body>
+
+    </html>
