@@ -14,7 +14,17 @@
         </div>
         <div id="navbuttons">
             <a href="index.php">Home</a>
-            <a href="bildetest.php">Test</a>
+            <div class="dropdownMenuSuper">
+                <button class="categoryBtn">Kategori</button>
+                    <div class="categoryMenu">
+                        <a href="bildetest2.php">Barer</a>
+                        <a href="bildetest2.php">Restauranter</a>
+                        <a href="bildetest2.php">Parkering</a>
+                        <a href="bildetest2.php">HELSE</a>
+                        <a href="bildetest2.php">Transport</a>
+                        <a href="bildetest2.php">Matbutikk</a>
+                    </div>
+            </div>
             <a href="index.php">Something</a>
             <?php
 

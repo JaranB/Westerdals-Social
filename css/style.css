@@ -601,3 +601,45 @@ footer p {
     transition-duration: 1s;
 }
 
+
+.categoryMenu {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 120px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+    overflow: hidden;
+    text-align: left;
+}
+
+.dropdownMenuSuper {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdownMenuSuper:hover .categoryMenu{
+    display: block;
+}
+
+.categoryMenu a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: inline-block;
+    float: left;
+    width: 100%;
+}
+
+.categoryMenu a:hover {
+    background-color: #f1f1f1
+}
+
+.categoryBtn {
+    background-color: black;
+    color: whitesmoke;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
