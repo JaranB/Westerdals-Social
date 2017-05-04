@@ -1,5 +1,25 @@
 <?php
 require_once('db.php');
+
+if(!isset($_SESSION)){
+    session_start();
+}
+
+                $postsystem = "SELECT DISTINCT postid, tittel, bildeURL, post FROM steder ORDER BY postid DESC";
+                $postsystemquery = mysqli_query($connection, $postsystem);
+
+                $finnpostid = "SELECT postid FROM steder";
+                $postidquery = mysqli_query($connection, $finnpostid);
+
+
+                while ($row = mysqli_fetch_array($postsystemquery)) {
+                    $tittel = $row['tittel'];
+                    $bildeURL = $row['bildeURL'];
+                    $post = $row['post'];
+                    $postid = $row['postid'];
+
+            }
+
 ?>
 
 <!DOCTYPE html>
@@ -12,11 +32,28 @@ require_once('db.php');
         <img class="titelundersider" src="http://localhost/something/bilder/kategoribilder/barerlogo.png" width="300px">
             <div class="undersidor">
 
+            <?php
+
+                $postsystem = "SELECT DISTINCT postid, tittel, bildeURL, post FROM steder ORDER BY postid DESC";
+                $postsystemquery = mysqli_query($connection, $postsystem);
+
+                $finnpostid = "SELECT postid FROM steder";
+                $postidquery = mysqli_query($connection, $finnpostid);
+
+
+                while ($row = mysqli_fetch_array($postsystemquery)) {
+                    $tittel = $row['tittel'];
+                    $bildeURL = $row['bildeURL'];
+                    $post = $row['post'];
+                    $postid = $row['postid'];
+
+                    ?>
+
             <div class="hexbox2">
-                <a href="restauranter.php">
+                <a href="bildetest2.php?postid=<?php echo $postid; ?>">
                     <div class="hexagon2">
                         <div class="hexagon-inside">
-                            <div class="hexagonimg" id="restauranter">
+                            <div class="hexagonimg" style="background:url(<?php echo $bildeURL; ?>)">
 
                             </div>
                         </div>
@@ -24,17 +61,7 @@ require_once('db.php');
                 </a>
             </div>
 
-            <div class="hexbox2">
-                <a href="restauranter.php">
-                    <div class="hexagon2">
-                        <div class="hexagon-inside">
-                            <div class="hexagonimg" id="restauranter">
-
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
+        <?php   }   ?>
 
             </div>
     </div>

@@ -25,7 +25,7 @@ if(isset($_POST) & !empty($_POST)){
 
 	}
 
-    if($row['rag'] == 1){
+    if($row['rang'] == 1){
         $_SESSION['admin'] = true;
     } else {
         $_SESSION['admin'] = false;
