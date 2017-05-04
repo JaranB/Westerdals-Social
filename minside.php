@@ -6,17 +6,16 @@ if(!isset($_SESSION)){
     session_start();
 }
 
-    if ($_SESSION['LogInStatus'] == false) {
-        header("Location: ./index.php");
-        die();
-    }
+if ($_SESSION['LogInStatus'] == false) {
+    header("Location: ./index.php");
+    die();
+}
 
-    $brukernavn = mysqli_real_escape_string($connection, $_SESSION['brukernavn']);
-
-	$sql = "SELECT avatarURL FROM `brukere` WHERE brukernavn='$brukernavn'";
-    $result1 = mysqli_query($connection, $sql);
-    $row = $result1->fetch_assoc();
-    $avatarURLSession = $_SESSION['avatarURL'];
+$brukernavn = mysqli_real_escape_string($connection, $_SESSION['brukernavn']);
+$sql = "SELECT avatarURL FROM `brukere` WHERE brukernavn='$brukernavn'";
+$result1 = mysqli_query($connection, $sql);
+$row = $result1->fetch_assoc();
+$avatarURLSession = $_SESSION['avatarURL'];
 
 if(isset($_POST['endreBruker'])) {
 
@@ -74,39 +73,41 @@ if(isset($_POST['endreBruker'])) {
                 <?php echo $fmsg; ?> </div>
             <?php } ?>
 
-            <div class="container2 center">
+            <div class="containerTrePanel center">
                 <div class="item">
-                <form class="panel" method="POST">
-                    <a>Ditt brukernavn: </a><?php echo $_SESSION['brukernavn']; ?>
-                    <br>
-                    <a>Din EPost: </a><?php echo $_SESSION['epost']; ?>
-                    <br>
-                    <a>Ditt Avatar: </a>
-                    <br>
-                    <?php echo "<img src='$avatarURLSession' id='avatarBilde'>"; ?>
-                    <br>
-                    <a>Bytt passord:</a>
-                    <br>
-                    <input type="password" name="eksisterendePassord" class="" placeholder="Eksisterende passord">
-                    <br>
-                    <input type="password" name="passordEndre" class="" placeholder="Nytt passord">
-                    <br>
-                    <a>Bytt EPost:</a>
-                    <br>
-                    <input type="text" name="epostEndre" class="" placeholder="Ny EPost">
-                    <br>
-                    <a>Avatar URL:</a>
-                    <br>
-                    <input type="text" name="settAvatar" class="" placeholder="Skriv inn URL til avataret">
-                    <br>
-                    <button type="submit" name="endreBruker">Endre</button>
-                </form>
+                    <form class="panel" method="POST">
+                        <a>Ditt brukernavn: </a>
+                        <?php echo $_SESSION['brukernavn']; ?>
+                        <br>
+                        <a>Din EPost: </a>
+                        <?php echo $_SESSION['epost']; ?>
+                        <br>
+                        <a>Ditt Avatar: </a>
+                        <br>
+                        <?php echo "<img src='$avatarURLSession' id='avatarBilde'>"; ?>
+                        <br>
+                        <a>Bytt passord:</a>
+                        <br>
+                        <input type="password" name="eksisterendePassord" class="" placeholder="Eksisterende passord">
+                        <br>
+                        <input type="password" name="passordEndre" class="" placeholder="Nytt passord">
+                        <br>
+                        <a>Bytt EPost:</a>
+                        <br>
+                        <input type="text" name="epostEndre" class="" placeholder="Ny EPost">
+                        <br>
+                        <a>Avatar URL:</a>
+                        <br>
+                        <input type="text" name="settAvatar" class="" placeholder="Skriv inn URL til avataret">
+                        <br>
+                        <button type="submit" name="endreBruker">Endre</button>
+                    </form>
 
-                <div class="panel">
-                    <a>Dine favoritter: </a>
-                    <br>
+                    <div class="panel">
+                        <a>Dine favoritter: </a>
+                        <br>
 
-            <?php
+                        <?php
 
                 $postsystem = "SELECT DISTINCT steder.postid, steder.tittel, steder.kategori, steder.navn, steder.bildeURL, steder.post, favoritter.favorittID, favoritter.brukernavn FROM steder, favoritter WHERE steder.postid=favoritter.favorittID";
                 $postsystemquery = mysqli_query($connection, $postsystem);
@@ -121,33 +122,25 @@ if(isset($_POST['endreBruker'])) {
                     $favorittBrukernavn = $row['brukernavn'];
                     $brukernavn = $_SESSION['brukernavn'];
 
-                    if(($favorittid == $postid) && ($favorittBrukernavn == $brukernavn)) {
+                    if(($favorittid == $postid) && ($favorittBrukernavn == $brukernavn)) { ?>
 
+                            <p><a href="/something/funksjoner/slettFavoritt.php?postid=<?php echo $postid; ?>" class="sletteKryss">&#9734</a></p>
+                            <h2>
+                                <?php echo $tittel; ?>
+                            </h2>
+                            <p>
+                                <?php echo $post;
 
-                    ?>
+                    }
+                } ?> </p>
 
+                    </div>
 
-                    <p><a href="slettFavoritt.php?postid=<?php echo $postid; ?>" class="sletteKryss">&#9734</a></p>
+                    <div class="panel">
+                        <a>Dine kommentarer: </a>
+                        <br>
 
-                    <h2><?php echo $tittel; ?></h2>
-
-                    <p><?php echo $post;
-
-
-            }} ?> </p>
-
-                </div>
-
-
-
-
-
-
-                <div class="panel">
-                    <a>Dine kommentarer: </a>
-                    <br>
-
-                <?php
+                        <?php
 
                     $brukernavn = $_SESSION['brukernavn'];
                     $kommentarsystem = "SELECT DISTINCT * FROM kommentarer WHERE brukernavn='$brukernavn' ORDER BY kommentarid DESC";
@@ -163,33 +156,23 @@ if(isset($_POST['endreBruker'])) {
 
                         if(isset($_SESSION['admin']) && $_SESSION['admin'] == true || isset($_SESSION['brukernavn']) && $_SESSION['brukernavn'] == $brukernavn) {
 
-                           // echo "<a href='funksjoner.php?kommentarid='$kommentarid'' class='sletteKryss'>&#x2717</a>";
-
                          ?>
-                            <a href="slettKommentar.php?kommentarid=<?php echo $kommentarid; ?>" class="sletteKryss">&#x2717</a>
+                            <a href="/something/funksjoner/slettKommentar.php?kommentarid=<?php echo $kommentarid; ?>" class="sletteKryss">&#x2717</a>
 
-                        <?php } ?>
-                        <br>
-                        <p><?php echo $brukernavn ?></p>
-                        <p><?php echo $kommentar;
-
-
-                    ?>
+                            <?php } ?>
                             <br>
-            <?php } ?>
+                            <p>
+                                <?php echo $brukernavn ?> </p>
+                            <p>
+                                <?php echo $kommentar; ?> </p>
 
+                            <?php } ?>
 
-                    </p>
+                    </div>
 
                 </div>
-
-            </div>
             </div>
         </div>
-
-        <!-- En "pusher" som sørger for ett mellomrom mellom footer og sidenes innhold - start -->
-        <div class="push"></div>
-        <!-- En "pusher" som sørger for ett mellomrom mellom footer og sidenes innhold - slutt -->
 
         <?php include 'footer.php';?>
 

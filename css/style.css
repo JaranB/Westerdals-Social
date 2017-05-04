@@ -1,6 +1,5 @@
 /*Home kode - start*/
 
-max-zoom: 150%
 
 /*Settings generelt for siden - start*/
 
@@ -30,14 +29,13 @@ p {
 /*Settings generelt for siden - slutt*/
 
 
-/*Header og navigator - start*/
+/*Header, navigator og inforbar - start*/
 
 header {
     position: relative;
     background-color: rgba(30, 37, 48, 1);
     height: 110px;
     z-index: 1;
-
 }
 
 #logo {
@@ -46,9 +44,8 @@ header {
 }
 
 #logo img {
-    margin-top: 4px;
-    max-width: 200px;
-    height: 100px;
+    margin-top: 17px;
+
 }
 
 #navbuttons {
@@ -89,7 +86,29 @@ header {
     bottom: 17px;
 }
 
-/*Header og navigator - slutt*/
+#loggetInnSom {
+    margin-right: 10px;
+}
+
+#avatarBilde {
+    overflow: hidden;
+    max-width: 100px;
+    max-height: 100px;
+    position: relative;
+    border-radius: 100px;
+}
+
+#avatarBildeHeader {
+    width: 100px;
+    height: 100px;
+    bottom: 35px;
+    position: relative;
+    opacity: 0.5;
+    float: left;
+    left: 10px;
+}
+
+/*Header, navigator og inforbar - slutt*/
 
 
 /*html, body (alt innenfor body) - start*/
@@ -122,23 +141,6 @@ body {
     margin-left: 5%;
     border-radius: 2%;
     position: relative;
-}
-
-.container2 {
-    position: relative;
-    width: 1500px;
-    margin-top: 5%;
-}
-
-#containerHovedside {
-    position: fixed;
-    z-index: 0;
-    padding:0;
-    margin:0;
-    top:0;
-    left:0;
-    width: 100%;
-    height: 100%;
 }
 
 
@@ -179,31 +181,120 @@ footer p {
 
 /*Pusher og footer - slutt*/
 
+/* Hexagons - start */
 
-/*Hexagons hovedside - start*/
+.hexagon {
+    position: relative;
+    transform: rotate(120deg);
+    margin: auto;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+.hexagon:hover {
+    transform: scale(1.1) rotate(120deg);
+    transition-duration: 1s;
+}
+
+.hexagon-inni {
+    width: 100%;
+    height: 100%;
+    transform: rotate(-60deg);
+    overflow: hidden;
+    display: inline-block;
+    list-style-type: none;
+}
+
+.hexagonimg {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: contain;
+    transform: rotate(-60deg);
+    visibility: visible;
+}
+
+.hexagonHovedside {
+    width: 200px;
+    height: 170px;
+}
+
+.hexagonUnderside {
+    width: 300px;
+    height: 260px;
+}
+
+#undersideHex {
+    margin-right: 20px;
+}
+
+/* Hexagons - slutt */
+
+/* Former, paneler og varsler - start */
+
+.forms {
+    text-decoration: none;
+    width: 200px;
+    border-radius: 4px;
+    background-color: rgba(30, 37, 48, 0.95);
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.panel {
+    text-decoration: none;
+    border-radius: 4px;
+    background-color: rgba(30, 37, 48, 0.95);
+    padding-left: 20px;
+    padding-right: 15px;
+    margin-top: 40px;
+    margin-left: 50px;
+    margin-bottom: 5%;
+    margin-right: 0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    float: left;
+    width: 400px;
+    height: 100%;
+    line-height: 150%;
+}
+
+.containerTrePanel {
+    position: relative;
+    width: 1500px;
+    margin-top: 5%;
+}
+
+.varsel {
+    text-decoration: none;
+    width: 200px;
+    border-radius: 4px;
+    background-color: rgba(30, 37, 48, 0.95);
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+    margin-top: 5%;
+}
+
+/* Former, paneler og varsler - slutt */
+
+/* Hovedside - start*/
 
 .hexbox {
     position: absolute;
     width: 520px;
-    height:552px;
+    height: 552px;
     margin: auto;
     opacity: 0.8;
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
-}
-
-.hexbox2 {
-    position: relative;
-    width: 200px;
-    height:170px;
-    margin: auto;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    display: inline;
 }
 
 .even {
@@ -222,61 +313,11 @@ footer p {
     margin-top: 95px;
 }
 
+/*Hovedside - slutt*/
 
-.hexagon {
-    position: relative;
-    width: 200px;
-    height: 170px;
-    background: red;
-    transform: rotate(120deg);
-    margin: auto;
-    overflow: hidden;
-    visibility: hidden;
-}
+/*Login og registrerings side - start*/
 
-.hexagon2 {
-    position: relative;
-    width: 200px;
-    height: 170px;
-    overflow: hidden;
-    visibility: hidden;
-    display: inline-block;
-    transform: rotate(120deg);
-
-}
-
-
-.hexagon-inside
-{
-    width: 100%;
-    height: 100%;
-    background-color: green;
-    transform: rotate(-60deg);
-    overflow: hidden;
-    display: inline-block;
-    list-style-type: none;
-}
-
-.hexagonimg
-{
-    width: 100%;
-    height: 100%;
-    background-position: center;
-    background-size: contain;
-    transform: rotate(-60deg);
-    visibility: visible;
-}
-
-.hexagon:hover {
-    transform: scale(1.1) rotate(120deg);
-    transition-duration: 1s;
-}
-
-
-/*Hexagons hovedside - slutt*/
-
-#brukerinfo,
-.panel {
+#brukerinfo {
     line-height: 150%;
 }
 
@@ -286,39 +327,109 @@ footer p {
     margin-top: 5%;
 }
 
+/*Login og registrerings side - slutt*/
+
+
+/*Post side - start*/
+
+#bildeogText {
+    background-color: black;
+    width: 850px;
+    margin: auto;
+    margin-top: 40px;
+    padding: 25px 0px 10px 0px;
+    margin-bottom: 10px;
+    border-radius: 25px;
+}
+
+.bildePost {
+    position: relative;
+    width: 800px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.bildePost img {
+    width: 100%;
+}
+
+.bildePostText {
+    position: relative;
+    width: 800px;
+    height: 100%;
+}
+
+.bildeKommentarText {
+    position: relative;
+    width: 800px;
+    ;
+    height: 100%;
+}
+
+#kommentar2 {
+    background: rgba(54, 25, 25, .9);
+    border-radius: 15px;
+    padding-top: 1px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#kommentarpanel2 {
+    background-color: rgba(25, 25, 25, 0);
+}
+
+.navnKommentar {
+    font-size: 25px;
+    margin-left: 20px;
+}
+
+.kommentarKommentar {
+    border-bottom-style: solid;
+    border-left,
+    border-right,
+    border-bottom: 0px;
+    border-bottom-width: thick;
+    border-color: darkgray;
+}
+
+.kommentarpanel {
+    text-decoration: none;
+    width: 96%;
+    border-radius: 4px;
+    background-color: rgba(30, 37, 48, 0.5);
+    padding-left: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#kommentarFelt {
+    min-width: 95%;
+    max-width: 95%;
+    min-height: 100px;
+    max-height: 100px;
+}
+
+#kommentarBox {
+    background-color: rgba(30, 37, 48, 0.5);
+}
+
+.sletteKryss {
+    margin-top: 15px;
+    position: relative;
+    float: right;
+}
+}
+
+/*Post side - slutt*/
+
 .marginauto {
     margin-left: auto;
     margin-bottom: auto;
     margin-right: auto;
     margin-top: auto;
-}
-
-.forms {
-    text-decoration: none;
-    width: 200px;
-    border-radius: 4px;
-    background-color: rgba(30, 37, 48, 0.95);
-    text-align: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
-.panel{
-    text-decoration: none;
-    border-radius: 4px;
-    background-color: rgba(30, 37, 48, 0.95);
-    padding-left: 20px;
-    padding-right: 15px;
-    margin-top: 40px;
-    margin-left: 50px;
-    margin-bottom: 5%;
-    margin-right: 0px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    position: relative;
-    float: left;
-    width: 400px;
-    height: 100%;
 }
 
 .left {
@@ -327,19 +438,6 @@ footer p {
 
 .right {
     float: right;
-}
-
-.varsel {
-    text-decoration: none;
-    width: 200px;
-    border-radius: 4px;
-    background-color: rgba(30, 37, 48, 0.5);
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    margin-bottom: 10px;
 }
 
 .center {
@@ -355,85 +453,7 @@ footer p {
     transform: translate(-50%);
 }
 
-.bildeTest {
-    position: relative;
-    width: 800px;;
-    height: 400px;
-    overflow: hidden;
-}
-
-.bildeTest img {
-    width: 100%;
-}
-
-.bildeTestText {
-    position: relative;
-    width: 800px;
-    height: 100%;
-}
-
-.bildeKommentarText {
-    position: relative;
-    width: 800px;;
-    height: 100%;
-}
-
 /*Home kode - slutt*/
-
-
-#avatarBilde {
-    overflow: hidden;
-    max-width: 100px;
-    max-height: 100px;
-    position: relative;
-    border-radius: 100px;
-}
-
-#avatarBildeHeader {
-    width: 100px;
-    height: 100px;
-    bottom: 35px;
-    position: relative;
-    opacity: 0.5;
-    float: left;
-    left: 10px;
-}
-
-#loggetInnSom {
-    margin-right: 10px;
-}
-
-.kommentarpanel{
-    text-decoration: none;
-    width: 96%;
-    border-radius: 4px;
-    background-color: rgba(30, 37, 48, 0.5);
-    padding-left: 30px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: auto;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
-#kommentar {
-    min-width: 95%;
-    max-width: 95%;
-    min-height: 100px;
-    max-height: 100px;
-}
-
-
-
-#kommentarBox {
-    background-color: rgba(30, 37, 48, 0.5);
-}
-
-.sletteKryss {
-    margin-top: 15px;
-    position: relative;
-    float: right;
-}
 
 #barer {
     background-image: url(http://localhost/something/bilder/Icons/bars.jpg);
@@ -467,13 +487,9 @@ footer p {
     background-image: url(http://localhost/something/bilder/kategoribilder/barerbackground.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
 }
 
-.container{
+.container {
     position: absolute;
     width: 950px;
     height: 570px;
@@ -484,23 +500,15 @@ footer p {
     right: 0;
 }
 
+.sted2 {}
 
+.sted3 {}
 
-.sted2 {
-
-}
-
-.sted3 {
-
-}
-
-.sted4 {
-
-}
+.sted4 {}
 
 .titelundersider {
-    display:block;
-    margin:auto;
+    display: block;
+    margin: auto;
     margin-bottom: 130px
 }
 
@@ -514,92 +522,10 @@ footer p {
     padding: 0;
 }
 
-#kommentar2 {
-    background: rgba(54, 25, 25, .9);
-    border-radius: 15px;
-    padding-top: 1px;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-
-
-#kommentarpanel2 {
-    background-color: rgba(25, 25, 25, 0);
-}
-
-.navnKommentar {
-    font-size: 25px;
-    margin-left: 20px;
-}
-
-
-
-.kommentarKommentar {
-    border-bottom-style: solid;
-    border-left, border-right, border-bottom: 0px;
-    border-bottom-width: thick;
-    border-color: darkgray;
-}
-
-#bildeogText {
-    background-color: black;
-    width: 850px;
-    margin: auto;
-    margin-top: 40px;
-    padding: 25px 0px 10px 0px;
-    margin-bottom: 10px;
-    border-radius: 25px;
-}
-
 #undersidor {
     display: flex;
     justify-content: center;
 }
-
-#undersideHex {
-    margin: 40px;
-}
-
-.hexagonundersider {
-    position: relative;
-    width: 300px;
-    height: 260px;
-    background: red;
-    transform: rotate(120deg);
-    margin: auto;
-    overflow: hidden;
-    visibility: hidden;
-}
-
-
-.hexagon-insideundersider
-{
-    width: 100%;
-    height: 100%;
-    background-color: green;
-    transform: rotate(-60deg);
-    overflow: hidden;
-    display: inline-block;
-    list-style-type: none;
-}
-
-.hexagonimgundersider
-{
-    width: 100%;
-    height: 100%;
-    background-image: url(http://localhost/something/bilder/hexBilde.jpg);
-    background-position: center;
-    background-size: contain;
-    transform: rotate(-60deg);
-    visibility: visible;
-}
-
-.hexagonundersider:hover {
-    transform: scale(1.1) rotate(120deg);
-    transition-duration: 1s;
-}
-
 
 .categoryMenu {
     display: none;
@@ -617,11 +543,11 @@ footer p {
     display: inline-block;
 }
 
-.dropdownMenuSuper:hover .categoryMenu{
+.dropdownMenuSuper:hover .categoryMenu {
     display: block;
 }
 
-.categoryMenu a{
+.categoryMenu a {
     color: black;
     padding: 12px 16px;
     text-decoration: none;

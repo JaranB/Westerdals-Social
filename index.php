@@ -7,13 +7,14 @@
 <body>
 
 
-   <!-- Boks for "velkommen" tekst & firmaets  slogan - start -->
-    <div id="containerHovedside">
+    <!-- Boks for hexagon menyen - start -->
+    <div class="container">
         <div class="hexbox">
             <div class="even">
 
-                <a href="barer.php"><div class="hexagon">
-                        <div class="hexagon-inside">
+                <a href="../something/kategorier/barer.php">
+                    <div class="hexagon hexagonHovedside">
+                        <div class="hexagon-inni">
                             <div class="hexagonimg" id="barer">
 
                             </div>
@@ -22,19 +23,20 @@
                 </a>
                 <br>
 
-                <a href="transport.php"><div class="hexagon">
-                    <div class="hexagon-inside">
-                        <div class="hexagonimg" id="transport">
+                <a href="../something/kategorier/transport.php">
+                    <div class="hexagon hexagonHovedside">
+                        <div class="hexagon-inni">
+                            <div class="hexagonimg" id="transport">
+                            </div>
                         </div>
                     </div>
-                </div>
-            </a>
-        </div>
+                </a>
+            </div>
 
             <div class="odd">
-                <a href="restauranter.php">
-                    <div class="hexagon">
-                        <div class="hexagon-inside">
+                <a href="../something/kategorier/restauranter.php">
+                    <div class="hexagon hexagonHovedside">
+                        <div class="hexagon-inni">
                             <div class="hexagonimg" id="restauranter">
 
                             </div>
@@ -43,20 +45,20 @@
                 </a>
 
                 <br>
-                <a href="helse.php">
-                <div class="hexagon">
-                    <div class="hexagon-inside">
-                        <div class="hexagonimg" id="helse">
+                <a href="../something/kategorier/helse.php">
+                    <div class="hexagon hexagonHovedside">
+                        <div class="hexagon-inni">
+                            <div class="hexagonimg" id="helse">
                             </div>
                         </div>
                     </div>
                 </a>
 
                 <br>
-                <a href="butikker.php">
-                    <div class="hexagon">
-                    <div class="hexagon-inside">
-                        <div class="hexagonimg" id="butikker">
+                <a href="../something/kategorier/butikker.php">
+                    <div class="hexagon hexagonHovedside">
+                        <div class="hexagon-inni">
+                            <div class="hexagonimg" id="butikker">
 
                             </div>
                         </div>
@@ -64,9 +66,9 @@
                 </a>
             </div>
             <div class="even2">
-                <a href="studier.php">
-                    <div class="hexagon">
-                        <div class="hexagon-inside">
+                <a href="../something/kategorier/studier.php">
+                    <div class="hexagon hexagonHovedside">
+                        <div class="hexagon-inni">
                             <div class="hexagonimg" id="studie">
 
                             </div>
@@ -74,9 +76,9 @@
                     </div>
                 </a>
                 <br>
-                <a href="parkering.php">
-                    <div class="hexagon">
-                        <div class="hexagon-inside">
+                <a href="../something/kategorier/parkering.php">
+                    <div class="hexagon hexagonHovedside">
+                        <div class="hexagon-inni">
                             <div class="hexagonimg" id="parkering">
                             </div>
                         </div>
@@ -85,11 +87,7 @@
             </div>
         </div>
     </div>
-    <!-- Boks for "velkommen" tekst og firmaets  slogan - slutt -->
-<!--Tommy-->
-    <!-- En "pusher" som sørger for ett mellomrom mellom footer og sidenes innhold - start -->
-    <div class="push"></div>
-    <!-- En "pusher" som sørger for ett mellomrom mellom footer og sidenes innhold - slutt -->
+    <!-- Boks for hexagon menyen - slutt -->
 
     <?php include 'footer.php';?>
 

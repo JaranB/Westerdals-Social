@@ -4,9 +4,15 @@ if(!isset($_SESSION)){
     session_start();
 }
 
+if($_SESSION['LogInStatus'] == true) {
+    header("Location: ./index.php");
+    die();
+}
+
 require_once('db.php');
 
 if(isset($_POST) & !empty($_POST)){
+
 	$brukernavn = mysqli_real_escape_string($connection, $_POST['brukernavn']);
 	$passord = md5($_POST['passord']);
 
@@ -39,20 +45,14 @@ if(isset($_POST) & !empty($_POST)){
 }
 ?>
 
-<!DOCTYPE html>
-<html>
+    <!DOCTYPE html>
+    <html>
 
-<!-- Head som inneholder hvordan character format siden bruker, tittel på siden og stylesheetet - start -->
+    <?php include 'header.php';?>
 
-<!-- Head som inneholder hvordan character format siden bruker, tittel på siden og stylesheetet - slutt -->
+    <body>
 
-<?php include 'header.php';?>
-
-<body>
-
-
-    <!-- Boks for "velkommen" tekst og firmaets  slogan - start -->
-    <div id="container">
+        <div id="container">
             <div id="brukerinfo">
                 <?php if(isset($smsg)){ ?>
                 <div class="varsel" role="alert">
@@ -69,15 +69,10 @@ if(isset($_POST) & !empty($_POST)){
                     <a class="" href="register.php">Register</a>
                 </form>
             </div>
-    </div>
-    <!-- Boks for "velkommen" tekst og firmaets  slogan - slutt -->
+        </div>
 
-    <!-- En "pusher" som sørger for ett mellomrom mellom footer og sidenes innhold - start -->
-    <div class="push"></div>
-    <!-- En "pusher" som sørger for ett mellomrom mellom footer og sidenes innhold - slutt -->
+        <?php include 'footer.php';?>
 
-    <?php include 'footer.php';?>
+    </body>
 
-</body>
-
-</html>
+    </html>

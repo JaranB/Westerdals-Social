@@ -1,5 +1,7 @@
 <?php
+
 require_once('db.php');
+
 if(isset($_POST) & !empty($_POST)){
 	$brukernavn = mysqli_real_escape_string($connection, $_POST['brukernavn']);
 	$epost = mysqli_real_escape_string($connection, $_POST['epost']);
@@ -13,8 +15,6 @@ if(isset($_POST) & !empty($_POST)){
 		$fmsg = "Registrering misslyket!";
 	}
 }
-
-
 ?>
 
     <!DOCTYPE html>
@@ -25,8 +25,6 @@ if(isset($_POST) & !empty($_POST)){
 
     <body>
 
-
-        <!-- Boks for "velkommen" tekst og firmaets  slogan - start -->
         <div id="container">
             <div id="brukerinfo">
                 <?php if(isset($smsg)){ ?>
@@ -46,11 +44,6 @@ if(isset($_POST) & !empty($_POST)){
                 </form>
             </div>
         </div>
-        <!-- Boks for "velkommen" tekst og firmaets  slogan - slutt -->
-
-        <!-- En "pusher" som sørger for ett mellomrom mellom footer og sidenes innhold - start -->
-        <div class="push"></div>
-        <!-- En "pusher" som sørger for ett mellomrom mellom footer og sidenes innhold - slutt -->
 
         <?php include 'footer.php';?>
 
