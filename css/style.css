@@ -126,7 +126,8 @@ body {
 
 .container2 {
     position: relative;
-    width: 100%;
+    width: 1725px;
+    margin-top: 5%;
 }
 
 #containerHovedside {
@@ -276,10 +277,15 @@ footer p {
 
 /*Hexagons hovedside - slutt*/
 
-#registerbox,
 #brukerinfo,
 .panel {
     line-height: 150%;
+}
+
+#brukerinfo {
+    position: relative;
+    width: 100%;
+    margin-top: 5%;
 }
 
 .marginauto {

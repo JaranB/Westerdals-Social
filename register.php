@@ -28,7 +28,7 @@ if(isset($_POST) & !empty($_POST)){
 
         <!-- Boks for "velkommen" tekst og firmaets  slogan - start -->
         <div id="container">
-            <div id="registerbox">
+            <div id="brukerinfo">
                 <?php if(isset($smsg)){ ?>
                 <div class="varsel" role="alert">
                     <?php echo $smsg; ?> </div>
@@ -37,7 +37,7 @@ if(isset($_POST) & !empty($_POST)){
                 <div class="varsel" role="alert">
                     <?php echo $fmsg; ?> </div>
                 <?php } ?>
-                <form class="forms" method="POST">
+                <form class="forms marginauto" method="POST">
                     <input type="text" name="brukernavn" class="" placeholder="Brukernavn" required>
                     <input type="email" name="epost" id="inputEmail" class="" placeholder="EPost" required autofocus>
                     <input type="password" name="passord" id="inputPassword" class="" placeholder="Passord" required>
