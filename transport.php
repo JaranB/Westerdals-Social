@@ -34,7 +34,7 @@ if(!isset($_SESSION)){
 
                 <?php
 
-                $postsystem = "SELECT DISTINCT postid, tittel, kategori, bildeURL, post FROM steder WHERE kategori=1 ORDER BY postid DESC";
+                $postsystem = "SELECT DISTINCT postid, tittel, kategori, bildeURL, post FROM steder WHERE kategori=6 ORDER BY postid DESC";
                 $postsystemquery = mysqli_query($connection, $postsystem);
 
                 $finnpostid = "SELECT postid FROM steder";
