@@ -486,29 +486,17 @@ footer p {
     right: 0;
 }
 
-.sted1 {
-    position: absolute;
-    float: left;
-}
+
 
 .sted2 {
-    position: absolute;
-    float: left;
-    margin-left: 250px;
 
 }
 
 .sted3 {
-    position: absolute;
-    float: left;
-    margin-left: 500px;
+
 }
 
 .sted4 {
-    position: absolute;
-    float: left;
-    margin-left: 750px;
-
 
 }
 
@@ -566,7 +554,11 @@ footer p {
     border-radius: 25px;
 }
 
-.undersidor {
-    position: relative;
-    width: 100px;
+#undersidor {
+    display: flex;
+    justify-content: center;
+}
+
+#undersideHex {
+    margin: 40px;
 }
