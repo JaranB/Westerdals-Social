@@ -126,7 +126,7 @@ body {
 
 .container2 {
     position: relative;
-    width: 1725px;
+    width: 100%;
 }
 
 #containerHovedside {
@@ -303,16 +303,17 @@ footer p {
     text-decoration: none;
     border-radius: 4px;
     background-color: rgba(30, 37, 48, 0.95);
-    padding-left: 30px;
-    padding-right: 25px;
-    margin-left: 10px;
+    padding-left: 20px;
+    padding-right: 15px;
+    margin-top: 40px;
+    margin-left: 50px;
     margin-bottom: 5%;
-    margin-right: 10px;
+    margin-right: 0px;
     padding-top: 20px;
     padding-bottom: 20px;
     position: relative;
     float: left;
-    width: 500px;
+    width: 400px;
     height: 100%;
 }
 
