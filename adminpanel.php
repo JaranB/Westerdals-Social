@@ -134,7 +134,7 @@ if(!empty($_POST['submit'])){
                         <option value="3">Butikk</option>
                         <option value="4">Parkering</option>
                         <option value="5">Helse</option>
-                        <option value="6">Tilbud</option>
+                        <option value="6">Transport</option>
                         <option value="7">Studie</option>
                         </select>
                     <br>
