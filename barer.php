@@ -38,15 +38,7 @@ require_once('db.php');
                         </div>
                     </div>
                 </a>
-                    <a href="">
-                    <div class="hexagon sted4">
-                        <div class="hexagon-inside">
-                            <div class="hexagonimg" id="barimg4">
-                                </div>
 
-                            </div>
-                        </div>
-                </a>
             </div>
             </div>
 
