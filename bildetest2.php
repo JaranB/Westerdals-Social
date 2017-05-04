@@ -5,7 +5,10 @@ if(!isset($_SESSION)){
     session_start();
 }
 
-                $postsystem = "SELECT DISTINCT postid, tittel, bildeURL, post FROM steder ORDER BY postid DESC";
+	if( isset($_GET['postid']) )
+	{
+                $id = $_GET['postid'];
+                $postsystem = "SELECT DISTINCT * FROM steder WHERE postid=$id ORDER BY postid DESC";
                 $postsystemquery = mysqli_query($connection, $postsystem);
 
                 $finnpostid = "SELECT postid FROM steder";
@@ -19,12 +22,13 @@ if(!isset($_SESSION)){
                     $postid = $row['postid'];
 
             }
+    }
 
 if(!empty($_POST['submit'])){
         $kommentar = $_POST['kommentar'];
         $kategori='bar';
         $brukernavn = $_SESSION['brukernavn'];
-        $postsystem = "INSERT IGNORE INTO kommentarer (kommentar, kategori, brukernavn) VALUE ('$kommentar', '$kategori', '$brukernavn')";
+        $postsystem = "INSERT IGNORE INTO kommentarer (kommentar, postid, kategori, brukernavn) VALUE ('$kommentar', '$id', '$kategori', '$brukernavn')";
         mysqli_query($connection, $postsystem);
         $smsg = "Kommentar lagt til!";
 }
@@ -53,7 +57,7 @@ if(!empty($_POST['submit'])){
         <div class="bildeTestText centerHorizontal">
             <?php
 
-                $postsystem = "SELECT DISTINCT postid, tittel, bildeURL, post FROM steder ORDER BY postid DESC";
+                $postsystem = "SELECT DISTINCT postid, tittel, bildeURL, post FROM steder WHERE postid=$id ORDER BY postid DESC";
                 $postsystemquery = mysqli_query($connection, $postsystem);
 
                 $finnpostid = "SELECT postid FROM steder";
@@ -82,7 +86,8 @@ if(!empty($_POST['submit'])){
             <?php
 
 
-                $kommentarsystem = "SELECT DISTINCT * FROM kommentarer ORDER BY kommentarid DESC";
+                $id = $_GET['postid'];
+                $kommentarsystem = "SELECT DISTINCT kommentarid, kommentarer.postid, kommentarer.kategori, kommentar, brukernavn FROM kommentarer LEFT JOIN steder ON kommentarer.postid = steder.postid WHERE kommentarer.postid=$id ORDER BY kommentarid DESC";
                 $kommentarsystemquery = mysqli_query($connection, $kommentarsystem);
 
                 $finnkommentarid = "SELECT kommentarid FROM steder";
