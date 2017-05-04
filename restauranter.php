@@ -1,5 +1,25 @@
 <?php
 require_once('db.php');
+
+if(!isset($_SESSION)){
+    session_start();
+}
+
+                $postsystem = "SELECT DISTINCT postid, tittel, bildeURL, post FROM steder ORDER BY postid DESC";
+                $postsystemquery = mysqli_query($connection, $postsystem);
+
+                $finnpostid = "SELECT postid FROM steder";
+                $postidquery = mysqli_query($connection, $finnpostid);
+
+
+                while ($row = mysqli_fetch_array($postsystemquery)) {
+                    $tittel = $row['tittel'];
+                    $bildeURL = $row['bildeURL'];
+                    $post = $row['post'];
+                    $postid = $row['postid'];
+
+            }
+
 ?>
 
 <!DOCTYPE html>
@@ -7,48 +27,42 @@ require_once('db.php');
 
 <?php include 'header.php'; ?>
 
-<body id="restauranterimg">
+<body id="barerimg">
     <div class="container">
-        <img class="titelundersider" src="http://localhost/something/bilder/kategoribilder/restauranterlogo.png" width="300px">
-            <div id="undersidor">
+        <img class="titelundersider" src="http://localhost/something/bilder/kategoribilder/barerlogo.png" width="300px">
+        <div id="undersidor">
 
-                <a href="bildetest.php"><div class="hexagon sted1" >
-                    <div class="hexagon-inside">
-                        <div class="hexagonimg" id="">
+                <?php
 
-                            </div>
-                        </div>
-                    </div>
-                </a>
+                $postsystem = "SELECT DISTINCT postid, tittel, kategori, bildeURL, post FROM steder WHERE kategori=1 ORDER BY postid DESC";
+                $postsystemquery = mysqli_query($connection, $postsystem);
 
-                <a href=""><div class="hexagon sted2">
-                    <div class="hexagon-inside">
-                        <div class="hexagonimg" id="">
-                        </div>
-                    </div>
-                </div>
-            </a>
+                $finnpostid = "SELECT postid FROM steder";
+                $postidquery = mysqli_query($connection, $finnpostid);
 
-                <a href="">
-                    <div class="hexagon sted3">
-                        <div class="hexagon-inside">
-                            <div class="hexagonimg" id="">
 
-                            </div>
-                        </div>
-                    </div>
-                </a>
-                    <a href="">
-                    <div class="hexagon sted4">
-                        <div class="hexagon-inside">
-                            <div class="hexagonimg" id="">
+                while ($row = mysqli_fetch_array($postsystemquery)) {
+                    $tittel = $row['tittel'];
+                    $bildeURL = $row['bildeURL'];
+                    $post = $row['post'];
+                    $postid = $row['postid'];
+
+                    ?>
+
+                    <a href="bildetest2.php?postid=<?php echo $postid; ?>">
+                        <div class="hexagonundersider" id="undersideHex">
+                            <div class="hexagon-insideundersider">
+                                <div class="hexagonimg" style="background:url(<?php echo $bildeURL; ?>)">
+
                                 </div>
-
                             </div>
                         </div>
-                </a>
-            </div>
-            </div>
+                    </a>
+
+                    <?php   }   ?>
+
+        </div>
+    </div>
 
     <!-- Boks for "velkommen" tekst og firmaets  slogan - slutt -->
 
@@ -59,4 +73,5 @@ require_once('db.php');
     <?php include 'footer.php';?>
 
 </body>
+
 </html>
