@@ -20,7 +20,7 @@
                         <a href="bildetest2.php">Barer</a>
                         <a href="bildetest2.php">Restauranter</a>
                         <a href="bildetest2.php">Parkering</a>
-                        <a href="bildetest2.php">HELSE</a>
+                        <a href="bildetest2.php">Helse</a>
                         <a href="bildetest2.php">Transport</a>
                         <a href="bildetest2.php">Matbutikk</a>
                     </div>
