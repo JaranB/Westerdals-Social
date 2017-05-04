@@ -124,7 +124,7 @@ if(isset($_POST['endreBruker'])) {
 
                     if(($favorittid == $postid) && ($favorittBrukernavn == $brukernavn)) { ?>
 
-                            <p><a href="/something/funksjoner/slettFavoritt.php?postid=<?php echo $postid; ?>" class="sletteKryss">&#9734</a></p>
+                            <p><a href="/something/funksjoner/slettFavoritt.php?postid=<?php echo $postid; ?>" class="funksjonSymboler">&#9734</a></p>
                             <h2>
                                 <?php echo $tittel; ?>
                             </h2>
@@ -157,7 +157,7 @@ if(isset($_POST['endreBruker'])) {
                         if(isset($_SESSION['admin']) && $_SESSION['admin'] == true || isset($_SESSION['brukernavn']) && $_SESSION['brukernavn'] == $brukernavn) {
 
                          ?>
-                            <a href="/something/funksjoner/slettKommentar.php?kommentarid=<?php echo $kommentarid; ?>" class="sletteKryss">&#x2717</a>
+                            <a href="/something/funksjoner/slettKommentar.php?kommentarid=<?php echo $kommentarid; ?>" class="funksjonSymboler">&#x2717</a>
 
                             <?php } ?>
                             <br>

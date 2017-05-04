@@ -72,7 +72,7 @@ if(!empty($_POST['submit'])){
 
                         ?>
 
-                        <p><a href="/something/funksjoner/favoritt.php?postid=<?php echo $postid; ?>" class="sletteKryss">&#9734</a></p>
+                        <p><a href="/something/funksjoner/favoritt.php?postid=<?php echo $postid; ?>" class="funksjonSymboler">&#9734</a></p>
 
                         <h2>
                             <?php echo $tittel; ?>
@@ -105,15 +105,15 @@ if(!empty($_POST['submit'])){
 
                     if(isset($_SESSION['admin']) && $_SESSION['admin'] == true || isset($_SESSION['brukernavn']) && $_SESSION['brukernavn'] == $brukernavn) {
 
-                       // echo "<a href='funksjoner.php?kommentarid='$kommentarid'' class='sletteKryss'>&#x2717</a>";
+                       // echo "<a href='funksjoner.php?kommentarid='$kommentarid'' class='funksjonSymboler'>&#x2717</a>";
 
                      ?>
                     <br>
 
+                    <a href="/something/funksjoner/slettKommentar.php?kommentarid=<?php echo $kommentarid; ?>" class="funksjonSymboler">&#x2717</a>
 
                     <?php } ?>
                     <br>
-                    <a href="/something/funksjoner/slettKommentar.php?kommentarid=<?php echo $kommentarid; ?>" class="sletteKryss">&#x2717</a>
                     <p class="navnKommentar">
                         <?php echo $brukernavn ?>
                     </p>
