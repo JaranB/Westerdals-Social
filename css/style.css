@@ -186,13 +186,12 @@ footer p {
     position: absolute;
     width: 520px;
     height:552px;
-    margin: auto;
+    margin: 13% auto auto auto;
     opacity: 0.8;
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
-    transform: scale(0.7);
 }
 
 .hexbox2 {
