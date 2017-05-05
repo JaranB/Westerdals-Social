@@ -583,10 +583,18 @@ footer p {
     font-family: sans-serif;
     font-style: italic;
     font-weight: 700;
-    margin-top: 70px;
+    margin-top: 0px;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
     padding-bottom: 150px;
     font-size: 80px;
+    z-index: 2;
+}
+
+.undersideeeee {
+    display: flex;
+    margin: 0;
+    z-index: 2;
+    margin-top: -100px;
 }
