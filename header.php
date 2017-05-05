@@ -2,9 +2,8 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Something</title>
-    <link rel="stylesheet" href="./css/style.css" type="text/css">
-    <link rel="stylesheet" href="../css/style.css" type="text/css">
+    <title>YEs</title>
+    <link rel="stylesheet" href="/something/css/style.css" type="text/css">
 </head>
 <header>
        <div id="navigator">

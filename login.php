@@ -4,7 +4,7 @@ if(!isset($_SESSION)){
     session_start();
 }
 
-if($_SESSION['LogInStatus'] == true) {
+if(isset($_SESSION['LogInStatus']) && $_SESSION['LogInStatus'] == true) {
     header("Location: ./index.php");
     die();
 }
