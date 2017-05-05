@@ -13,7 +13,7 @@
             </a>
         </div>
         <div id="navbuttons">
-            <a href="/something/index.php">Home</a>
+            <a href="/something/index.php">Forside</a>
             <div class="dropdownMenuSuper">
                 <button class="categoryBtn">Kategori &#9660;</button>
                     <div class="categoryMenu">
@@ -25,6 +25,7 @@
                         <a href="/something/kategorier/butikker.php">Butikker</a>
                     </div>
             </div>
+            <a href="/something/kart.php">Kart</a>
             <?php
 
 
