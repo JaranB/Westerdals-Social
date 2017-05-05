@@ -2,7 +2,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>YEs</title>
+    <title>Westerdals Social</title>
     <link rel="stylesheet" href="/something/css/style.css" type="text/css">
 </head>
 <header>
