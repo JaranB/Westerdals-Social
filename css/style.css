@@ -494,7 +494,6 @@ footer p {
 
 .container {
     position: absolute;
-    width: 950px;
     height: 570px;
     margin: auto;
     top: 0;
@@ -528,6 +527,9 @@ footer p {
 #undersidor {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+    max-width: 90%;
+    margin: auto;
 }
 
 .categoryMenu {
