@@ -598,3 +598,10 @@ footer p {
     z-index: 2;
     margin-top: -100px;
 }
+
+#restaurantimg {
+    background-image: url(http://localhost/something/bilder/kategoribilder/restauranterbackground.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
