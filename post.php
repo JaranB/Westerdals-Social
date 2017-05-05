@@ -1,5 +1,5 @@
 <?php
-require_once('./db.php');
+require_once(dirname(__FILE__) . '/db.php');
 
 if(!isset($_SESSION)){
     session_start();

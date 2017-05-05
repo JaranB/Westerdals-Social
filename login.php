@@ -9,7 +9,7 @@ if(isset($_SESSION['LogInStatus']) && $_SESSION['LogInStatus'] == true) {
     die();
 }
 
-require_once('./db.php');
+require_once(dirname(__FILE__) . '/db.php');
 
 if(isset($_POST) & !empty($_POST)){
 
