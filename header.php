@@ -15,7 +15,7 @@
         <div id="navbuttons">
             <a href="/something/index.php">Home</a>
             <div class="dropdownMenuSuper">
-                <button class="categoryBtn">Kategori</button>
+                <button class="categoryBtn">Kategori &#9660;</button>
                     <div class="categoryMenu">
                         <a href="/something/kategorier/barer.php">Barer</a>
                         <a href="/something/kategorier/restauranter.php">Restauranter</a>

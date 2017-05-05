@@ -559,6 +559,9 @@ footer p {
 
 .categoryMenu a:hover {
     background-color: white;
+    color: black;
+    text-decoration: underline;
+    font-weight: bold;
 }
 
 .categoryBtn {
@@ -567,4 +570,5 @@ footer p {
     font-size: 16px;
     border: none;
     cursor: pointer;
+    background-color: rgba(0, 0, 0, 0);
 }
