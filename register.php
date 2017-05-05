@@ -1,6 +1,6 @@
 <?php
 
-require_once('db.php');
+require_once('./db.php');
 
 if(isset($_POST) & !empty($_POST)){
 	$brukernavn = mysqli_real_escape_string($connection, $_POST['brukernavn']);
