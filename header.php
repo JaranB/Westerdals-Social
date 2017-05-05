@@ -27,7 +27,8 @@
             </div>
             <?php
 
-                require_once('./db.php');
+
+                require_once(dirname(__FILE__) . '/db.php');
 
                   function loggUtFunksjon() {
                     $_SESSION['LogInStatus'] = false;
