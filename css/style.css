@@ -63,7 +63,8 @@ header {
     display: inline-block;
 }
 
-#navbuttons a:hover {
+#navbuttons a:hover,
+.categoryBtn:hover {
     background-color: white;
     border-radius: 10%;
     color: rgba(30, 37, 48, 1);
@@ -226,7 +227,7 @@ footer p {
 }
 
 #undersideHex {
-    margin-right: 20px;
+    margin: 20px;
 }
 
 /* Hexagons - slutt */
@@ -555,7 +556,7 @@ footer p {
     text-decoration: none;
     display: inline-block;
     float: left;
-    width: 100%;
+    width: 120px;
 }
 
 .categoryMenu a:hover {
@@ -563,6 +564,7 @@ footer p {
     color: black;
     text-decoration: underline;
     font-weight: bold;
+    border-radius: -10%;
 }
 
 .categoryBtn {
@@ -572,4 +574,17 @@ footer p {
     border: none;
     cursor: pointer;
     background-color: rgba(0, 0, 0, 0);
+}
+
+#undersideTittel {
+    color: black;
+    font-family: sans-serif;
+    font-style: italic;
+    font-weight: 700;
+    margin-top: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding-bottom: 150px;
+    font-size: 80px;
 }

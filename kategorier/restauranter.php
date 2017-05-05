@@ -15,7 +15,7 @@ if(!isset($_SESSION)){
 
     <body id="barerimg">
         <div class="container">
-            <img class="titelundersider" src="http://localhost/something/bilder/kategoribilder/barerlogo.png" width="300px">
+            <h1 id="undersideTittel">Restauranter</h1>
             <div id="undersidor">
 
                 <?php
