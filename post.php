@@ -26,9 +26,8 @@ if(!isset($_SESSION)){
 
 if(!empty($_POST['submit'])){
         $kommentar = $_POST['kommentar'];
-        $kategori='bar';
         $brukernavn = $_SESSION['brukernavn'];
-        $postsystem = "INSERT IGNORE INTO kommentarer (kommentar, postid, kategori, brukernavn) VALUE ('$kommentar', '$id', '$kategori', '$brukernavn')";
+        $postsystem = "INSERT IGNORE INTO kommentarer (kommentar, postid, brukernavn) VALUE ('$kommentar', '$id', '$brukernavn')";
         mysqli_query($connection, $postsystem);
         $smsg = "Kommentar lagt til!";
 }
@@ -91,7 +90,7 @@ if(!empty($_POST['submit'])){
 
 
                 $id = $_GET['postid'];
-                $kommentarsystem = "SELECT DISTINCT kommentarid, kommentarer.postid, kommentarer.kategori, kommentar, brukernavn FROM kommentarer LEFT JOIN steder ON kommentarer.postid = steder.postid WHERE kommentarer.postid=$id ORDER BY kommentarid DESC";
+                $kommentarsystem = "SELECT DISTINCT kommentarid, kommentarer.postid, kommentar, brukernavn FROM kommentarer LEFT JOIN steder ON kommentarer.postid = steder.postid WHERE kommentarer.postid=$id ORDER BY kommentarid DESC";
                 $kommentarsystemquery = mysqli_query($connection, $kommentarsystem);
 
                 $finnkommentarid = "SELECT kommentarid FROM steder";
@@ -110,7 +109,7 @@ if(!empty($_POST['submit'])){
                      ?>
                     <br>
 
-                    <a href="/something/funksjoner/slettKommentar.php?kommentarid=<?php echo $kommentarid; ?>" class="funksjonSymboler">&#x2717</a>
+                    <a href="/something/funksjoner/slett.php?kommentarid=<?php echo $kommentarid; ?>" class="funksjonSymboler">&#x2717</a>
 
                     <?php } ?>
                     <br>
@@ -119,13 +118,11 @@ if(!empty($_POST['submit'])){
                     </p>
 
                     <p class="kommentarKommentar">
-                        <?php echo $kommentar;
-
-                ?>
-                        <br>
-                        <?php } ?>
+                        <?php echo $kommentar; ?>
                     </p>
-                    <form class="kommentarpanel" id="kommentarpanel2" method="POST">
+                        <?php } ?>
+
+                    <form class="kommentarpanel" method="POST">
                         <a>Legg til kommentar:</a>
                         <br>
                         <textarea id="kommentarFelt" name="kommentar" required></textarea>

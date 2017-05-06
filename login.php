@@ -22,7 +22,7 @@ if(isset($_POST) & !empty($_POST)){
 	$count = mysqli_num_rows($result);
 	if($count == 1){
         $_SESSION['LogInStatus'] = true;
-        $_SESSION['brukernavn'] = $brukernavn;
+        $_SESSION['brukernavn'] = $row['brukernavn'];
         $_SESSION['epost'] = $row['epost'];
         $_SESSION['avatarURL'] = $row['avatarURL'];
 
@@ -46,13 +46,14 @@ if(isset($_POST) & !empty($_POST)){
 ?>
 
     <!DOCTYPE html>
+
     <html>
 
     <?php include 'header.php';?>
 
     <body>
 
-        <div class="container">
+        <div id="container">
             <div id="brukerinfo">
                 <?php if(isset($smsg)){ ?>
                 <div class="varsel" role="alert">
@@ -62,7 +63,7 @@ if(isset($_POST) & !empty($_POST)){
                 <div class="varsel" role="alert">
                     <?php echo $fmsg; ?> </div>
                 <?php } ?>
-                <form class="forms center" method="POST">
+                <form class="forms centerHorizontal" method="POST">
                     <input type="text" name="brukernavn" placeholder="Brukernavn" required>
                     <input type="password" name="passord" placeholder="Passord" required>
                     <button name="" type="submit">Login</button>

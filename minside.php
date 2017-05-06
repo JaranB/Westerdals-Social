@@ -76,6 +76,8 @@ if(isset($_POST['endreBruker'])) {
             <div class="containerTrePanel center">
                 <div class="item">
                     <form class="panel" method="POST">
+                        <h2>Dine instillinger: </h2>
+                        <br>
                         <a>Ditt brukernavn: </a>
                         <?php echo $_SESSION['brukernavn']; ?>
                         <br>
@@ -104,12 +106,12 @@ if(isset($_POST['endreBruker'])) {
                     </form>
 
                     <div class="panel">
-                        <a>Dine favoritter: </a>
+                        <h2>Dine favoritter: </h2>
                         <br>
 
                         <?php
 
-                $postsystem = "SELECT DISTINCT steder.postid, steder.tittel, steder.kategori, steder.navn, steder.bildeURL, steder.post, favoritter.favorittID, favoritter.brukernavn FROM steder, favoritter WHERE steder.postid=favoritter.favorittID";
+                $postsystem = "SELECT DISTINCT steder.postid, steder.tittel, steder.kategori, steder.bildeURL, steder.post, favoritter.favorittID, favoritter.brukernavn FROM steder, favoritter WHERE steder.postid=favoritter.favorittID";
                 $postsystemquery = mysqli_query($connection, $postsystem);
 
 
@@ -124,48 +126,54 @@ if(isset($_POST['endreBruker'])) {
 
                     if(($favorittid == $postid) && ($favorittBrukernavn == $brukernavn)) { ?>
 
-                            <p><a href="/something/funksjoner/slettFavoritt.php?postid=<?php echo $postid; ?>" class="funksjonSymboler">&#9734</a></p>
+                            <p><a href="/something/funksjoner/slett.php?postid=<?php echo $postid; ?>" class="funksjonSymboler">&#9734</a></p>
                             <h2>
                                 <?php echo $tittel; ?>
                             </h2>
-                            <p>
-                                <?php echo $post;
+                            <p class="kommentarKommentar kommentarKommentarFavoritt">
+                                <?php echo $post; ?>
+                                <br>
+                            </p>
+                            <?php
 
                     }
-                } ?> </p>
+                } ?>
 
                     </div>
 
                     <div class="panel">
-                        <a>Dine kommentarer: </a>
+                        <h2>Dine kommentarer: </h2>
                         <br>
 
                         <?php
 
                     $brukernavn = $_SESSION['brukernavn'];
-                    $kommentarsystem = "SELECT DISTINCT * FROM kommentarer WHERE brukernavn='$brukernavn' ORDER BY kommentarid DESC";
+                    $kommentarsystem = "SELECT DISTINCT kommentarer.kommentarid, kommentarer.postid, kommentarer.kommentar, kommentarer.brukernavn, steder.postid, steder.tittel FROM kommentarer, steder WHERE (brukernavn='$brukernavn') AND (kommentarer.postid=steder.postid) ORDER BY kommentarid DESC";
                     $kommentarsystemquery = mysqli_query($connection, $kommentarsystem);
 
                     $finnkommentarid = "SELECT kommentarid FROM steder";
                     $kommentaridquery = mysqli_query($connection, $finnkommentarid);
 
                     while ($row = mysqli_fetch_array($kommentarsystemquery)) {
-                        $brukernavn = $row['brukernavn'];
                         $kommentar = $row['kommentar'];
                         $kommentarid = $row['kommentarid'];
+                        $tittel = $row['tittel'];
+
 
                         if(isset($_SESSION['admin']) && $_SESSION['admin'] == true || isset($_SESSION['brukernavn']) && $_SESSION['brukernavn'] == $brukernavn) {
 
                          ?>
-                            <a href="/something/funksjoner/slettKommentar.php?kommentarid=<?php echo $kommentarid; ?>" class="funksjonSymboler">&#x2717</a>
+                            <a href="/something/funksjoner/slett.php?kommentarid=<?php echo $kommentarid; ?>" class="funksjonSymboler">&#x2717</a>
 
                             <?php } ?>
                             <br>
                             <p>
-                                <?php echo $brukernavn ?> </p>
-                            <p>
-                                <?php echo $kommentar; ?> </p>
+                                <?php echo $tittel ?> </p>
 
+                            <p class="kommentarKommentar">
+                                <?php echo $kommentar; ?>
+                                <br>
+                            </p>
                             <?php } ?>
 
                     </div>

@@ -58,15 +58,23 @@ if(isset($_POST['endreBruker'])) {
     }
 
     }
+} else if(isset($_POST['slettPost'])) {
+
+    if(!empty($_POST['postID'])){
+
+            $id = $_POST['postID'];
+            $sql= "DELETE FROM steder WHERE postid='$id'";
+            $res= mysqli_query($connection, $sql) or die("Failed".mysqli_error());
+
+    }
 }
 
 if(!empty($_POST['submit'])){
         $tittel = $_POST['tittel'];
         $kategori=$_POST['formKategorier'];
-        $navn = $_POST['navn'];
         $bildeURL = $_POST['bildeURL'];
         $post = $_POST['post'];
-        $postsystem = "INSERT IGNORE INTO steder (tittel, kategori, navn, bildeURL, post) VALUE ('$tittel', '$kategori', '$navn', '$bildeURL', '$post')";
+        $postsystem = "INSERT IGNORE INTO steder (tittel, kategori, bildeURL, post) VALUE ('$tittel', '$kategori', '$bildeURL', '$post')";
         mysqli_query($connection, $postsystem);
         $smsg = "Post lagt til!";
 }
@@ -94,6 +102,8 @@ if(!empty($_POST['submit'])){
 
             <div class="containerTrePanel center">
                 <form class="panel" method="POST">
+                    <h2>Endre en bruker:</h2>
+                    <br>
                     <a>Bruker å endre:</a>
                     <br>
                     <input type="text" name="brukerEndre" class="" placeholder="Bruker å endre" required>
@@ -118,7 +128,7 @@ if(!empty($_POST['submit'])){
                 </form>
 
                 <form class="panel" method="POST">
-                    <a>Legg til post</a>
+                    <h2>Legg til post</h2>
                     <br>
                     <a>Tittel:</a>
                     <br>
@@ -136,10 +146,6 @@ if(!empty($_POST['submit'])){
                         <option value="7">Studie</option>
                         </select>
                     <br>
-                    <a>Navn:</a>
-                    <br>
-                    <input type="text" name="navn" required>
-                    <br>
                     <a>Bilde URL:</a>
                     <br>
                     <input type="text" name="bildeURL" required>
@@ -149,6 +155,20 @@ if(!empty($_POST['submit'])){
                     <textarea id="minpost" name="post" required></textarea>
                     <br>
                     <input type="submit" name="submit" value="Post" />
+                </form>
+
+                <form class="panel" method="POST">
+                    <h2>Slett post:</h2>
+                    <br>
+                    <a>PostID:</a>
+                    <br>
+                    <input type="text" name="postID" required>
+                    <br>
+                    <button type="submit" name="slettPost">Slett</button>
+                    <br>
+                    <br>
+                    <a href="../something/adminpost.php"><p>Liste for alle poster</p></a>
+                    <br>
                 </form>
 
             </div>
