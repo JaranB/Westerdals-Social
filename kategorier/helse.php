@@ -13,9 +13,9 @@ if(!isset($_SESSION)){
 
     <!-- Knapper til steder lastet inn fra databasen - start -->
 
-    <body id="barerimg">
+    <body id="helseimg">
         <div class="container">
-            <h1 id="undersideTittel">Helse</h1>
+            <div class="titelbox"><h1 id="undersideTittel">Helse</h1></div>
             <div id="undersidor">
 
                 <?php

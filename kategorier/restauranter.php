@@ -14,10 +14,9 @@ if(!isset($_SESSION)){
     <!-- Knapper til steder lastet inn fra databasen - start -->
 
     <body id="restaurantimg">
-        <div class="undersideeeee"><h1 id="undersideTittel">Restauranter</h1></div>
         <div class="container">
-
-            <div id="undersidor">
+            <div class="titelbox"><h1 id="undersideTittel">Restauranter</h1></div>
+                <div id="undersidor">
 
                 <?php
 

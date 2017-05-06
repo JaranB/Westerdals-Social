@@ -9,7 +9,7 @@
        <div id="navigator">
         <div id="logo">
             <a href="/something/index.php">
-                <img src="http://localhost/something/bilder/newlogowesterdals.png">
+                <img src="http://localhost/something/bilder/newlogowesterdals.png" height="40px">
             </a>
         </div>
         <div id="navbuttons">
