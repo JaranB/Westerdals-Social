@@ -13,10 +13,10 @@ if(!isset($_SESSION)){
 
     <!-- Knapper til steder lastet inn fra databasen - start -->
 
-    <body id="barerimg">
+    <body id="transportimg">
         <div class="container">
-            <h1 id="undersideTittel">Transport</h1>
-            <div id="undersidor">
+            <div class="titelbox"><h1 id="undersideTittel">Transport</h1></div>
+                <div id="undersidor">
 
                 <?php
 

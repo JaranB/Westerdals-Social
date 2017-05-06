@@ -15,7 +15,7 @@ if(!isset($_SESSION)){
 
     <body id="barerimg">
         <div class="container">
-            <h1 id="undersideTittel">Barer</h1>
+            <div class="titelbox"><h1 id="undersideTittel">Barer</h1></div>
             <div id="undersidor">
 
                 <?php
