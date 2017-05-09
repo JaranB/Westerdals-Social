@@ -69,10 +69,12 @@ if(!empty($_POST['submit'])){
                         $post = $row['post'];
                         $postid = $row['postid'];
 
+                    if (isset($_SESSION['LogInStatus']) && $_SESSION['LogInStatus'] == true) {
+
                         ?>
 
                         <p><a href="/something/funksjoner/favoritt.php?postid=<?php echo $postid; ?>" class="funksjonSymboler">&#9734</a></p>
-
+                <?php } ?>
                         <h2>
                             <?php echo $tittel; ?>
                         </h2>
@@ -85,6 +87,11 @@ if(!empty($_POST['submit'])){
 
                 </div>
             </div>
+
+<?php
+    if (isset($_SESSION['LogInStatus']) && $_SESSION['LogInStatus'] == true) {
+?>
+
             <div class="bildeKommentarText centerHorizontal" id="kommentar2">
                 <?php
 
@@ -130,6 +137,10 @@ if(!empty($_POST['submit'])){
                         <input type="submit" name="submit" value="Post" />
                     </form>
             </div>
+
+<?php
+    }
+?>
 
         </div>
         <!-- Boks for "velkommen" tekst og firmaets  slogan - slutt -->
