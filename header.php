@@ -53,7 +53,7 @@
                         echo "<a href='/something/adminpanel.php'>Admin</a>";
                     }
 
-                    echo "<a href='/something/minside.php'>Min Side</a>";
+                    echo "<a href='/something/minside.php'>Min side</a>";
                     echo "<a href='/something/index.php?loggUt=true'>Logg ut</a>";
 
                 } else {
