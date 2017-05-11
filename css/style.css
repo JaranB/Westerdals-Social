@@ -507,6 +507,8 @@ footer p {
 }
 
 /*Home kode - slutt*/
+
+/*Undersider - start*/
 #barer {
     background-image: url(http://localhost/something/bilder/Icons/bars.jpg);
 }
@@ -528,6 +530,7 @@ footer p {
 #butikker {
     background-image: url(http://localhost/something/bilder/Icons/Shopping.jpg);
 }
+
 .container {
     position: absolute;
     height: 570px;
@@ -543,6 +546,7 @@ footer p {
     margin: auto;
     margin-bottom: 130px;
 }
+
 #undersidor {
     display: flex;
     justify-content: center;
@@ -551,7 +555,6 @@ footer p {
     margin: auto;
     margin-top: 100px;
 }
-
 
 .titeltext {
     color: whitesmoke;
@@ -602,3 +605,4 @@ footer p {
     background-repeat: no-repeat;
     background-size: cover;
 }
+/*Undersider - slutt*/
