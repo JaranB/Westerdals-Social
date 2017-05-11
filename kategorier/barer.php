@@ -14,7 +14,7 @@ if(!isset($_SESSION)){
     <!-- Knapper til steder lastet inn fra databasen - start -->
 
     <body id="barerimg">
-        <div class="container">
+        <div class="container2">
             <div class="titelbox"><h1 class="titeltext">Barer</h1></div>
             <div id="undersidor">
 
