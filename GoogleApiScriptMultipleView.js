@@ -15,32 +15,27 @@ function initMap() {
 
 
     //forskjellige marker pins
-    //var GoogleBluePin = {url: 'http://gamesync.us/wp-content/uploads/2017/04/google-map-icon.png';
-    var iconBase = 'https://maps.google.com/mapfiles/kml/shapes/';
     var icons = {
         parking: {
-            icon: iconBase + 'parking_lot_maps.png'
-        },
-        info: {
-            icon: iconBase + 'info-i_maps.png'
+            icon: 'https://tek.westerdals.no/~bjojar16/bilder/MapIcons/Parking.png'
         },
         Wskoler: {
-            icon: 'http://gamesync.us/wp-content/uploads/2017/04/google-map-icon.png'
+            icon: 'https://tek.westerdals.no/~bjojar16/bilder/MapIcons/Education.png'
         },
         Lege: {
-            icon: 'http://www.whhs.com/images/design/icons/icon-urgentcare.png'
+            icon: 'https://tek.westerdals.no/~bjojar16/bilder/MapIcons/Health.png'
         },
         Butikker: {
-            icon: 'http://texascarpetbaggers.com/wp-content/uploads/2014/07/cart-icon.png'
+            icon: 'https://tek.westerdals.no/~bjojar16/bilder/MapIcons/Shopping.png'
         },
         Restauranter: {
-            icon: 'http://www.sushiwawa.com.au/wp-content/uploads/2014/05/2_restaurant_icon-40x40.png'
+            icon: 'https://tek.westerdals.no/~bjojar16/bilder/MapIcons/Restaurants.png'
         },
         Transport: {
-            icon: 'https://www.shareicon.net/data/128x128/2016/04/20/499049_info_40x40.png'
+            icon: 'https://tek.westerdals.no/~bjojar16/bilder/MapIcons/Transport.png'
         },
         Barer: {
-            icon: 'http://tiltedkilt.com/wp-content/themes/base/library/images/beer-icon.png'
+            icon: 'https://tek.westerdals.no/~bjojar16/bilder/MapIcons/Bars.png'
         }
 
     };
