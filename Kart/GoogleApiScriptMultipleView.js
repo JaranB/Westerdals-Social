@@ -31,36 +31,19 @@ function initMap() {
             icon: 'http://www.whhs.com/images/design/icons/icon-urgentcare.png'
         },
         Butikker: {
-            icon: iconBase + 'info-i_maps.png'
+            icon: iconBase + 'http://texascarpetbaggers.com/wp-content/uploads/2014/07/cart-icon.png'
         },
         Restauranter: {
-            icon: iconBase + 'info-i_maps.png'
+            icon: iconBase + 'http://www.sushiwawa.com.au/wp-content/uploads/2014/05/2_restaurant_icon-40x40.png'
         },
         Transport: {
-            icon: iconBase + 'info-i_maps.png'
+            icon: iconBase + 'https://www.shareicon.net/data/128x128/2016/04/20/499049_info_40x40.png'
         },
         Barer: {
-            icon: iconBase + 'info-i_maps.png'
+            icon: iconBase + 'http://tiltedkilt.com/wp-content/themes/base/library/images/beer-icon.png'
         }
 
     };
-    
-    //forskjellige marker pin slutt
-
-
-    var markerControl = document.getElementById('marker-selector-control');
-    map.controls[google.maps.ControlPosition.TOP_LEFT].push(markerControl);
-
-    // Setter kartets stil til den innledende verdien til velgeren.
-    var markerSelector = document.getElementById('marker-selector');
-    map.setOptions({features: styles[markerSelector.value]});
-    //Styles må vise til marker array
-
-    // Bruk ny JSON når brukeren velger en annen stil.
-    markerSelector.addEventListener('change', function() {
-        map.setOptions({features: styles[markerSelector.value]});
-
-    });
 
 
     //Marker Array
