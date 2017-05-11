@@ -1,16 +1,16 @@
 
 var map;
 function initMap() {
-    // Create the map with no initial style specified.
-    // It therefore has default styling.
+    // Opprett kartet uten innledende stil angitt.
+    // Det har derfor standard styling.
     map = new google.maps.Map(document.getElementById('map'), {
-        center: {lat: 59.919, lng: 10.758},
-        zoom: 14,
+        center: {lat: 59.916, lng: 10.759},
+        zoom: 16,
         mapTypeControl: false
     });
 
     //
-    //marker start
+    //Marker start
     //
 
 
@@ -31,36 +31,19 @@ function initMap() {
             icon: 'http://www.whhs.com/images/design/icons/icon-urgentcare.png'
         },
         Butikker: {
-            icon: iconBase + 'info-i_maps.png'
+            icon: 'http://texascarpetbaggers.com/wp-content/uploads/2014/07/cart-icon.png'
         },
         Restauranter: {
-            icon: iconBase + 'info-i_maps.png'
+            icon: 'http://www.sushiwawa.com.au/wp-content/uploads/2014/05/2_restaurant_icon-40x40.png'
         },
         Transport: {
-            icon: iconBase + 'info-i_maps.png'
+            icon: 'https://www.shareicon.net/data/128x128/2016/04/20/499049_info_40x40.png'
         },
         Barer: {
-            icon: iconBase + 'info-i_maps.png'
+            icon: 'http://tiltedkilt.com/wp-content/themes/base/library/images/beer-icon.png'
         }
 
     };
-
-    //forskjellige marker pin slutt
-
-
-    var markerControl = document.getElementById('marker-selector-control');
-    map.controls[google.maps.ControlPosition.TOP_LEFT].push(markerControl);
-
-    // Set the map's style to the initial value of the selector.
-    var markerSelector = document.getElementById('marker-selector');
-    map.setOptions({features: styles[markerSelector.value]});
-    //Styles må vise til marker array
-
-    // Apply new JSON when the user selects a different style.
-    markerSelector.addEventListener('change', function() {
-        map.setOptions({features: styles[markerSelector.value]});
-
-    });
 
 
     //Marker Array
@@ -97,16 +80,16 @@ function initMap() {
         }, 
         
         //Parkeringhus slutt
-        //campuser
+        //Campuser
         {
-            //fjerdingen
+            //Fjerdingen
             position: new google.maps.LatLng(59.9160764, 10.7597162),
             type: 'Wskoler',
             title: 'Fjerdingen',
             url: 'https://www.westerdals.no/artikkel/campus-fjerdingen/'
 
         }, {
-            //vulkan
+            //Vulkan
             position: new google.maps.LatLng(59.9232845, 10.752226),
             type: 'Wskoler',
             title: 'Vulkan',
@@ -117,12 +100,20 @@ function initMap() {
             type: 'Wskoler',
             title: 'Brenneriveien',
             url: 'https://www.westerdals.no/artikkel/campus-brenneriveien/'
+        },
+        //Campuser slutt
+        {
+            //Buss og trikke holdeplass
+            position: new google.maps.LatLng(59.916319, 10.757229),
+            type: 'Transport',
+            title: 'Hausmannsgate',
+            url: 'https://ruter.no/'
         }
 
-        //campuser slutt
+        
     ];
 
-    // Create markers.
+    // Lage markers.
     features.forEach(function(feature) 
 
                      {
@@ -152,20 +143,20 @@ function initMap() {
     //
 
 
-    // Add a style-selector control to the map.
+    // Legg til en stilvelgerkontroll på kartet.
     var styleControl = document.getElementById('style-selector-control');
     map.controls[google.maps.ControlPosition.TOP_RIGHT].push(styleControl);
 
-    // Set the map's style to the initial value of the selector.
+    // Sett kartets stil til den innledende verdien til velgeren
     var styleSelector = document.getElementById('style-selector');
     map.setOptions({styles: styles[styleSelector.value]});
 
-    // Apply new JSON when the user selects a different style.
+    // Bruk ny JSON når brukeren velger en annen stil.
     styleSelector.addEventListener('change', function() {
         map.setOptions({styles: styles[styleSelector.value]});
     });
 
-} //function init slutt
+} //Funksjon init slutt
 
 var styles = {
 
