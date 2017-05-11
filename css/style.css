@@ -213,6 +213,7 @@ footer {
     bottom: 0;
     height: 40px;
     text-align: center;
+    background-color: rgba(30, 37, 48, 0.7);
 }
 
 footer p {
@@ -426,7 +427,8 @@ footer p {
     border-bottom-style: solid;
     border-left,
     border-right,
-    border-bottom: 0px;
+    border-top: 0px;
+    padding-bottom: 25px;
     border-bottom-width: thick;
     border-color: darkgray;
 }
