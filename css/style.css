@@ -366,6 +366,11 @@ footer p {
     position: relative;
     width: 800px;
     height: 100%;
+    background-color: rgba(30, 37, 48, 0.85);
+    border-radius: 15px;
+    padding-top: 1px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 #kommentar2 {
@@ -381,7 +386,7 @@ footer p {
     margin-left: 20px;
 }
 
-.kommentarKommentar {
+.kommentarBorder {
     border-bottom-style: solid;
     border-left,
     border-right,
@@ -391,11 +396,11 @@ footer p {
     border-color: darkgray;
 }
 
-.kommentarKommentarAdmin {
+.kommentarAdmin {
     margin-bottom: 10px;
 }
 
-.kommentarKommentarFavoritt {
+.kommentarFavoritt {
     margin-bottom: 10px;
     max-height: 200px;
     overflow-y: auto;

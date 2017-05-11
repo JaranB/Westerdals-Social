@@ -92,7 +92,7 @@ if(!empty($_POST['submit'])){
     if (isset($_SESSION['LogInStatus']) && $_SESSION['LogInStatus'] == true) {
 ?>
 
-            <div class="bildeKommentarText centerHorizontal" id="kommentar2">
+            <div class="bildeKommentarText centerHorizontal">
                 <?php
 
 
@@ -124,7 +124,7 @@ if(!empty($_POST['submit'])){
                         <?php echo $brukernavn ?>
                     </p>
 
-                    <p class="kommentarKommentar">
+                    <p class="kommentarBorder">
                         <?php echo $kommentar; ?>
                     </p>
                         <?php } ?>

@@ -52,7 +52,7 @@ if(isset($_SESSION['admin']) && $_SESSION['admin'] == true) {
                         </h2>
 
                         <p>
-                            <p class="kommentarKommentar kommentarKommentarAdmin">
+                            <p class="kommentarBorder kommentarAdmin">
                                 <?php echo $post;
 
                 ?>

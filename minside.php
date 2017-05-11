@@ -130,7 +130,7 @@ if(isset($_POST['endreBruker'])) {
                             <h2>
                                 <?php echo $tittel; ?>
                             </h2>
-                            <p class="kommentarKommentar kommentarKommentarFavoritt">
+                            <p class="kommentarFavoritt">
                                 <?php echo $post; ?>
                                 <br>
                             </p>
@@ -170,7 +170,7 @@ if(isset($_POST['endreBruker'])) {
                             <p>
                                 <?php echo $tittel ?> </p>
 
-                            <p class="kommentarKommentar">
+                            <p class="kommentarBorder">
                                 <?php echo $kommentar; ?>
                                 <br>
                             </p>
