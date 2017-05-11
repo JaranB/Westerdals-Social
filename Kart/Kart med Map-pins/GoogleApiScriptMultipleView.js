@@ -44,6 +44,14 @@ function initMap() {
         }
 
     };
+    
+    function setVisible(){
+        
+        setVisible(false);
+        if(setVisible==false){
+            setVisible(true);
+        }
+    }
 
     //forskjellige marker pin slutt
 
