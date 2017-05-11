@@ -1,8 +1,8 @@
 
 var map;
 function initMap() {
-    // Create the map with no initial style specified.
-    // It therefore has default styling.
+    // Opprett kartet uten innledende stil angitt.
+    // Det har derfor standard styling.
     map = new google.maps.Map(document.getElementById('map'), {
         center: {lat: 59.919, lng: 10.758},
         zoom: 14,
@@ -10,7 +10,7 @@ function initMap() {
     });
 
     //
-    //marker start
+    //Marker start
     //
 
 
@@ -51,12 +51,12 @@ function initMap() {
     var markerControl = document.getElementById('marker-selector-control');
     map.controls[google.maps.ControlPosition.TOP_LEFT].push(markerControl);
 
-    // Set the map's style to the initial value of the selector.
+    // Setter kartets stil til den innledende verdien til velgeren.
     var markerSelector = document.getElementById('marker-selector');
     map.setOptions({features: styles[markerSelector.value]});
     //Styles må vise til marker array
 
-    // Apply new JSON when the user selects a different style.
+    // Bruk ny JSON når brukeren velger en annen stil.
     markerSelector.addEventListener('change', function() {
         map.setOptions({features: styles[markerSelector.value]});
 
@@ -97,16 +97,16 @@ function initMap() {
         }, 
         
         //Parkeringhus slutt
-        //campuser
+        //Campuser
         {
-            //fjerdingen
+            //Fjerdingen
             position: new google.maps.LatLng(59.9160764, 10.7597162),
             type: 'Wskoler',
             title: 'Fjerdingen',
             url: 'https://www.westerdals.no/artikkel/campus-fjerdingen/'
 
         }, {
-            //vulkan
+            //Vulkan
             position: new google.maps.LatLng(59.9232845, 10.752226),
             type: 'Wskoler',
             title: 'Vulkan',
@@ -119,10 +119,10 @@ function initMap() {
             url: 'https://www.westerdals.no/artikkel/campus-brenneriveien/'
         }
 
-        //campuser slutt
+        //Campuser slutt
     ];
 
-    // Create markers.
+    // Lage markers.
     features.forEach(function(feature) 
 
                      {
@@ -152,20 +152,20 @@ function initMap() {
     //
 
 
-    // Add a style-selector control to the map.
+    // Legg til en stilvelgerkontroll på kartet.
     var styleControl = document.getElementById('style-selector-control');
     map.controls[google.maps.ControlPosition.TOP_RIGHT].push(styleControl);
 
-    // Set the map's style to the initial value of the selector.
+    // Sett kartets stil til den innledende verdien til velgeren
     var styleSelector = document.getElementById('style-selector');
     map.setOptions({styles: styles[styleSelector.value]});
 
-    // Apply new JSON when the user selects a different style.
+    // Bruk ny JSON når brukeren velger en annen stil.
     styleSelector.addEventListener('change', function() {
         map.setOptions({styles: styles[styleSelector.value]});
     });
 
-} //function init slutt
+} //Funksjon init slutt
 
 var styles = {
 
