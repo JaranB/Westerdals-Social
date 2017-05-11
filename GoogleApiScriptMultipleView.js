@@ -59,7 +59,7 @@ function initMap() {
             type: 'Lege',
             title: 'Sentrum Tannlegevakt',
             url: 'http://www.sentrumtannlegevakt.no/'
-        }, 
+        },
 
         //Parkeringshus
         {
@@ -77,7 +77,7 @@ function initMap() {
             type: 'parking',
             title: 'Christian Krohgskvartalet P-hus',
             url: 'http://www.q-park.no/no/parker-hos-q-park-/finn-parkering/parkering-per-by-sted/oslo/chr-kroghs-gate-35/37'
-        }, 
+        },
 
         //Parkeringhus slutt
         //Campuser
@@ -141,7 +141,7 @@ function initMap() {
             url: 'http://delicatessen.no'
         },
 
-        
+
 
 
 
@@ -149,7 +149,7 @@ function initMap() {
     ];
 
     // Lage markers.
-    features.forEach(function(feature) 
+    features.forEach(function(feature)
 
                      {
         var marker = new google.maps.Marker({
@@ -846,5 +846,5 @@ var styles = {
                 }
             ]
         }
-    ] 
+    ]
 };
