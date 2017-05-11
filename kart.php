@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Map Multiple view</title>
-        <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
-        <meta charset="utf-8">
-        <link href="MapMultipleViewStyle.css" rel="stylesheet" type="text/css">
-    </head>
-    <body>
-        <!--Kart stil velger-->
+
+<?php include 'header.php'; ?>
+
+<body>
+
+
+    <!-- Boks for hexagon menyen - start -->
+    <div class="container">
         <div id="style-selector-control"  class="map-control">
             <select id="style-selector" class="selector-control">
                 <option value="silver" selected="selected">WesterDals dag</option>
@@ -16,13 +16,18 @@
             </select>
         </div>
         <!--Kart stil velger slutt-->
-        
+
         <div id="map"></div>
         <!--Henter Kartet-->
         <script src="GoogleApiScriptMultipleView.js"></script>
         <!--API nøkkel-->
         <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDoL_r7jaY2J3PcX6pQzUZ_s_CS6VrInZE&callback=initMap">
         </script>
+    </div>
+    <!-- Boks for hexagon menyen - slutt -->
 
-    </body>
+    <?php include 'footer.php';?>
+
+</body>
+
 </html>
