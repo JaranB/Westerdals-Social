@@ -15,7 +15,7 @@ if(!isset($_SESSION)){
 
     <body id="studierimg">
         <div class="container">
-            <div class="titelbox"><h1 id="undersideTittel">Studier</h1></div>
+            <div class="titelbox"><h1 class="titeltext">Studier</h1></div>
                 <div id="undersidor">
 
                 <?php

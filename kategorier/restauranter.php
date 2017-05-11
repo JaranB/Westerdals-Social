@@ -15,7 +15,7 @@ if(!isset($_SESSION)){
 
     <body id="restaurantimg">
         <div class="container">
-            <div class="titelbox"><h1 id="undersideTittel">Restauranter</h1></div>
+            <div class="titelbox"><h1 class="titeltext">Restauranter</h1></div>
                 <div id="undersidor">
 
                 <?php

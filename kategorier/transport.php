@@ -15,7 +15,7 @@ if(!isset($_SESSION)){
 
     <body id="transportimg">
         <div class="container">
-            <div class="titelbox"><h1 id="undersideTittel">Transport</h1></div>
+            <div class="titelbox"><h1 class="titeltext">Transport</h1></div>
                 <div id="undersidor">
 
                 <?php
