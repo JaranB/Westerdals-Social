@@ -4,7 +4,7 @@ function initMap() {
     // Opprett kartet uten innledende stil angitt.
     // Det har derfor standard styling.
     map = new google.maps.Map(document.getElementById('map'), {
-        center: {lat: 59.916, lng: 10.759},
+        center: {lat: 59.917, lng: 10.759},
         zoom: 16,
         mapTypeControl: false
     });
@@ -73,12 +73,12 @@ function initMap() {
             title: 'Q-park Urtehagen',
             url: 'http://www.q-park.no'
         }, {
-            position: new google.maps.LatLng(59.916003, 10.759428),
+            position: new google.maps.LatLng(59.915900, 10.759350),
             type: 'parking',
             title: 'Christian Krohgskvartalet P-hus',
             url: 'http://www.q-park.no/no/parker-hos-q-park-/finn-parkering/parkering-per-by-sted/oslo/chr-kroghs-gate-35/37'
         }, 
-        
+
         //Parkeringhus slutt
         //Campuser
         {
@@ -108,9 +108,44 @@ function initMap() {
             type: 'Transport',
             title: 'Hausmannsgate',
             url: 'https://ruter.no/'
-        }
+        },{
+            //barer
+            position: new google.maps.LatLng(59.916003, 10.760409),
+            type: 'Barer',
+            title: 'Skjenkestua Studentbar',
+            url: 'https://www.facebook.com/SkjenkestuaStudentbar/'
+        },{
+            position: new google.maps.LatLng(59.918359, 10.759566),
+            type: 'Barer',
+            title: 'Bettola',
+            url: 'https://m.facebook.com/bettolacocktailbar/'
+        },{
+            position: new google.maps.LatLng(59.918362, 10.760306),
+            type: 'Barer',
+            title: 'Schouskjelleren Mikrobryggeri',
+            url: 'http://schouskjelleren.no/'
+        },{
+            position: new google.maps.LatLng(59.915700, 10.760154),
+            type: 'Restauranter',
+            title: 'Rokkekokker',
+            url: 'www.rokkekokker.no'
+        },{
+            position: new google.maps.LatLng(59.918129, 10.760591),
+            type: 'Restauranter',
+            title: 'Sudöst',
+            url: 'http://sudost.no/no/'
+        },{
+            position: new google.maps.LatLng(59.918732, 10.758259),
+            type: 'Restauranter',
+            title: 'Delicatessen',
+            url: 'http://delicatessen.no'
+        },
 
         
+
+
+
+
     ];
 
     // Lage markers.
