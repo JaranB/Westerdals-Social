@@ -3,10 +3,10 @@
     * element that contains the map. */
 
     #map {
-        height: 50%;
-        width: 50%;
-        top: 25%;
-        left: 25%;
+        height: 75%;
+        width: 75%;
+        top: 12%;
+        left: 12%;
         border: 1px solid black;
       }
 

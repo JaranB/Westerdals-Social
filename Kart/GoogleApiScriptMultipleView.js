@@ -73,7 +73,7 @@ function initMap() {
             title: 'Q-park Urtehagen',
             url: 'http://www.q-park.no'
         }, {
-            position: new google.maps.LatLng(59.915900, 10.759350),
+            position: new google.maps.LatLng(59.915900, 10.759330),
             type: 'parking',
             title: 'Christian Krohgskvartalet P-hus',
             url: 'http://www.q-park.no/no/parker-hos-q-park-/finn-parkering/parkering-per-by-sted/oslo/chr-kroghs-gate-35/37'
