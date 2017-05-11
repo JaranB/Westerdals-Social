@@ -172,6 +172,7 @@ footer {
     bottom: 0;
     height: 40px;
     text-align: center;
+    background-color: rgba(30, 37, 48, 0.7);
 }
 
 footer p {
