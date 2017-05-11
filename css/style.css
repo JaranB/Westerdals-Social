@@ -608,10 +608,8 @@ footer p {
 
     #map {
         margin: auto;
-        top: 0;
-        bottom: 0;
         position: absolute;
-        height: 128%;
+        height: 120%;
         width: 100%;
         border: 1px solid black;
       }
