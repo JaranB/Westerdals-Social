@@ -7,6 +7,7 @@
         <link href="MapMultipleViewStyle.css" rel="stylesheet" type="text/css">
     </head>
     <body>
+        <!--Kart stil velger-->
         <div id="style-selector-control"  class="map-control">
             <select id="style-selector" class="selector-control">
                 <option value="silver" selected="selected">WesterDals dag</option>
@@ -14,6 +15,9 @@
                 <option value="retro">Retro</option>
             </select>
         </div>
+        <!--Kart stil velger slutt-->
+        
+        <!--Markør velger på kartet-->
         <div id="marker-selector-control"  class="map-control">
             <select id="marker-selector" class="selector-control">
                 <option value="Wskoler" selected="selected">Campuser</option>
@@ -25,10 +29,12 @@
                 <option value="Lege">Apotek-Legevakt</option>
             </select>
         </div>
+        <!--Markør velger slutt-->
+        
         <div id="map"></div>
-
+        <!--Henter Kartet-->
         <script src="GoogleApiScriptMultipleView.js"></script>
-
+        <!--API nøkkel-->
         <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDoL_r7jaY2J3PcX6pQzUZ_s_CS6VrInZE&callback=initMap">
         </script>
 
