@@ -25,7 +25,7 @@
                         <a href="/something/kategorier/butikker.php">Butikker</a>
                     </div>
             </div>
-            <a href="/something/kart.php">Kart</a>
+            <a href="/something/Kart/Kart%20med%20Map-pins/flereView.html">Kart</a>
             <?php
 
 

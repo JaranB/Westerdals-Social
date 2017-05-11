@@ -4,8 +4,8 @@ function initMap() {
     // Opprett kartet uten innledende stil angitt.
     // Det har derfor standard styling.
     map = new google.maps.Map(document.getElementById('map'), {
-        center: {lat: 59.919, lng: 10.758},
-        zoom: 14,
+        center: {lat: 59.916, lng: 10.759},
+        zoom: 16,
         mapTypeControl: false
     });
 
@@ -31,16 +31,16 @@ function initMap() {
             icon: 'http://www.whhs.com/images/design/icons/icon-urgentcare.png'
         },
         Butikker: {
-            icon: iconBase + 'http://texascarpetbaggers.com/wp-content/uploads/2014/07/cart-icon.png'
+            icon: 'http://texascarpetbaggers.com/wp-content/uploads/2014/07/cart-icon.png'
         },
         Restauranter: {
-            icon: iconBase + 'http://www.sushiwawa.com.au/wp-content/uploads/2014/05/2_restaurant_icon-40x40.png'
+            icon: 'http://www.sushiwawa.com.au/wp-content/uploads/2014/05/2_restaurant_icon-40x40.png'
         },
         Transport: {
-            icon: iconBase + 'https://www.shareicon.net/data/128x128/2016/04/20/499049_info_40x40.png'
+            icon: 'https://www.shareicon.net/data/128x128/2016/04/20/499049_info_40x40.png'
         },
         Barer: {
-            icon: iconBase + 'http://tiltedkilt.com/wp-content/themes/base/library/images/beer-icon.png'
+            icon: 'http://tiltedkilt.com/wp-content/themes/base/library/images/beer-icon.png'
         }
 
     };
@@ -100,9 +100,17 @@ function initMap() {
             type: 'Wskoler',
             title: 'Brenneriveien',
             url: 'https://www.westerdals.no/artikkel/campus-brenneriveien/'
+        },
+        //Campuser slutt
+        {
+            //Buss og trikke holdeplass
+            position: new google.maps.LatLng(59.916319, 10.757229),
+            type: 'Transport',
+            title: 'Hausmannsgate',
+            url: 'https://ruter.no/'
         }
 
-        //Campuser slutt
+        
     ];
 
     // Lage markers.

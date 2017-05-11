@@ -386,7 +386,8 @@ footer p {
     border-bottom-style: solid;
     border-left,
     border-right,
-    border-bottom: 0px;
+    border-top: 0px;
+    padding-bottom: 25px;
     border-bottom-width: thick;
     border-color: darkgray;
 }
