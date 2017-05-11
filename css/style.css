@@ -69,6 +69,47 @@ header {
     color: rgba(30, 37, 48, 1);
 }
 
+.categoryMenu {
+    display: none;
+    position: absolute;
+    min-width: 120px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+    overflow: hidden;
+    text-align: left;
+}
+.dropdownMenuSuper {
+    position: relative;
+    display: inline-block;
+}
+.dropdownMenuSuper:hover .categoryMenu {
+    display: block;
+}
+.categoryMenu a {
+    background-color: black;
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: inline-block;
+    float: left;
+    width: 120px;
+}
+.categoryMenu a:hover {
+    background-color: white;
+    color: black;
+    text-decoration: underline;
+    font-weight: bold;
+    border-radius: -10%;
+}
+.categoryBtn {
+    color: whitesmoke;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0);
+}
+
 #infobarcontent {
     position: absolute;
     height: 30px;
@@ -172,6 +213,7 @@ footer {
     bottom: 0;
     height: 40px;
     text-align: center;
+    background-color: rgba(30, 37, 48, 0.7);
 }
 
 footer p {
@@ -495,9 +537,7 @@ footer p {
     bottom: 0;
     right: 0;
 }
-.sted2 {}
-.sted3 {}
-.sted4 {}
+
 .titelundersider {
     display: block;
     margin: auto;
@@ -511,49 +551,10 @@ footer p {
     margin: auto;
     margin-top: 100px;
 }
-.categoryMenu {
-    display: none;
-    position: absolute;
-    min-width: 120px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 2;
-    overflow: hidden;
-    text-align: left;
-}
-.dropdownMenuSuper {
-    position: relative;
-    display: inline-block;
-}
-.dropdownMenuSuper:hover .categoryMenu {
-    display: block;
-}
-.categoryMenu a {
-    background-color: black;
-    color: white;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: inline-block;
-    float: left;
-    width: 120px;
-}
-.categoryMenu a:hover {
-    background-color: white;
-    color: black;
-    text-decoration: underline;
-    font-weight: bold;
-    border-radius: -10%;
-}
-.categoryBtn {
+
+
+.titeltext {
     color: whitesmoke;
-    padding: 10px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-    background-color: rgba(0, 0, 0, 0);
-}
-#undersideTittel {
-    color: whitesmoke;
-    font-family: sans-serif;
     font-style: "Seagoe UI";
     text-align: center;
     font-size: 4em;

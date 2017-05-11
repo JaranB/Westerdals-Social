@@ -15,7 +15,7 @@ if(!isset($_SESSION)){
 
     <body id="parkeringimg">
         <div class="container">
-            <div class="titelbox"><h1 id="undersideTittel">Parkering</h1></div>
+            <div class="titelbox"><h1 class="titeltext">Parkering</h1></div>
                 <div id="undersidor">
 
                 <?php

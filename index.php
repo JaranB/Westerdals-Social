@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html>
 
-<?php include 'header.php';
-        include 'SQLQuerys.php'?>
+<?php include 'header.php'; ?>
 
 <body>
 
