@@ -162,7 +162,7 @@ html {
 
 body {
     position: relative;
-    background-image: url(http://localhost/something/bilder/Westerdalsimg.jpg);
+    background-image: url(https://tek.westerdals.no/~bjojar16/WesterdalsSocial/bilder/Westerdalsimg.jpg);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -524,25 +524,25 @@ footer p {
 
 /*Undersider - start*/
 #barer {
-    background-image: url(http://localhost/something/bilder/Icons/bars.jpg);
+    background-image: url(https://tek.westerdals.no/~bjojar16/WesterdalsSocial/bilder/Icons/Bars.jpg);
 }
 #restauranter {
-    background-image: url(http://localhost/something/bilder/Icons/restaurants.jpg);
+    background-image: url(https://tek.westerdals.no/~bjojar16/WesterdalsSocial/bilder/Icons/Restaurants.jpg);
 }
 #studie {
-    background-image: url(http://localhost/something/bilder/Icons/education.jpg);
+    background-image: url(https://tek.westerdals.no/~bjojar16/WesterdalsSocial/bilder/Icons/Education.jpg);
 }
 #helse {
-    background-image: url(http://localhost/something/bilder/Icons/health.jpg);
+    background-image: url(https://tek.westerdals.no/~bjojar16/WesterdalsSocial/bilder/Icons/Health.jpg);
 }
 #transport {
-    background-image: url(http://localhost/something/bilder/Icons/transport.jpg);
+    background-image: url(https://tek.westerdals.no/~bjojar16/WesterdalsSocial/bilder/Icons/Transport.jpg);
 }
 #parkering {
-    background-image: url(http://localhost/something/bilder/Icons/parking.jpg);
+    background-image: url(https://tek.westerdals.no/~bjojar16/WesterdalsSocial/bilder/Icons/Parking.jpg);
 }
 #butikker {
-    background-image: url(http://localhost/something/bilder/Icons/Shopping.jpg);
+    background-image: url(https://tek.westerdals.no/~bjojar16/WesterdalsSocial/bilder/Icons/Shopping.jpg);
 }
 
 .container2 {
@@ -585,37 +585,37 @@ footer p {
     margin: auto;
 }
 #restaurantimg {
-    background-image: url(http://localhost/something/bilder/kategoribilder/restauranterbackground.jpg);
+    background-image: url(https://tek.westerdals.no/~bjojar16/WesterdalsSocial/bilder/kategoribilder/restauranterbackground.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 #studierimg {
-    background-image: url(http://localhost/something/bilder/kategoribilder/studier.jpg);
+    background-image: url(https://tek.westerdals.no/~bjojar16/WesterdalsSocial/bilder/kategoribilder/studier.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 #barerimg {
-    background-image: url(http://localhost/something/bilder/kategoribilder/barer.jpg);
+    background-image: url(https://tek.westerdals.no/~bjojar16/WesterdalsSocial/bilder/kategoribilder/barer.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 #parkeringimg {
-    background-image: url(http://localhost/something/bilder/kategoribilder/parkering.JPG);
+    background-image: url(https://tek.westerdals.no/~bjojar16/WesterdalsSocial/bilder/kategoribilder/parkering.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 #butikkerimg {
-    background-image: url(http://localhost/something/bilder/kategoribilder/butikker.JPG);
+    background-image: url(https://tek.westerdals.no/~bjojar16/WesterdalsSocial/bilder/kategoribilder/butikker.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 #helseimg {
-    background-image: url(http://localhost/something/bilder/kategoribilder/helse.JPG);
+    background-image: url(https://tek.westerdals.no/~bjojar16/WesterdalsSocial/bilder/kategoribilder/helse.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 #transportimg {
-    background-image: url(http://localhost/something/bilder/kategoribilder/transport.JPG);
+    background-image: url(https://tek.westerdals.no/~bjojar16/WesterdalsSocial/bilder/kategoribilder/transport.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
