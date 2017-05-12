@@ -8,7 +8,7 @@
 
     <!-- Boks for hexagon menyen - start -->
     <div class="wrapper">
-    <div class="container">
+    <div class="container3">
         <div class="hexbox">
             <div class="even">
 
