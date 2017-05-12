@@ -17,25 +17,25 @@ function initMap() {
     //forskjellige marker pins
     var icons = {
         parking: {
-            icon: 'https://tek.westerdals.no/~bjojar16/bilder/MapIcons/Parking.png'
+            icon: 'https://tek.westerdals.no/~bjojar16/WesterdalsSocial/bilder/MapIcons/Parking.png'
         },
         Wskoler: {
-            icon: 'https://tek.westerdals.no/~bjojar16/bilder/MapIcons/Education.png'
+            icon: 'https://tek.westerdals.no/~bjojar16/WesterdalsSocial/bilder/MapIcons/Education.png'
         },
         Lege: {
-            icon: 'https://tek.westerdals.no/~bjojar16/bilder/MapIcons/Health.png'
+            icon: 'https://tek.westerdals.no/~bjojar16/WesterdalsSocial/bilder/MapIcons/Health.png'
         },
         Butikker: {
-            icon: 'https://tek.westerdals.no/~bjojar16/bilder/MapIcons/Shopping.png'
+            icon: 'https://tek.westerdals.no/~bjojar16/WesterdalsSocial/bilder/MapIcons/Shopping.png'
         },
         Restauranter: {
-            icon: 'https://tek.westerdals.no/~bjojar16/bilder/MapIcons/Restaurants.png'
+            icon: 'https://tek.westerdals.no/~bjojar16/WesterdalsSocial/bilder/MapIcons/Restaurants.png'
         },
         Transport: {
-            icon: 'https://tek.westerdals.no/~bjojar16/bilder/MapIcons/Transport.png'
+            icon: 'https://tek.westerdals.no/~bjojar16/WesterdalsSocial/bilder/MapIcons/Transport.png'
         },
         Barer: {
-            icon: 'https://tek.westerdals.no/~bjojar16/bilder/MapIcons/Bars.png'
+            icon: 'https://tek.westerdals.no/~bjojar16/WesterdalsSocial/bilder/MapIcons/Bars.png'
         }
 
     };
@@ -175,7 +175,7 @@ function initMap() {
 
     // Legg til en stilvelgerkontroll på kartet.
     var styleControl = document.getElementById('style-selector-control');
-    map.controls[google.maps.ControlPosition.TOP_RIGHT].push(styleControl);
+    map.controls[google.maps.ControlPosition.LEFT_CENTER].push(styleControl);
 
     // Sett kartets stil til den innledende verdien til velgeren
     var styleSelector = document.getElementById('style-selector');

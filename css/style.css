@@ -35,7 +35,7 @@ p {
 header {
     background-color: rgba(30, 37, 48, 1);
     height: 110px;
-    z-index: 1;
+    z-index: 10;
 }
 
 #logo {
@@ -621,10 +621,15 @@ footer p {
 
 /*kart side kart style er i JS - start*/
 
+.kartContainer {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
     #map {
-        margin: auto;
-        position: absolute;
-        height: 120%;
+        height: 100%;
         width: 100%;
         border: 1px solid black;
       }
