@@ -33,7 +33,6 @@ p {
 /*Header, navigator og inforbar - start*/
 
 header {
-    position: relative;
     background-color: rgba(30, 37, 48, 1);
     height: 110px;
     z-index: 1;
@@ -207,21 +206,18 @@ body {
 }
 
 footer {
-    position: fixed;
-    left: 0;
-    right: 0;
-    bottom: 0;
+    line-height: 20px;
     height: 40px;
     text-align: center;
     background-color: rgba(30, 37, 48, 0.7);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
 footer p {
-    line-height: 20px;
     margin-top: 10px;
 }
-
-
 /*Pusher og footer - slutt*/
 
 
@@ -346,6 +342,7 @@ footer p {
     left: 0;
     bottom: 0;
     right: 0;
+    margin-bottom: 100px;
 }
 
 .even {
@@ -532,9 +529,9 @@ footer p {
 }
 
 .container2 {
-    position: absolute;
     height: 570px;
     margin: auto;
+    margin-top: 100px;
     top: 0;
     left: 0;
     bottom: 0;
@@ -563,12 +560,14 @@ footer p {
     font-size: 4em;
     box-shadow: 0px 0px 37px 2px rgba(0, 0, 0, 0.82);
     margin: auto;
-}
-.titelbox {
     background: black;
     opacity: 0.7;
-    max-width: 35%;
     margin: auto;
+    width: 50%;
+    margin: auto;
+    word-wrap: break-word;
+}
+
 }
 #restaurantimg {
     background-image: url(http://localhost/something/bilder/kategoribilder/restauranterbackground.jpg);
