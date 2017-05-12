@@ -156,6 +156,7 @@ header {
 /*html, body (alt innenfor body) - start*/
 
 html {
+    min-height: 100%;
     height: 100%;
 }
 
@@ -176,12 +177,9 @@ body {
 
 .container {
     z-index: 0;
-    width: 90%;
-    height: auto;
-    margin-top: 5%;
-    margin-bottom: 5%;
-    margin-left: 5%;
-    border-radius: 2%;
+    min-width: 90%;
+    padding-top: 3%;
+    padding-bottom: 3%;
     position: relative;
 }
 
@@ -205,18 +203,29 @@ body {
     height: 70px;
 }
 
-footer {
-    line-height: 20px;
-    height: 40px;
-    text-align: center;
-    background-color: rgba(30, 37, 48, 0.7);
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+.wrapper {
+    min-height: 100%;
 }
 
-footer p {
-    margin-top: 10px;
+footer html {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+footer body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+footer {
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    background-color: rgba(30, 37, 48, 0.7);
+    bottom: 0;
 }
 /*Pusher og footer - slutt*/
 
@@ -346,7 +355,7 @@ footer p {
 /* Hovedside - start*/
 
 .hexbox {
-    position: absolute;
+    position: relative;
     width: 520px;
     height: 552px;
     margin: auto;
