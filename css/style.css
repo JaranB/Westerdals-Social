@@ -670,3 +670,10 @@ footer {
 #style-selector-control {
     margin-top: 40px;
 }
+
+.wrapperUndersidor {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+}
