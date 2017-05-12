@@ -7,6 +7,7 @@
 
 
     <!-- Boks for hexagon menyen - start -->
+    <div class="wrapper">
     <div class="container">
         <div class="hexbox">
             <div class="even">
@@ -89,6 +90,7 @@
     <!-- Boks for hexagon menyen - slutt -->
 
     <?php include 'footer.php';?>
+    </div>
 
 </body>
 
