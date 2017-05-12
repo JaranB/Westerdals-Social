@@ -175,7 +175,7 @@ function initMap() {
 
     // Legg til en stilvelgerkontroll på kartet.
     var styleControl = document.getElementById('style-selector-control');
-    map.controls[google.maps.ControlPosition.LEFT_CENTER].push(styleControl);
+    map.controls[google.maps.ControlPosition.TOP_RIGHT].push(styleControl);
 
     // Sett kartets stil til den innledende verdien til velgeren
     var styleSelector = document.getElementById('style-selector');
