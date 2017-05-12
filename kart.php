@@ -7,6 +7,7 @@
 
 
     <!-- Boks for hexagon menyen - start -->
+    <div class="wrapper">
     <div class="kartContainer">
             <div id="style-selector-control"  class="map-control">
                 <select id="style-selector" class="selector-control">
@@ -27,6 +28,7 @@
     <!-- Boks for hexagon menyen - slutt -->
 
     <?php include 'footer.php';?>
+        </div>
 
 </body>
 
