@@ -38,8 +38,8 @@ if(!isset($_SESSION)){
                     <a href="/something/post.php?postid=<?php echo $postid; ?>">
                         <div class="hexagon hexagonUnderside" id="undersideHex">
                             <div class="hexagon-inni">
-                                <div class="hexagonimg" style="background:url(<?php echo $bildeURL; ?>)">
-
+                                <div class="hexagonimg" style="background:url(<?php echo $bildeURL; ?>)center center;background-size: 100% 100%;">
+                                    <p><?php echo $tittel; ?></p>
                                 </div>
                             </div>
                         </div>
