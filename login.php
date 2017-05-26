@@ -65,7 +65,9 @@ if(isset($_POST) & !empty($_POST)){
                 <?php } ?>
                 <form class="forms centerHorizontal" method="POST">
                     <input type="text" name="brukernavn" placeholder="Brukernavn" required>
+                    <br>
                     <input type="password" name="passord" placeholder="Passord" required>
+                    <br>
                     <button name="" type="submit">Login</button>
                     <a class="" href="register.php">Register</a>
                 </form>
