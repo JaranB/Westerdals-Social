@@ -3,7 +3,6 @@
 
 	if (isset($_GET['kommentarid']) )
 	{
-            $postid = $_GET['postid'];
             $id = $_GET['kommentarid'];
             $sql= "DELETE FROM kommentarer WHERE kommentarid='$id'";
             $res= mysqli_query($connection, $sql) or die("Failed".mysqli_error());
