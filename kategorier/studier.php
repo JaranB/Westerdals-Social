@@ -15,10 +15,13 @@ if(!isset($_SESSION)){
 
     <body id="studierimg">
         <div class="container2">
-            <div class="titelbox"><h1 class="titeltext">Studier</h1></div>
+            <div class="titelbox">
+                <h1 class="titeltext">Studier</h1>
+            </div>
+            <div class="wrapperUndersidor">
                 <div id="undersidor">
 
-                <?php
+                    <?php
 
                     $postsystem = "SELECT DISTINCT postid, tittel, kategori, bildeURL, post FROM steder WHERE kategori=7 ORDER BY postid DESC";
                     $postsystemquery = mysqli_query($connection, $postsystem);
@@ -35,16 +38,19 @@ if(!isset($_SESSION)){
 
                         ?>
 
-                    <a href="/something/post.php?postid=<?php echo $postid; ?>">
-                        <div class="hexagon hexagonUnderside" id="undersideHex">
-                            <div class="hexagon-inni">
-                                <div class="hexagonimg" style="background:url(<?php echo $bildeURL; ?>)">
-
+                        <a href="/something/post.php?postid=<?php echo $postid; ?>">
+                            <div class="hexagon hexagonUnderside" id="undersideHex">
+                                <div class="hexagon-inni">
+                                    <div class="hexagonimg" style="background:url(<?php echo $bildeURL; ?>)center center;background-size: 100% 100%;">
+                                        <p>
+                                            <?php echo $tittel; ?>
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </a>
-                    <?php   }   ?>
+                        </a>
+                        <?php   }   ?>
+                </div>
             </div>
         </div>
 
