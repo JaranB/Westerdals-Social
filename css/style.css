@@ -146,14 +146,14 @@ header {
 }
 
 #avatarBildeHeader {
-    width: 100px;
-    height: 100px;
     bottom: 35px;
     position: relative;
     opacity: 0.5;
     float: left;
     left: 10px;
+    display: flex;
 }
+
 
 
 /*Header, navigator og inforbar - slutt*/
