@@ -38,7 +38,7 @@ if(isset($_POST['endreBruker'])) {
                 $byttEPost = "UPDATE brukere SET epost='$nyEPost' WHERE brukernavn ='$brukernavn'";
                 $result = mysqli_query($connection, $byttEPost);
                 $_SESSION['epost'] = $nyEPost;
-                $smsg = "EPost endret!";
+                $smsg = "E-Post endret!";
             }
 
             if(!empty($_POST['settAvatar'])){
@@ -73,7 +73,7 @@ if(isset($_POST['endreBruker'])) {
                 <?php echo $fmsg; ?> </div>
             <?php } ?>
 
-            <div class="containerTrePanel center">
+            <div class="trippelPanel center">
                 <div class="item">
                     <form class="panel" method="POST">
                         <h2>Dine instillinger: </h2>
@@ -81,7 +81,7 @@ if(isset($_POST['endreBruker'])) {
                         <a>Ditt brukernavn: </a>
                         <?php echo $_SESSION['brukernavn']; ?>
                         <br>
-                        <a>Din EPost: </a>
+                        <a>Din E-Post: </a>
                         <?php echo $_SESSION['epost']; ?>
                         <br>
                         <a>Ditt Avatar: </a>
@@ -94,9 +94,9 @@ if(isset($_POST['endreBruker'])) {
                         <br>
                         <input type="password" name="passordEndre" class="" placeholder="Nytt passord">
                         <br>
-                        <a>Bytt EPost:</a>
+                        <a>Bytt E-Post:</a>
                         <br>
-                        <input type="text" name="epostEndre" class="" placeholder="Ny EPost">
+                        <input type="text" name="epostEndre" class="" placeholder="Ny E-Post">
                         <br>
                         <a>Avatar URL:</a>
                         <br>

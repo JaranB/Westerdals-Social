@@ -8,13 +8,13 @@
 
     <!-- Boks for hexagon menyen - start -->
     <div class="wrapper">
-        <div class="hexbox">
-            <div class="even">
+        <div class="hexBoks">
+            <div class="lik">
 
                 <a href="../something/kategorier/barer.php">
                     <div class="hexagon hexagonHovedside">
-                        <div class="hexagon-inni">
-                            <div class="hexagonimg" id="barer">
+                        <div class="hexagonInni">
+                            <div class="hexagonBilde" id="barer">
 
                             </div>
                         </div>
@@ -24,19 +24,19 @@
 
                 <a href="../something/kategorier/transport.php">
                     <div class="hexagon hexagonHovedside">
-                        <div class="hexagon-inni">
-                            <div class="hexagonimg" id="transport">
+                        <div class="hexagonInni">
+                            <div class="hexagonBilde" id="transport">
                             </div>
                         </div>
                     </div>
                 </a>
             </div>
 
-            <div class="odd">
+            <div class="ulik">
                 <a href="../something/kategorier/restauranter.php">
                     <div class="hexagon hexagonHovedside">
-                        <div class="hexagon-inni">
-                            <div class="hexagonimg" id="restauranter">
+                        <div class="hexagonInni">
+                            <div class="hexagonBilde" id="restauranter">
 
                             </div>
                         </div>
@@ -46,8 +46,8 @@
                 <br>
                 <a href="../something/kategorier/helse.php">
                     <div class="hexagon hexagonHovedside">
-                        <div class="hexagon-inni">
-                            <div class="hexagonimg" id="helse">
+                        <div class="hexagonInni">
+                            <div class="hexagonBilde" id="helse">
                             </div>
                         </div>
                     </div>
@@ -56,19 +56,19 @@
                 <br>
                 <a href="../something/kategorier/butikker.php">
                     <div class="hexagon hexagonHovedside">
-                        <div class="hexagon-inni">
-                            <div class="hexagonimg" id="butikker">
+                        <div class="hexagonInni">
+                            <div class="hexagonBilde" id="butikker">
 
                             </div>
                         </div>
                     </div>
                 </a>
             </div>
-            <div class="even2">
+            <div class="lik2">
                 <a href="../something/kategorier/studier.php">
                     <div class="hexagon hexagonHovedside">
-                        <div class="hexagon-inni">
-                            <div class="hexagonimg" id="studie">
+                        <div class="hexagonInni">
+                            <div class="hexagonBilde" id="studie">
 
                             </div>
                         </div>
@@ -77,8 +77,8 @@
                 <br>
                 <a href="../something/kategorier/parkering.php">
                     <div class="hexagon hexagonHovedside">
-                        <div class="hexagon-inni">
-                            <div class="hexagonimg" id="parkering">
+                        <div class="hexagonInni">
+                            <div class="hexagonBilde" id="parkering">
                             </div>
                         </div>
                     </div>

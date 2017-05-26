@@ -12,11 +12,11 @@
                 <img src="http://localhost/something/bilder/newlogowesterdals.png" height="40px">
             </a>
         </div>
-        <div id="navbuttons">
+        <div id="navKnapper">
             <a href="/something/index.php">Forside</a>
-            <div class="dropdownMenuSuper">
-                <button class="categoryBtn">Kategori &#9660;</button>
-                    <div class="categoryMenu">
+            <div class="dropdownMeny">
+                <button class="kategoriKnapp">Kategori &#9660;</button>
+                    <div class="kategoriMeny">
                         <a href="/something/kategorier/barer.php">Barer</a>
                         <a href="/something/kategorier/restauranter.php">Restauranter</a>
                         <a href="/something/kategorier/parkering.php">Parkering</a>
@@ -66,7 +66,7 @@
                 ?>
         </div>
     </div>
-        <div id="infobarcontent">
+        <div id="infoMenyInnhold">
             <?php
 
                 if(isset($_SESSION['LogInStatus']) && $_SESSION['LogInStatus'] == true) {

@@ -37,7 +37,7 @@ if(isset($_POST) & !empty($_POST)){
                 <?php } ?>
                 <form class="forms centerHorizontal" method="POST">
                     <input type="text" name="brukernavn" class="" placeholder="Brukernavn" required>
-                    <input type="email" name="epost" id="inputEmail" class="" placeholder="EPost" required autofocus>
+                    <input type="email" name="epost" id="inputEmail" class="" placeholder="E-Post" required autofocus>
                     <input type="password" name="passord" id="inputPassword" class="" placeholder="Passord" required>
                     <button class="" type="submit">Registrer</button>
                     <a class="" href="login.php">Login</a>

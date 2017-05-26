@@ -37,7 +37,7 @@ if(isset($_POST['endreBruker'])) {
                 if(!empty($_POST['epostEndre'])){
                     $byttEPost = "UPDATE brukere SET epost='$nyEPost' WHERE brukernavn ='$brukernavn'";
                     mysqli_query($connection, $byttEPost);
-                    $smsg = "EPost endret!";
+                    $smsg = "E-Post endret!";
                 }
 
                 if(!empty($_POST['passordEndre'])){
@@ -100,7 +100,7 @@ if(!empty($_POST['submit'])){
                 <?php echo $fmsg; ?> </div>
             <?php } ?>
 
-            <div class="containerTrePanel center">
+            <div class="trippelPanel center">
                 <form class="panel" method="POST">
                     <h2>Endre en bruker:</h2>
                     <br>
@@ -112,9 +112,9 @@ if(!empty($_POST['submit'])){
                     <br>
                     <input type="text" name="navnEndre" id="inputPassword" class="" placeholder="Nytt Brukernavn">
                     <br>
-                    <a>Ny EPost:</a>
+                    <a>Ny E-Post:</a>
                     <br>
-                    <input type="text" name="epostEndre" id="inputPassword" class="" placeholder="Ny EPost">
+                    <input type="text" name="epostEndre" id="inputPassword" class="" placeholder="Ny E-Post">
                     <br>
                     <a>Nytt passord:</a>
                     <br>
@@ -128,7 +128,7 @@ if(!empty($_POST['submit'])){
                 </form>
 
                 <form class="panel" method="POST">
-                    <h2>Legg til post</h2>
+                    <h2>Legg til post:</h2>
                     <br>
                     <a>Tittel:</a>
                     <br>
@@ -160,7 +160,7 @@ if(!empty($_POST['submit'])){
                 <form class="panel" method="POST">
                     <h2>Slett post:</h2>
                     <br>
-                    <a>PostID:</a>
+                    <a>Post-ID:</a>
                     <br>
                     <input type="text" name="postID" required>
                     <br>

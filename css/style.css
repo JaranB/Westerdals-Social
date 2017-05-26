@@ -15,7 +15,7 @@ p,
 #infobar,
 .varsel,
 .panel,
-.categoryBtn {
+.kategoriKnapp {
     text-decoration: none;
     font-family: "Segoe UI";
     color: whitesmoke;
@@ -25,7 +25,6 @@ p {
     font-size: 1.2em;
     top: 10px;
 }
-
 
 /*Settings generelt for siden - slutt*/
 
@@ -47,7 +46,7 @@ header {
     margin-top: 40px;
 }
 
-#navbuttons {
+#navKnapper {
     float: right;
     text-align: center;
     text-decoration: none;
@@ -56,19 +55,19 @@ header {
     margin-right: 5%;
 }
 
-#navbuttons a {
+#navKnapper a {
     padding: 10px;
     display: inline-block;
 }
 
-#navbuttons a:hover,
-.categoryBtn:hover {
+#navKnapper a:hover,
+.kategoriKnapp:hover {
     background-color: white;
     border-radius: 10%;
     color: rgba(30, 37, 48, 1);
 }
 
-.categoryMenu {
+.kategoriMeny {
     display: none;
     position: absolute;
     min-width: 120px;
@@ -78,14 +77,17 @@ header {
     overflow: hidden;
     text-align: left;
 }
-.dropdownMenuSuper {
+
+.dropdownMeny {
     position: relative;
     display: inline-block;
 }
-.dropdownMenuSuper:hover .categoryMenu {
+
+.dropdownMeny:hover .kategoriMeny {
     display: block;
 }
-.categoryMenu a {
+
+.kategoriMeny a {
     background-color: black;
     color: white;
     padding: 12px 16px;
@@ -94,14 +96,16 @@ header {
     float: left;
     width: 120px;
 }
-.categoryMenu a:hover {
+
+.kategoriMeny a:hover {
     background-color: white;
     color: black;
     text-decoration: underline;
     font-weight: bold;
     border-radius: -10%;
 }
-.categoryBtn {
+
+.kategoriKnapp {
     color: whitesmoke;
     padding: 10px;
     font-size: 16px;
@@ -110,7 +114,7 @@ header {
     background-color: rgba(0, 0, 0, 0);
 }
 
-#infobarcontent {
+#infoMenyInnhold {
     position: absolute;
     height: 30px;
     width: 100%;
@@ -122,7 +126,7 @@ header {
             box-sizing: border-box;
 }
 
-#infobarcontent a {
+#infoMenyInnhold a {
     position: relative;
     padding-top: 20px;
     float: left;
@@ -186,20 +190,6 @@ body {
     padding-top: 4.8%;
 }
 
-.container3 {
-
-}
-
-
-/*Container med hovedinnhold på alle sider - slutt*/
-
-#sitecontent {
-    text-align: center;
-    position: relative;
-    margin: auto;
-    padding: 1%;
-}
-
 
 /*html, body (alt innenfor body) - slutt*/
 
@@ -255,7 +245,7 @@ footer {
             transition-duration: 1s;
 }
 
-.hexagon-inni {
+.hexagonInni {
     width: 100%;
     height: 100%;
     -webkit-transform: rotate(-60deg);
@@ -265,7 +255,7 @@ footer {
     list-style-type: none;
 }
 
-.hexagonimg {
+.hexagonBilde {
     width: 100%;
     height: 100%;
     background-position: center;
@@ -275,7 +265,7 @@ footer {
     visibility: visible;
 }
 
-.hexagonimg p {
+.hexagonBilde p {
     position: relative;
     top: 50%;
     left: 50%;
@@ -341,7 +331,7 @@ footer {
     line-height: 150%;
 }
 
-.containerTrePanel {
+.trippelPanel {
     position: relative;
     width: 1500px;
     margin-top: 5%;
@@ -367,7 +357,7 @@ footer {
 
 /* Hovedside - start*/
 
-.hexbox {
+.hexBoks {
     position: absolute;
     width: 520px;
     height: 552px;
@@ -380,17 +370,17 @@ footer {
     right: 0;
 }
 
-.even {
+.lik {
     position: absolute;
     margin-top: 95px;
 }
 
-.odd {
+.ulik {
     position: absolute;
     margin-left: 160px;
 }
 
-.even2 {
+.lik2 {
     position: absolute;
     margin-left: 320px;
     margin-top: 95px;
@@ -409,7 +399,7 @@ footer {
 
 /*Post side - start*/
 
-#bildeogText {
+#bildeOgTekst {
     background-color: rgba(30, 37, 48, 0.85);
     width: 850px;
     margin: auto;
@@ -430,7 +420,7 @@ footer {
     width: 100%;
 }
 
-.bildePostText {
+.bildePostTekst {
     position: relative;
     width: 800px;
     height: 100%;
@@ -440,14 +430,6 @@ footer {
     position: relative;
     width: 800px;
     height: 100%;
-    background-color: rgba(30, 37, 48, 0.85);
-    border-radius: 15px;
-    padding-top: 1px;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-#kommentar2 {
     background-color: rgba(30, 37, 48, 0.85);
     border-radius: 15px;
     padding-top: 1px;
@@ -480,7 +462,7 @@ footer {
     overflow-y: auto;
 }
 
-.kommentarpanel {
+.kommentarPanel {
     text-decoration: none;
     width: 96%;
     border-radius: 4px;
@@ -500,10 +482,6 @@ footer {
     max-height: 100px;
 }
 
-#kommentarBox {
-    background-color: rgba(30, 37, 48, 0.5);
-}
-
 .funksjonSymboler {
     margin-top: 15px;
     position: relative;
@@ -511,18 +489,7 @@ footer {
 }
 
 /*Post side - slutt*/
-.marginauto {
-    margin-left: auto;
-    margin-bottom: auto;
-    margin-right: auto;
-    margin-top: auto;
-}
-.left {
-    float: left;
-}
-.right {
-    float: right;
-}
+
 .center {
     position: relative;
     top: 50%;
@@ -530,6 +497,7 @@ footer {
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
 }
+
 .centerHorizontal {
     position: relative;
     left: 50%;
@@ -543,26 +511,32 @@ footer {
 #barer {
     background-image: url(https://tek.westerdals.no/~bjojar16/WesterdalsSocial/bilder/Icons/Bars.jpg);
 }
+
 #restauranter {
     background-image: url(https://tek.westerdals.no/~bjojar16/WesterdalsSocial/bilder/Icons/Restaurants.jpg);
 }
+
 #studie {
     background-image: url(https://tek.westerdals.no/~bjojar16/WesterdalsSocial/bilder/Icons/Education.jpg);
 }
+
 #helse {
     background-image: url(https://tek.westerdals.no/~bjojar16/WesterdalsSocial/bilder/Icons/Health.jpg);
 }
+
 #transport {
     background-image: url(https://tek.westerdals.no/~bjojar16/WesterdalsSocial/bilder/Icons/Transport.jpg);
 }
+
 #parkering {
     background-image: url(https://tek.westerdals.no/~bjojar16/WesterdalsSocial/bilder/Icons/Parking.jpg);
 }
+
 #butikker {
     background-image: url(https://tek.westerdals.no/~bjojar16/WesterdalsSocial/bilder/Icons/Shopping.jpg);
 }
 
-.container2 {
+.containerUndersider {
     height: 570px;
     margin: auto;
     margin-top: 100px;
@@ -572,13 +546,7 @@ footer {
     right: 0;
 }
 
-.titelundersider {
-    display: block;
-    margin: auto;
-    margin-bottom: 130px;
-}
-
-#undersidor {
+#undersider {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -592,7 +560,7 @@ footer {
     margin-top: 100px;
 }
 
-.titeltext {
+.tittelTekst {
     color: whitesmoke;
     font-style: "Seagoe UI";
     text-align: center;
@@ -608,37 +576,37 @@ footer {
     word-wrap: break-word;
 }
 
-#restaurantimg {
+#restaurantBilde {
     background-image: url(https://tek.westerdals.no/~bjojar16/WesterdalsSocial/bilder/kategoribilder/restauranterbackground.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
-#studierimg {
+#studierBilde {
     background-image: url(https://tek.westerdals.no/~bjojar16/WesterdalsSocial/bilder/kategoribilder/studier.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
-#barerimg {
+#barerBilde {
     background-image: url(https://tek.westerdals.no/~bjojar16/WesterdalsSocial/bilder/kategoribilder/barer.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
-#parkeringimg {
+#parkeringBilde {
     background-image: url(https://tek.westerdals.no/~bjojar16/WesterdalsSocial/bilder/kategoribilder/parkering.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
-#butikkerimg {
+#butikkerBilde {
     background-image: url(https://tek.westerdals.no/~bjojar16/WesterdalsSocial/bilder/kategoribilder/butikker.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
-#helseimg {
+#helseBilde {
     background-image: url(https://tek.westerdals.no/~bjojar16/WesterdalsSocial/bilder/kategoribilder/helse.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
-#transportimg {
+#transportBilde {
     background-image: url(https://tek.westerdals.no/~bjojar16/WesterdalsSocial/bilder/kategoribilder/transport.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -684,10 +652,11 @@ footer {
     margin-top: 40px;
 }
 
-.wrapperUndersidor {
+.wrapUndersider {
     position: absolute;
     width: 100%;
     top: 50%;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
+    margin-top: 90px;
 }

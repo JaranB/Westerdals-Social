@@ -24,9 +24,9 @@ if(isset($_SESSION['admin']) && $_SESSION['admin'] == true) {
 
         <!-- Boks for "velkommen" tekst og firmaets  slogan - start -->
         <div id="container">
-            <div id="bildeogText">
+            <div id="bildeOgTekst">
 
-                <div class="bildePostText centerHorizontal">
+                <div class="bildePostTekst centerHorizontal">
                     <?php
 
                     $postsystem = "SELECT DISTINCT postid, tittel, bildeURL, post FROM steder ORDER BY postid DESC";
@@ -47,7 +47,7 @@ if(isset($_SESSION['admin']) && $_SESSION['admin'] == true) {
 
                         <h2>
                             <?php echo $tittel; ?>
-                            <a>PostID:</a>
+                            <a>Post-ID:</a>
                             <?php echo $postid; ?>
                         </h2>
 

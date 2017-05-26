@@ -13,13 +13,13 @@ if(!isset($_SESSION)){
 
     <!-- Knapper til steder lastet inn fra databasen - start -->
 
-    <body id="butikkerimg">
-        <div class="container2">
-            <div class="titelbox">
-                <h1 class="titeltext">Butikker</h1>
+    <body id="butikkerBilde">
+        <div class="containerUndersider">
+            <div class="tittelBoks">
+                <h1 class="tittelTekst">Butikker</h1>
             </div>
-            <div class="wrapperUndersidor">
-                <div id="undersidor">
+            <div class="wrapUndersider">
+                <div id="undersider">
 
                     <?php
 
@@ -40,8 +40,8 @@ if(!isset($_SESSION)){
 
                         <a href="/something/post.php?postid=<?php echo $postid; ?>">
                             <div class="hexagon hexagonUnderside" id="undersideHex">
-                                <div class="hexagon-inni">
-                                    <div class="hexagonimg" style="background:url(<?php echo $bildeURL; ?>)center center;background-size: 100% 100%;">
+                                <div class="hexagonInni">
+                                    <div class="hexagonBilde" style="background:url(<?php echo $bildeURL; ?>)center center;background-size: 100% 100%;">
                                         <p>
                                             <?php echo $tittel; ?>
                                         </p>

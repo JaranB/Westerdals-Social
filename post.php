@@ -44,7 +44,7 @@ if(!empty($_POST['submit'])){
 
         <!-- Boks for "velkommen" tekst og firmaets  slogan - start -->
         <div class="container">
-            <div id="bildeogText">
+            <div id="bildeOgTekst">
                 <div class="bildePost centerHorizontal">
                     <?php
 
@@ -53,7 +53,7 @@ if(!empty($_POST['submit'])){
 
                 </div>
 
-                <div class="bildePostText centerHorizontal">
+                <div class="bildePostTekst centerHorizontal">
                     <?php
 
                     $postsystem = "SELECT DISTINCT postid, tittel, bildeURL, post FROM steder WHERE postid=$id ORDER BY postid DESC";
@@ -129,7 +129,7 @@ if(!empty($_POST['submit'])){
                     </p>
                         <?php } ?>
 
-                    <form class="kommentarpanel" method="POST">
+                    <form class="kommentarPanel" method="POST">
                         <a>Legg til kommentar:</a>
                         <br>
                         <textarea id="kommentarFelt" name="kommentar" required></textarea>
