@@ -167,7 +167,9 @@ if(!empty($_POST['submit'])){
                     <button type="submit" name="slettPost">Slett</button>
                     <br>
                     <br>
-                    <a href="../something/adminpost.php"><p>Liste for alle poster</p></a>
+                    <a href="../something/adminpost.php">
+                        <p>Liste for alle poster</p>
+                    </a>
                     <br>
                 </form>
 

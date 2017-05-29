@@ -85,9 +85,9 @@
                 </a>
             </div>
         </div>
-    <!-- Boks for hexagon menyen - slutt -->
+        <!-- Boks for hexagon menyen - slutt -->
 
-    <?php include 'footer.php';?>
+        <?php include 'footer.php';?>
     </div>
 
 </body>

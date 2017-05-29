@@ -1,10 +1,13 @@
-
 var map;
+
 function initMap() {
     // Opprett kartet uten innledende stil angitt.
     // Det har derfor standard styling.
     map = new google.maps.Map(document.getElementById('map'), {
-        center: {lat: 59.917, lng: 10.759},
+        center: {
+            lat: 59.917,
+            lng: 10.759
+        },
         zoom: 16,
         mapTypeControl: false
     });
@@ -49,7 +52,7 @@ function initMap() {
             type: 'Lege',
             title: 'Legevakten',
             url: 'http://www.osloakutten.no/legevakt/?gclid=CJeMxueh4NMCFRrPsgodgYIOww'
-        },{
+        }, {
             position: new google.maps.LatLng(59.916556, 10.756723),
             type: 'Lege',
             title: 'Sentrum Tannlegevakt',
@@ -62,7 +65,7 @@ function initMap() {
             type: 'parking',
             title: 'Q-park Specrtum',
             url: 'http://www.q-park.no'
-        },{
+        }, {
             position: new google.maps.LatLng(59.915040, 10.761727),
             type: 'parking',
             title: 'Q-park Urtehagen',
@@ -103,33 +106,33 @@ function initMap() {
             type: 'Transport',
             title: 'Hausmannsgate',
             url: 'https://ruter.no/'
-        },{
+        }, {
             //barer
             position: new google.maps.LatLng(59.916003, 10.760409),
             type: 'Barer',
             title: 'Skjenkestua Studentbar',
             url: 'https://www.facebook.com/SkjenkestuaStudentbar/'
-        },{
+        }, {
             position: new google.maps.LatLng(59.918359, 10.759566),
             type: 'Barer',
             title: 'Bettola',
             url: 'https://m.facebook.com/bettolacocktailbar/'
-        },{
+        }, {
             position: new google.maps.LatLng(59.918362, 10.760306),
             type: 'Barer',
             title: 'Schouskjelleren Mikrobryggeri',
             url: 'http://schouskjelleren.no/'
-        },{
+        }, {
             position: new google.maps.LatLng(59.915700, 10.760154),
             type: 'Restauranter',
             title: 'Rokkekokker',
             url: 'www.rokkekokker.no'
-        },{
+        }, {
             position: new google.maps.LatLng(59.918129, 10.760591),
             type: 'Restauranter',
             title: 'Sudöst',
             url: 'http://sudost.no/no/'
-        },{
+        }, {
             position: new google.maps.LatLng(59.918732, 10.758259),
             type: 'Restauranter',
             title: 'Delicatessen',
@@ -144,21 +147,21 @@ function initMap() {
     ];
 
     // Lage markers.
-    features.forEach(function(feature)
+    features.forEach(function (feature)
 
-                     {
-        var marker = new google.maps.Marker({
-            position: feature.position,
-            icon: icons[feature.type].icon,
-            title: feature.title,
-            url: feature.url,
-            map: map
+        {
+            var marker = new google.maps.Marker({
+                position: feature.position,
+                icon: icons[feature.type].icon,
+                title: feature.title,
+                url: feature.url,
+                map: map
 
+            });
+            google.maps.event.addListener(marker, 'click', function () {
+                window.open(this.url, '_blank');
+            });
         });
-        google.maps.event.addListener(marker, 'click', function() {
-            window.open(this.url, '_blank');
-        });
-    });
     //Marker Array slutt
 
 
@@ -179,11 +182,15 @@ function initMap() {
 
     // Sett kartets stil til den innledende verdien til velgeren
     var styleSelector = document.getElementById('style-selector');
-    map.setOptions({styles: styles[styleSelector.value]});
+    map.setOptions({
+        styles: styles[styleSelector.value]
+    });
 
     // Bruk ny JSON når brukeren velger en annen stil.
-    styleSelector.addEventListener('change', function() {
-        map.setOptions({styles: styles[styleSelector.value]});
+    styleSelector.addEventListener('change', function () {
+        map.setOptions({
+            styles: styles[styleSelector.value]
+        });
     });
 
 } //Funksjon init slutt

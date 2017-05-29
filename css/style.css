@@ -26,6 +26,7 @@ p {
     top: 10px;
 }
 
+
 /*Settings generelt for siden - slutt*/
 
 
@@ -72,7 +73,7 @@ header {
     position: absolute;
     min-width: 120px;
     -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 2;
     overflow: hidden;
     text-align: left;
@@ -123,7 +124,7 @@ header {
     padding-left: 5%;
     margin-top: 110px;
     -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 #infoMenyInnhold a {
@@ -153,7 +154,6 @@ header {
     left: 10px;
     display: flex;
 }
-
 
 
 /*Header, navigator og inforbar - slutt*/
@@ -224,6 +224,8 @@ footer {
     background-color: rgba(30, 37, 48, 0.7);
     bottom: 0;
 }
+
+
 /*Pusher og footer - slutt*/
 
 
@@ -232,7 +234,7 @@ footer {
 .hexagon {
     position: relative;
     -webkit-transform: rotate(120deg);
-            transform: rotate(120deg);
+    transform: rotate(120deg);
     margin: auto;
     overflow: hidden;
     visibility: hidden;
@@ -240,16 +242,16 @@ footer {
 
 .hexagon:hover {
     -webkit-transform: scale(1.1) rotate(120deg);
-            transform: scale(1.1) rotate(120deg);
+    transform: scale(1.1) rotate(120deg);
     -webkit-transition-duration: 1s;
-            transition-duration: 1s;
+    transition-duration: 1s;
 }
 
 .hexagonInni {
     width: 100%;
     height: 100%;
     -webkit-transform: rotate(-60deg);
-            transform: rotate(-60deg);
+    transform: rotate(-60deg);
     overflow: hidden;
     display: inline-block;
     list-style-type: none;
@@ -261,7 +263,7 @@ footer {
     background-position: center;
     background-size: contain;
     -webkit-transform: rotate(-60deg);
-            transform: rotate(-60deg);
+    transform: rotate(-60deg);
     visibility: visible;
 }
 
@@ -270,13 +272,13 @@ footer {
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
     text-align: center;
     text-decoration: none;
     font-family: "Segoe UI";
     color: whitesmoke;
-   -webkit-text-stroke-width: 1px;
-   -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
     font-size: 2em;
 }
 
@@ -393,7 +395,6 @@ footer {
 /*Login og registrerings side - start*/
 
 
-
 /*Login og registrerings side - slutt*/
 
 
@@ -488,6 +489,7 @@ footer {
     float: right;
 }
 
+
 /*Post side - slutt*/
 
 .center {
@@ -495,19 +497,22 @@ footer {
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
 
 .centerHorizontal {
     position: relative;
     left: 50%;
     -webkit-transform: translate(-50%);
-            transform: translate(-50%);
+    transform: translate(-50%);
 }
+
 
 /*Home kode - slutt*/
 
+
 /*Undersider - start*/
+
 #barer {
     background-image: url(https://tek.westerdals.no/~bjojar16/WesterdalsSocial/bilder/Icons/Bars.jpg);
 }
@@ -551,10 +556,10 @@ footer {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
     max-width: 90%;
     margin: auto;
     margin-top: 100px;
@@ -566,7 +571,7 @@ footer {
     text-align: center;
     font-size: 4em;
     -webkit-box-shadow: 0px 0px 37px 2px rgba(0, 0, 0, 0.82);
-            box-shadow: 0px 0px 37px 2px rgba(0, 0, 0, 0.82);
+    box-shadow: 0px 0px 37px 2px rgba(0, 0, 0, 0.82);
     margin: auto;
     background: black;
     opacity: 0.7;
@@ -581,36 +586,43 @@ footer {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 #studierBilde {
     background-image: url(https://tek.westerdals.no/~bjojar16/WesterdalsSocial/bilder/kategoribilder/studier.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 #barerBilde {
     background-image: url(https://tek.westerdals.no/~bjojar16/WesterdalsSocial/bilder/kategoribilder/barer.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 #parkeringBilde {
     background-image: url(https://tek.westerdals.no/~bjojar16/WesterdalsSocial/bilder/kategoribilder/parkering.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 #butikkerBilde {
     background-image: url(https://tek.westerdals.no/~bjojar16/WesterdalsSocial/bilder/kategoribilder/butikker.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 #helseBilde {
     background-image: url(https://tek.westerdals.no/~bjojar16/WesterdalsSocial/bilder/kategoribilder/helse.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 #transportBilde {
     background-image: url(https://tek.westerdals.no/~bjojar16/WesterdalsSocial/bilder/kategoribilder/transport.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 
 /*kart side kart style er i JS - start*/
 
@@ -621,32 +633,37 @@ footer {
     overflow: hidden;
 }
 
-    #map {
-        height: 100%;
-        width: 100%;
-        border: 1px solid black;
-      }
+#map {
+    height: 100%;
+    width: 100%;
+    border: 1px solid black;
+}
 
-      .map-control {
-        background-color: #fff;
-        border: 1px solid #ccc;
-        -webkit-box-shadow: 0 2px 2px rgba(33, 33, 33, 0.4);
-                box-shadow: 0 2px 2px rgba(33, 33, 33, 0.4);
-        font-family: 'Roboto','sans-serif';
-        margin: 10px;
-        /* Hide the control initially, to prevent it from appearing
+.map-control {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    -webkit-box-shadow: 0 2px 2px rgba(33, 33, 33, 0.4);
+    box-shadow: 0 2px 2px rgba(33, 33, 33, 0.4);
+    font-family: 'Roboto', 'sans-serif';
+    margin: 10px;
+    /* Hide the control initially, to prevent it from appearing
            before the map loads. */
-        display: none;
-      }
-      /* Display the control once it is inside the map. */
-      #map .map-control { display: block; }
+    display: none;
+}
 
-      .selector-control {
-        font-size: 14px;
-        line-height: 30px;
-        padding-left: 5px;
-        padding-right: 5px;
-      }
+
+/* Display the control once it is inside the map. */
+
+#map .map-control {
+    display: block;
+}
+
+.selector-control {
+    font-size: 14px;
+    line-height: 30px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
 
 #style-selector-control {
     margin-top: 40px;
@@ -657,6 +674,6 @@ footer {
     width: 100%;
     top: 50%;
     -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
+    transform: translateY(-50%);
     margin-top: 90px;
 }

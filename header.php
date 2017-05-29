@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="/something/css/style.css" type="text/css">
 </head>
 <header>
-       <div id="navigator">
+    <div id="navigator">
         <div id="logo">
             <a href="/something/index.php">
                 <img src="http://localhost/something/bilder/newlogowesterdals.png" height="40px">
@@ -16,14 +16,14 @@
             <a href="/something/index.php">Forside</a>
             <div class="dropdownMeny">
                 <button class="kategoriKnapp">Kategori &#9660;</button>
-                    <div class="kategoriMeny">
-                        <a href="/something/kategorier/barer.php">Barer</a>
-                        <a href="/something/kategorier/restauranter.php">Restauranter</a>
-                        <a href="/something/kategorier/parkering.php">Parkering</a>
-                        <a href="/something/kategorier/helse.php">Helse</a>
-                        <a href="/something/kategorier/transport.php">Transport</a>
-                        <a href="/something/kategorier/butikker.php">Butikker</a>
-                    </div>
+                <div class="kategoriMeny">
+                    <a href="/something/kategorier/barer.php">Barer</a>
+                    <a href="/something/kategorier/restauranter.php">Restauranter</a>
+                    <a href="/something/kategorier/parkering.php">Parkering</a>
+                    <a href="/something/kategorier/helse.php">Helse</a>
+                    <a href="/something/kategorier/transport.php">Transport</a>
+                    <a href="/something/kategorier/butikker.php">Butikker</a>
+                </div>
             </div>
             <a href="/something/Kart.php">Kart</a>
             <?php
@@ -66,8 +66,8 @@
                 ?>
         </div>
     </div>
-        <div id="infoMenyInnhold">
-            <?php
+    <div id="infoMenyInnhold">
+        <?php
 
                 if(isset($_SESSION['LogInStatus']) && $_SESSION['LogInStatus'] == true) {
                   echo "<a id='loggetInnSom'>Logget inn som: </a><a>" . $_SESSION['brukernavn']; echo "</a> ";
@@ -86,6 +86,6 @@
                  }
 
                 ?>
-        </div>
+    </div>
 </header>
 <!-- Header som inneholder navigatoren på nettsiden - slutt -->
