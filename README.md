@@ -20,7 +20,7 @@ We had a task to make a website about the social options around our campus at We
 ![alt text](https://i.imgur.com/hSnPxx4.jpg "Administrator panel")
 
 
-## Full feauture list:
+## Feauture list:
 
 * User registratio
 * Set custom avatar
