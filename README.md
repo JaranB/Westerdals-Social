@@ -22,17 +22,17 @@ We had a task to make a website about the social options around our campus at We
 
 ## Full feauture list:
 
-..* User registratio
-..* Set custom avatar
-..* Make posts about social places
-..* Comment on social places
-..* Add social places to favorites
-..* View social places locations on google maps
-..* User panel where users can see all their posts, avatar and all their favorites
-..* Administrator panel
+* User registratio
+* Set custom avatar
+* Make posts about social places
+* Comment on social places
+* Add social places to favorites
+* View social places locations on google maps
+* User panel where users can see all their posts, avatar and all their favorites
+* Administrator panel
 
 ## Administrator features:
 
-..* Change users(username, EMail, password, priveliges)
-..* Add posts with title, category, pictures and a description
-..* Delete posts by any users
+* Change users(username, EMail, password, priveliges)
+* Add posts with title, category, pictures and a description
+* Delete posts by any users
